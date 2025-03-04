@@ -1,8 +1,7 @@
 import 'dart:async';
 
 import 'package:eyadty_app/core/utils/app_colors.dart';
-import 'package:eyadty_app/features/auth/presentation/views/widgets/box_shape.dart';
-import 'package:flutter/material.dart';
+ import 'package:flutter/material.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 
 import '../../../../../../core/utils/app_text_styles.dart';
