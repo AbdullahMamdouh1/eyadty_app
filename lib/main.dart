@@ -1,5 +1,8 @@
-import 'package:eyadty_app/features/auth/presentation/views/signup_view.dart';
-import 'package:flutter/material.dart';
+ import 'package:flutter/material.dart';
+
+import 'features/auth/presentation/views/signup_step2/signup_step2_view.dart';
+import 'features/auth/presentation/views/signup_step2/widgets/Pin_code_verification.dart';
+import 'features/auth/presentation/views/signup_step1/signup_view.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +18,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: SignupView(),
+      home: SignupStep2View(),
     );
   }
 }

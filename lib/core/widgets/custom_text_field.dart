@@ -24,7 +24,7 @@ class CustomTextFormField extends StatelessWidget {
       children: [
         Text(
           text,
-          style: TextStyle(fontSize: 18),
+          style: TextStyle(fontSize: 18,),
         ),
         SizedBox(
           height: 8,
@@ -41,7 +41,7 @@ class CustomTextFormField extends StatelessWidget {
           keyboardType: textInputType,
           decoration: InputDecoration(
             suffixIcon: suffixIcon,
-            hintStyle: TextStyles.bold16.copyWith(
+            hintStyle: TextStyles.regular15.copyWith(
               color: const Color(0xFF949D9E),
             ),
             hintText: hintText,
@@ -103,7 +103,7 @@ class CustomTextFormField2 extends StatelessWidget {
       children: [
         Text(
           text,
-          style: TextStyle(fontSize: 18),
+          style: TextStyles.regular15,
         ),
         SizedBox(
           height: 8,
@@ -120,8 +120,8 @@ class CustomTextFormField2 extends StatelessWidget {
           obscureText: ispassword,
           decoration: InputDecoration(
               hintText: hintText,
-              hintStyle: TextStyles.bold16.copyWith(
-                color: const Color(0xFF949D9E),
+              hintStyle: TextStyles.regular15.copyWith(
+                color: const Color(0xFFB3B3B3),
               ),
               focusColor: Colors.red,
               labelStyle: TextStyle(

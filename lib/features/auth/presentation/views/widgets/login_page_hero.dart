@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../../../generated/assets.dart';
+
 class LoginPageHero extends StatelessWidget {
   const LoginPageHero({
     super.key,
@@ -13,12 +15,9 @@ class LoginPageHero extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.blue,
         image: DecorationImage(
-            image:  AssetImage("assets/images/Login Page Hero.png"),
-            fit: BoxFit.fill
-        ),
+            image: AssetImage(Assets.imagesLoginPageHero), fit: BoxFit.fill),
       ),
       child: Text("data"),
-
     );
   }
 }

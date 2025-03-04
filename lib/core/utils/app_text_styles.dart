@@ -1,72 +1,31 @@
 import 'package:flutter/material.dart';
 
+/// Normal / regular / plain.
+//static const FontWeight w400 = FontWeight._(3, 400);
+
+/// Medium.
+///static const FontWeight w500 = FontWeight._(4, 500);
+
+/// Semi-bold.
+//static const FontWeight w600 = FontWeight._(5, 600);
+
+/// Bold.
+//static const FontWeight w700 = FontWeight._(6, 700);
+
 abstract class TextStyles {
-  static const TextStyle bold13 = TextStyle(
-    fontWeight: FontWeight.bold,
-    fontSize: 13,
-  );
-  static const TextStyle bold23 = TextStyle(
-    fontWeight: FontWeight.bold,
-    fontSize: 23,
-  );
+  //    1 bold
+  static const TextStyle bold18 =
+      TextStyle(fontWeight: FontWeight.bold, fontSize: 18, fontFamily: "Karla");
 
-  static const TextStyle semiBold13 = TextStyle(
-    fontWeight: FontWeight.w600,
-    fontSize: 13,
-  );
+  // 2 semiBold
+  static const TextStyle semiBold15 =
+      TextStyle(fontWeight: FontWeight.w600, fontSize: 15, fontFamily: "Karla");
 
-  static const TextStyle regular13 = TextStyle(
-    fontWeight: FontWeight.normal,
-    fontSize: 13,
-  );
+  // 3 regular
+  static const TextStyle regular15 = TextStyle(
+      fontWeight: FontWeight.normal, fontSize: 15, fontFamily: "Karla");
 
-  static const TextStyle bold16 = TextStyle(
-    fontWeight: FontWeight.bold,
-    fontSize: 16,
-  );
-
-  static const TextStyle bold19 = TextStyle(
-    fontWeight: FontWeight.bold,
-    fontSize: 19,
-  );
-
-  static const TextStyle semiBold16 = TextStyle(
-    fontWeight: FontWeight.w600,
-    fontSize: 16,
-  );
-
-  static const TextStyle bold28 = TextStyle(
-    fontWeight: FontWeight.bold,
-    fontSize: 28,
-  );
-
-  static const TextStyle regular22 = TextStyle(
-    fontWeight: FontWeight.normal,
-    fontSize: 22,
-  );
-
-  static const TextStyle semiBold11 = TextStyle(
-    fontWeight: FontWeight.w600,
-    fontSize: 11,
-  );
-
-  static const TextStyle medium15 = TextStyle(
-    fontWeight: FontWeight.w500,
-    fontSize: 15,
-  );
-
-  static const TextStyle regular26 = TextStyle(
-    fontWeight: FontWeight.normal,
-    fontSize: 26,
-  );
-
-  static const TextStyle regular16 = TextStyle(
-    fontWeight: FontWeight.normal,
-    fontSize: 16,
-  );
-
-  static const TextStyle regular11 = TextStyle(
-    fontWeight: FontWeight.normal,
-    fontSize: 11,
-  );
+//  4 medium
+  static const TextStyle medium16 =
+      TextStyle(fontWeight: FontWeight.w500, fontSize: 16, fontFamily: "Karla");
 }

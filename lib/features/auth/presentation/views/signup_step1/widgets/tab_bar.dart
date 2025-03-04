@@ -1,16 +1,17 @@
-import 'package:eyadty_app/features/auth/presentation/views/widgets/box_signup_with_email.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
+import '../../../../../../generated/assets.dart';
+import 'box_signup_with_email.dart';
 import 'box_signup_with_phon.dart';
-
-
 
 class TabBarWidget extends StatefulWidget {
   @override
   _TabBarWidgetState createState() => _TabBarWidgetState();
 }
 
-class _TabBarWidgetState extends State<TabBarWidget> with SingleTickerProviderStateMixin {
+class _TabBarWidgetState extends State<TabBarWidget>
+    with SingleTickerProviderStateMixin {
   late TabController _tabController;
 
   @override
@@ -37,7 +38,6 @@ class _TabBarWidgetState extends State<TabBarWidget> with SingleTickerProviderSt
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-
       body: Column(
         children: [
           Container(
@@ -52,7 +52,9 @@ class _TabBarWidgetState extends State<TabBarWidget> with SingleTickerProviderSt
                       color: _tabController.index == 0
                           ? Colors.green[100]
                           : Colors.transparent,
-                      borderRadius: BorderRadius.only(topLeft:Radius.circular(20),bottomLeft: Radius.circular(20)),
+                      borderRadius: BorderRadius.only(
+                          topLeft: Radius.circular(20),
+                          bottomLeft: Radius.circular(20)),
                     ),
                     padding: EdgeInsets.symmetric(vertical: 10, horizontal: 0),
                     child: Center(
@@ -66,21 +68,28 @@ class _TabBarWidgetState extends State<TabBarWidget> with SingleTickerProviderSt
                                   : Colors.grey,
                             ),
                           ),
-                          SizedBox(width: 4,),
-                          Icon(Icons.phone)
+                          SizedBox(
+                            width: 4,
+                          ),
+                          SvgPicture.asset(
+                            Assets.imagesCall,
+                            color:
+                                _tabController.index == 0 ? null : Colors.black,
+                          )
                         ],
                       ),
                     ),
                   ),
                 ),
-
                 Tab(
                   child: Container(
                     decoration: BoxDecoration(
                       color: _tabController.index == 1
                           ? Colors.green[100]
                           : Colors.transparent,
-                      borderRadius: BorderRadius.only(topRight:Radius.circular(20),bottomRight: Radius.circular(20)),
+                      borderRadius: BorderRadius.only(
+                          topRight: Radius.circular(20),
+                          bottomRight: Radius.circular(20)),
                     ),
                     padding: EdgeInsets.symmetric(vertical: 10, horizontal: 0),
                     child: Center(
@@ -94,8 +103,13 @@ class _TabBarWidgetState extends State<TabBarWidget> with SingleTickerProviderSt
                                   : Colors.grey,
                             ),
                           ),
-                          SizedBox(width: 4,),
-                          Icon(Icons.email_outlined,color: Color(0xff07de9c),)
+                          SizedBox(
+                            width: 4,
+                          ),
+                          SvgPicture.asset(Assets.imagesEmail,
+                              color: _tabController.index == 1
+                                  ? Colors.green
+                                  : null)
                         ],
                       ),
                     ),
@@ -110,7 +124,6 @@ class _TabBarWidgetState extends State<TabBarWidget> with SingleTickerProviderSt
             child: TabBarView(
               controller: _tabController,
               children: [
-
                 BoxSignupWithPhon(),
                 BoxSignupWithEmail(),
               ],

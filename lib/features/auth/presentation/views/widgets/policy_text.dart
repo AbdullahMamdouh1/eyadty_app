@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 
-import 'custom_check_box.dart';
+import '../signup_step1/widgets/custom_check_box.dart';
 
 class PolicyText extends StatefulWidget {
   const PolicyText({
-    super.key, required this.onChanged,
+    super.key,
+    required this.onChanged,
   });
   final ValueChanged<bool> onChanged;
 
@@ -28,20 +29,24 @@ class _PolicyTextState extends State<PolicyText> {
           },
           isChecked: isTermsAccepted,
         ),
-        SizedBox(width: 10,),
+        SizedBox(
+          width: 10,
+        ),
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text("By signing up, you agree to our"),
             Row(
               children: [
-                Text("Terms & Conditions ",style: TextStyle(color: Colors.blue),),
+                Text(
+                  "Terms & Conditions ",
+                  style: TextStyle(color: Colors.blue),
+                ),
                 Text("and "),
-                Text("Privacy ",style: TextStyle(color: Colors.blue)),
+                Text("Privacy ", style: TextStyle(color: Colors.blue)),
               ],
             ),
-            Text("Policy.",style: TextStyle(color: Colors.blue)),
-
+            Text("Policy.", style: TextStyle(color: Colors.blue)),
           ],
         )
       ],
