@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../signup_step1/widgets/custom_check_box.dart';
+import '../../widgets/custom_check_box.dart';
 
 class PolicyText extends StatefulWidget {
   const PolicyText({

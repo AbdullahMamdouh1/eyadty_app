@@ -3,7 +3,7 @@ import 'package:eyadty_app/generated/assets.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../../core/widgets/custom_text_field.dart';
-import '../../widgets/policy_text.dart';
+import 'policy_text.dart';
 
 class BoxSignupWithEmail extends StatefulWidget {
   const BoxSignupWithEmail({

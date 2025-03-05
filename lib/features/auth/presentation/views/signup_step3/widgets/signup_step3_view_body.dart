@@ -6,21 +6,20 @@ import '../../widgets/already_have_account.dart';
 import '../../widgets/end_text.dart';
 import '../../widgets/login_page_hero.dart';
 import '../../widgets/step_text.dart';
-import 'Pin_code_verification.dart';
+import 'complete _registration.dart';
 
-class SignupStep2ViewBody extends StatelessWidget {
-  const SignupStep2ViewBody({super.key});
+class SignupStep3ViewBody extends StatelessWidget {
+  const SignupStep3ViewBody({super.key});
+
 
   @override
   Widget build(BuildContext context) {
-    return Column(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        LoginPageHero(),
-        SizedBox(
-          height: 40,
-        ),
-        Padding(
+    return Column(children: [
+      LoginPageHero(),
+      SizedBox(
+        height: 40,
+      ),
+      Padding(
           padding: const EdgeInsets.only(right: 20.0, left: 20),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
@@ -35,35 +34,34 @@ class SignupStep2ViewBody extends StatelessWidget {
               StepsLine(
                 color1: Colors.green,
                 color2: Colors.green,
+                color3: Colors.green,
               ),
               SizedBox(
                 height: 8,
               ),
               StepText(
-                Title: 'Step 2 of 3:',
-                SubTitle: "Verify Your Account",
+                Title: 'Step 3 of 3:',
+                SubTitle: "Complete Your Registration",
               ),
               SizedBox(
                 height: 24,
               ),
-              boxShape(
-                Child: Padding(
-                  padding: const EdgeInsets.only(left: 29.0, right: 29),
-                  child: PinCodeVerification(),
-                ),
-                Height: 400,
-              ),
-              SizedBox(
-                height: 120,
-              ),
-              EndText(),
-              SizedBox(
-                height: 32,
-              )
             ],
-          ),
-        )
-      ],
-    );
+          )),
+      //////////////////
+      Padding(
+        padding: const EdgeInsets.only(left: 20.0,right: 20),
+        child: boxShape(Child:Padding(
+          padding: const EdgeInsets.all(24.0),
+          child: CompleteRegistration(),
+        ), Height: 1185, ),
+      ),
+      SizedBox(height:96,),
+      EndText(),
+      SizedBox(height:32,),
+
+
+
+    ]);
   }
 }

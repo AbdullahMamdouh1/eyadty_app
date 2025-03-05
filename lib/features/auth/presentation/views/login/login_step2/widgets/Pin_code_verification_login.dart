@@ -4,12 +4,11 @@ import 'package:eyadty_app/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 
-import '../../../../../../core/utils/app_text_styles.dart';
-import '../../../../../../core/widgets/custom_button.dart';
-import '../../../../../../generated/assets.dart';
+import '../../../../../../../core/utils/app_text_styles.dart';
+import '../../../../../../../core/widgets/custom_button.dart';
 
-class PinCodeVerification extends StatefulWidget {
-  const PinCodeVerification({
+class PinCodeVerificationLogin extends StatefulWidget {
+  const PinCodeVerificationLogin({
     Key? key,
     this.phoneNumber,
   }) : super(key: key);
@@ -17,10 +16,11 @@ class PinCodeVerification extends StatefulWidget {
   final String? phoneNumber;
 
   @override
-  State<PinCodeVerification> createState() => _PinCodeVerificationState();
+  State<PinCodeVerificationLogin> createState() =>
+      _PinCodeVerificationLoginState();
 }
 
-class _PinCodeVerificationState extends State<PinCodeVerification> {
+class _PinCodeVerificationLoginState extends State<PinCodeVerificationLogin> {
   TextEditingController textEditingController = TextEditingController();
   // ..text = "123456";
 
@@ -72,30 +72,8 @@ class _PinCodeVerificationState extends State<PinCodeVerification> {
               style: TextStyles.semiBold15.copyWith(color: Color(0xff245266))),
           textAlign: TextAlign.center,
         ),
-        SizedBox(
-          height: 8,
-        ),
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Row(
-              children: [
-                Text(
-                  "Not your number? ",
-                  style: TextStyles.regular15,
-                ),
-                Text("Re enter your Phone ",
-                    style: TextStyles.semiBold15
-                        .copyWith(color: AppColors.blueColor)),
-              ],
-            ),
-            Text("Number",
-                style:
-                    TextStyles.semiBold15.copyWith(color: AppColors.blueColor)),
-          ],
-        ),
         const SizedBox(
-          height: 20,
+          height: 15,
         ),
         Form(
           key: formKey,
@@ -180,7 +158,7 @@ class _PinCodeVerificationState extends State<PinCodeVerification> {
           ),
         ),
         const SizedBox(
-          height: 20,
+          height: 120,
         ),
         Row(
           mainAxisAlignment: MainAxisAlignment.center,

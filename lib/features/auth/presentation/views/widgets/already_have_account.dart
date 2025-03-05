@@ -25,3 +25,26 @@ class AlreadyHaveAccount extends StatelessWidget {
     );
   }
 }
+
+class DontHaveAccount extends StatelessWidget {
+  const DontHaveAccount({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.end,
+      children: [
+        Text(
+          "Don’t Have Account? ",
+          style: TextStyles.regular15,
+        ),
+        Text(
+          "Sign Up",
+          style: TextStyles.semiBold15.copyWith(color: AppColors.blueColor),
+        )
+      ],
+    );
+  }
+}

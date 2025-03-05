@@ -1,28 +1,29 @@
+import 'package:eyadty_app/core/utils/app_colors.dart';
+import 'package:eyadty_app/core/widgets/custom_button.dart';
+import 'package:eyadty_app/generated/assets.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../../../core/widgets/custom_button.dart';
-import '../../../../../../core/widgets/custom_text_field.dart';
-import '../../../../../../generated/assets.dart';
-import 'policy_text.dart';
+import '../../../../../../../core/utils/app_text_styles.dart';
+import '../../../../../../../core/widgets/custom_text_field.dart';
 
-class BoxSignupWithPhon extends StatefulWidget {
-  const BoxSignupWithPhon({
+class BoxLogin extends StatefulWidget {
+  const BoxLogin({
     super.key,
   });
 
   @override
-  State<BoxSignupWithPhon> createState() => _BoxSignupWithPhonState();
+  State<BoxLogin> createState() => _BoxLoginState();
 }
 
-class _BoxSignupWithPhonState extends State<BoxSignupWithPhon> {
-  final userNemeController = TextEditingController();
+class _BoxLoginState extends State<BoxLogin> {
+  final EmailController = TextEditingController();
   final PasswordController = TextEditingController();
   final ConfirmPasswordController = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 32.0, left: 20, right: 20),
+      padding: const EdgeInsets.only(left: 20, right: 20),
       child: Container(
         height: 400,
         decoration: BoxDecoration(
@@ -42,12 +43,11 @@ class _BoxSignupWithPhonState extends State<BoxSignupWithPhon> {
                   }
                   return null;
                 },
-                controller: userNemeController,
+                controller: EmailController,
                 ispassword: false,
                 textInputType: TextInputType.text,
-                labelText: 'enter your username',
-                text: 'Phone Number',
-                hintText: '+20 888 888 8888',
+                text: 'Email or Phone Number',
+                hintText: 'example@example.com',
               ),
               SizedBox(
                 height: 24,
@@ -62,41 +62,26 @@ class _BoxSignupWithPhonState extends State<BoxSignupWithPhon> {
                 controller: PasswordController,
                 ispassword: true,
                 textInputType: TextInputType.text,
-                labelText: 'enter your username',
                 text: 'Password',
                 hintText: '********',
               ),
               SizedBox(
                 height: 24,
               ),
-              CustomTextFormField2(
-                validator: (value) {
-                  if (value == null || value.isEmpty) {
-                    return 'Please enter some text';
-                  }
-                  return null;
-                },
-                controller: ConfirmPasswordController,
-                ispassword: true,
-                textInputType: TextInputType.text,
-                text: 'Confirm Password',
-                hintText: '********',
-              ),
-              SizedBox(
-                height: 24,
-              ),
-              PolicyText(
-                onChanged: (bool value) {},
-              ),
-              SizedBox(
-                height: 24,
-              ),
               CustomButton(
                 onPressed: () {},
-                text: 'Sign Up',
+                text: 'Log In',
                 image: Assets.imagesLogin,
                 color: Colors.green,
               ),
+              SizedBox(
+                height: 44,
+              ),
+              Text(
+                "Forget Your Password?",
+                style:
+                    TextStyles.regular15.copyWith(color: AppColors.greyColor),
+              )
             ],
           ),
         ),

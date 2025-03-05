@@ -1,15 +1,15 @@
-import 'package:eyadty_app/features/auth/presentation/views/widgets/box_shape.dart';
 import 'package:flutter/material.dart';
 
-import '../../signup_step1/widgets/steps_line.dart';
-import '../../widgets/already_have_account.dart';
-import '../../widgets/end_text.dart';
-import '../../widgets/login_page_hero.dart';
-import '../../widgets/step_text.dart';
-import 'Pin_code_verification.dart';
+import '../../../../../../../core/utils/app_colors.dart';
+import '../../../../../../../core/utils/app_text_styles.dart';
+import '../../../widgets/already_have_account.dart';
+import '../../../widgets/box_shape.dart';
+import '../../../widgets/end_text.dart';
+import '../../../widgets/login_page_hero.dart';
+import 'Pin_code_verification_login.dart';
 
-class SignupStep2ViewBody extends StatelessWidget {
-  const SignupStep2ViewBody({super.key});
+class LoginVerifyViewBody extends StatelessWidget {
+  const LoginVerifyViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,25 +23,18 @@ class SignupStep2ViewBody extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(right: 20.0, left: 20),
           child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Padding(
                 padding: const EdgeInsets.only(left: 20.0, right: 20),
-                child: AlreadyHaveAccount(),
+                child: DontHaveAccount(),
               ),
               SizedBox(
-                height: 32,
+                height: 24,
               ),
-              StepsLine(
-                color1: Colors.green,
-                color2: Colors.green,
-              ),
-              SizedBox(
-                height: 8,
-              ),
-              StepText(
-                Title: 'Step 2 of 3:',
-                SubTitle: "Verify Your Account",
+              Text(
+                "Log In to Your Account",
+                style: TextStyles.bold28.copyWith(color: AppColors.blackColor),
               ),
               SizedBox(
                 height: 24,
@@ -49,9 +42,9 @@ class SignupStep2ViewBody extends StatelessWidget {
               boxShape(
                 Child: Padding(
                   padding: const EdgeInsets.only(left: 29.0, right: 29),
-                  child: PinCodeVerification(),
+                  child: PinCodeVerificationLogin(),
                 ),
-                Height: 400,
+                Height: 445,
               ),
               SizedBox(
                 height: 120,
