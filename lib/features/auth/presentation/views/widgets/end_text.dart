@@ -7,29 +7,28 @@ class EndText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      mainAxisAlignment: MainAxisAlignment.center,
-      children: [
-        Text(
-          "Terms & Conditions",
-          style: TextStyle(
-              color: Colors.blue,
-              decoration: TextDecoration.underline,
-              decorationColor: Colors.blue,
-              fontWeight: FontWeight.bold),
-        ),
-        SizedBox(
-          width: 36,
-        ),
-        Text(
-          "Privacy Policy. ",
-          style: TextStyle(
-              color: Colors.blue,
-              decoration: TextDecoration.underline,
-              decorationColor: Colors.blue,
-              fontWeight: FontWeight.bold),
-        )
-      ],
+    return  Padding(
+      padding: const EdgeInsets.only(bottom: 15.0),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          TextButton(
+            onPressed: () {}, // أضف وظيفة الشروط والأحكام هنا
+            child: Text(
+              "Terms & Conditions",
+              style: TextStyle(color: Colors.blue),
+            ),
+          ),
+          Text("|", style: TextStyle(color: Colors.grey)),
+          TextButton(
+            onPressed: () {}, // أضف وظيفة سياسة الخصوصية هنا
+            child: Text(
+              "Privacy Policy",
+              style: TextStyle(color: Colors.blue),
+            ),
+          ),
+        ],
+      ),
     );
   }
 }

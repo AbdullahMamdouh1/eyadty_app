@@ -54,7 +54,7 @@ class SignupStep3ViewBody extends StatelessWidget {
         child: boxShape(Child:Padding(
           padding: const EdgeInsets.all(24.0),
           child: CompleteRegistration(),
-        ), Height: 1185, ),
+        ), Height: 1170, ),
       ),
       SizedBox(height:96,),
       EndText(),

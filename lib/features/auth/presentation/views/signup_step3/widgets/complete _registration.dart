@@ -1,5 +1,5 @@
 import 'package:eyadty_app/core/utils/app_colors.dart';
-import 'package:eyadty_app/features/auth/presentation/views/signup_step3/widgets/select%20_account_type.dart';
+ import 'package:eyadty_app/features/auth/presentation/views/signup_step3/widgets/account_selection.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../../core/utils/app_text_styles.dart';
@@ -157,30 +157,17 @@ class _CompleteRegistrationState extends State<CompleteRegistration> {
         SizedBox(
           height: 24,
         ),
-        Text("Select Account Type",
-            style: TextStyles.regular15.copyWith(color: AppColors.blackColor)),
+
+        AccountSelection(),
         SizedBox(
           height: 24,
-        ),
-        SizedBox(
-          height: 169,
-          child: ListView.builder(
-            padding: EdgeInsets.zero,
-            physics: NeverScrollableScrollPhysics(),
-            itemCount: 2, // عدد العناصر في القائمة
-            itemBuilder: (context, index) {
-              return SelectAccountType(
-                onChanged: (bool value) {},
-                isChecked: index == 1 ? true : false,
-              );
-            },
-          ),
         ),
         CustomButton2(
           color: AppColors.greenColor,
           onPressed: () {},
           text: 'Create My Account',
         ),
+
       ],
     );
   }

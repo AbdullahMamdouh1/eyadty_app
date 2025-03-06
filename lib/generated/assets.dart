@@ -12,6 +12,7 @@ class Assets {
   static const String imagesEmail = 'assets/images/email.svg';
   static const String imagesGoogle = 'assets/images/google.svg';
   static const String imagesIconStar = 'assets/images/IconStar.svg';
+  static const String imagesLock = 'assets/images/lock.svg';
   static const String imagesLogin = 'assets/images/login.svg';
   static const String imagesLoginPageHero = 'assets/images/LoginPageHero.png';
   static const String imagesSave = 'assets/images/save.svg';

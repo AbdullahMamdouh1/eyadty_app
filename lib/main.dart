@@ -1,5 +1,9 @@
  import 'package:flutter/material.dart';
 
+import 'features/auth/presentation/views/forgot_password/forgot_password_step1/forgot_password_step1_view.dart';
+import 'features/auth/presentation/views/forgot_password/forgot_password_step2/forgot_password_step2_view.dart';
+import 'features/auth/presentation/views/forgot_password/forgot_password_step3/forgot_password_step3_view.dart';
+import 'features/auth/presentation/views/forgot_password/forgot_password_step4/password_reset_card.dart';
 import 'features/auth/presentation/views/login/login_step1/widgets/login_step1_view_body.dart';
 import 'features/auth/presentation/views/login/login_step1/login_step1_view.dart';
 import 'features/auth/presentation/views/login/login_step2/login_verify_view.dart';
@@ -23,7 +27,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: LoginVerifyView(),
+      home: PasswordResetCard(),
     );
   }
 }
