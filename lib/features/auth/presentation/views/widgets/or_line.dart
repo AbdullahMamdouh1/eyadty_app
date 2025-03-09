@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../../core/widgets/custom_button.dart';
-import '../../../../../../generated/assets.dart';
-import '../../widgets/end_text.dart';
+import '../../../../../core/widgets/custom_button.dart';
+import '../../../../../generated/assets.dart';
+import 'end_text.dart';
 
 class OrLine extends StatelessWidget {
   const OrLine({

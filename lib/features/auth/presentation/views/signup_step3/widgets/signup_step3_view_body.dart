@@ -1,7 +1,7 @@
-import 'package:eyadty_app/features/auth/presentation/views/widgets/box_shape.dart';
-import 'package:flutter/material.dart';
+ import 'package:flutter/material.dart';
 
-import '../../signup_step1/widgets/steps_line.dart';
+import '../../../../../../core/widgets/custom_container_shape.dart';
+import '../../widgets/steps_line.dart';
 import '../../widgets/already_have_account.dart';
 import '../../widgets/end_text.dart';
 import '../../widgets/login_page_hero.dart';
@@ -51,7 +51,7 @@ class SignupStep3ViewBody extends StatelessWidget {
       //////////////////
       Padding(
         padding: const EdgeInsets.only(left: 20.0,right: 20),
-        child: boxShape(Child:Padding(
+        child: CustomContainerShape(Child:Padding(
           padding: const EdgeInsets.all(24.0),
           child: CompleteRegistration(),
         ), Height: 1170, ),

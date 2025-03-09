@@ -2,7 +2,7 @@ import 'package:eyadty_app/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../../../core/utils/app_text_styles.dart';
-import '../../../signup_step1/widgets/or_line.dart';
+import '../../../widgets/or_line.dart';
 import '../../../widgets/already_have_account.dart';
 import '../../../widgets/login_page_hero.dart';
 import 'box_login.dart';

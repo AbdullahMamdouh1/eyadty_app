@@ -1,7 +1,7 @@
-import 'package:eyadty_app/features/auth/presentation/views/widgets/box_shape.dart';
-import 'package:flutter/material.dart';
+ import 'package:flutter/material.dart';
 
-import '../../signup_step1/widgets/steps_line.dart';
+import '../../../../../../core/widgets/custom_container_shape.dart';
+import '../../widgets/steps_line.dart';
 import '../../widgets/already_have_account.dart';
 import '../../widgets/end_text.dart';
 import '../../widgets/login_page_hero.dart';
@@ -46,7 +46,7 @@ class SignupStep2ViewBody extends StatelessWidget {
               SizedBox(
                 height: 24,
               ),
-              boxShape(
+              CustomContainerShape(
                 Child: Padding(
                   padding: const EdgeInsets.only(left: 29.0, right: 29),
                   child: PinCodeVerification(),

@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 
 import '../../../../../../../core/utils/app_colors.dart';
 import '../../../../../../../core/utils/app_text_styles.dart';
+import '../../../../../../../core/widgets/custom_container_shape.dart';
 import '../../../widgets/already_have_account.dart';
-import '../../../widgets/box_shape.dart';
-import '../../../widgets/end_text.dart';
+ import '../../../widgets/end_text.dart';
 import '../../../widgets/login_page_hero.dart';
 import 'Pin_code_verification_login.dart';
 
@@ -39,7 +39,7 @@ class LoginVerifyViewBody extends StatelessWidget {
               SizedBox(
                 height: 24,
               ),
-              boxShape(
+              CustomContainerShape(
                 Child: Padding(
                   padding: const EdgeInsets.only(left: 29.0, right: 29),
                   child: PinCodeVerificationLogin(),

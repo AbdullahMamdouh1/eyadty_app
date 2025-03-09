@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class boxShape extends StatelessWidget {
-  const boxShape({
+class  CustomContainerShape extends StatelessWidget {
+  const CustomContainerShape({
     super.key,
     required this.Child,
     required this.Height,
@@ -12,6 +12,7 @@ class boxShape extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: Height,
+      width: double.infinity,
       decoration: BoxDecoration(
           border: Border.all(
             color: Colors.grey,

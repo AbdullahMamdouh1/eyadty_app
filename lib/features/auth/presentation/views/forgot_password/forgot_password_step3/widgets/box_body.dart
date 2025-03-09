@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 
 import '../../../../../../../core/utils/app_colors.dart';
 import '../../../../../../../core/widgets/custom_button.dart';
+import '../../../../../../../core/widgets/custom_container_shape.dart';
 import '../../../../../../../core/widgets/custom_text_field.dart';
 import '../../../../../../../generated/assets.dart';
-import '../../../widgets/box_shape.dart';
-import 'protect_your_privacy.dart';
+ import 'protect_your_privacy.dart';
 
 class BoxBody extends StatelessWidget {
   const BoxBody({
@@ -19,7 +19,7 @@ class BoxBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return boxShape(
+    return CustomContainerShape(
         Child: Padding(
           padding: const EdgeInsets.only(left: 30.0, right: 30, top: 24),
           child: Column(

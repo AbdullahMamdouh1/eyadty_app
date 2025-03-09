@@ -5,8 +5,8 @@ import '../../../../../../core/utils/app_text_styles.dart';
 import '../../widgets/already_have_account.dart';
 import '../../widgets/login_page_hero.dart';
 import '../../widgets/step_text.dart';
-import 'or_line.dart';
-import 'steps_line.dart';
+import '../../widgets/or_line.dart';
+import '../../widgets/steps_line.dart';
 import 'tab_bar.dart';
 
 class SignupViewBody extends StatelessWidget {

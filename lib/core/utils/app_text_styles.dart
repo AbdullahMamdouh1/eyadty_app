@@ -18,11 +18,16 @@ abstract class TextStyles {
       TextStyle(fontWeight: FontWeight.bold, fontSize: 18, fontFamily: "Karla");
   static const TextStyle bold28 =
   TextStyle(fontWeight: FontWeight.bold, fontSize: 28, fontFamily: "Karla");
+  static const TextStyle bold24 =
+  TextStyle(fontWeight: FontWeight.bold, fontSize: 24, fontFamily: "Karla");
+
 
 
   // 2 semiBold
   static const TextStyle semiBold15 =
       TextStyle(fontWeight: FontWeight.w600, fontSize: 15, fontFamily: "Karla");
+  static const TextStyle semiBold20 =
+  TextStyle(fontWeight: FontWeight.w600, fontSize: 20, fontFamily: "Karla");
 
   // 3 regular
   static const TextStyle regular15 = TextStyle(

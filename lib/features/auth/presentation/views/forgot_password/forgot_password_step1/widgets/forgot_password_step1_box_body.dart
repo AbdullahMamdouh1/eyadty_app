@@ -3,9 +3,9 @@ import 'package:flutter/material.dart';
 import '../../../../../../../core/utils/app_colors.dart';
 import '../../../../../../../core/utils/app_text_styles.dart';
 import '../../../../../../../core/widgets/custom_button.dart';
+import '../../../../../../../core/widgets/custom_container_shape.dart';
 import '../../../../../../../core/widgets/custom_text_field.dart';
 import '../../../../../../../generated/assets.dart';
-import '../../../widgets/box_shape.dart';
 
 class ForgotPasswordStep1BoxBody extends StatefulWidget {
   const ForgotPasswordStep1BoxBody({
@@ -22,7 +22,7 @@ class _ForgotPasswordStep1BoxBodyState
   final EmailController = TextEditingController();
   @override
   Widget build(BuildContext context) {
-    return boxShape(
+    return CustomContainerShape(
         Child: Padding(
           padding: const EdgeInsets.only(left: 30.0, right: 30, top: 24),
           child: Column(
