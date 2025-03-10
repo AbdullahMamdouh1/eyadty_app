@@ -81,6 +81,8 @@ class CustomTextFormField2 extends StatelessWidget {
   var onChangedd;
   final String text;
   final String hintText;
+  final Widget? widget;
+
 
   CustomTextFormField2({
     super.key,
@@ -92,7 +94,7 @@ class CustomTextFormField2 extends StatelessWidget {
     this.validator,
     this.autovalidateMode,
       this.suffixIcon,
-    required this.text, required this.hintText,
+    required this.text, required this.hintText, this.widget,
   });
 
   @override
@@ -101,9 +103,16 @@ class CustomTextFormField2 extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
-          text,
-          style: TextStyles.regular15,
+        Row(
+          children: [
+            Container(child: widget),
+            SizedBox(width: 12,),
+
+            Text(
+              text,
+              style: TextStyles.regular15,
+            ),
+          ],
         ),
         SizedBox(
           height: 8,

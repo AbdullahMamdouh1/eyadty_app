@@ -229,6 +229,7 @@ class _ListingAddListStep1ViewBodyState
                         textButton1: 'Pin Location on Map',
                         textButton2: 'Add Operational Information',
                         imageButton1: Assets.imagesAddLocationAlt,
+                        Visible: true,
                       )
                     ],
                   )),

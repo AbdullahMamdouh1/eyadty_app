@@ -15,7 +15,7 @@ class ListingEndButtons extends StatelessWidget {
     required this.onPressedButtonBack,
     required this.textButton1,
     required this.imageButton1,
-    required this.textButton2,
+    required this.textButton2, required this.Visible,
   });
   final VoidCallback onPressedButton1;
   final VoidCallback onPressedButton2;
@@ -24,36 +24,39 @@ class ListingEndButtons extends StatelessWidget {
   final String textButton1;
   final String imageButton1;
   final String textButton2;
-
+final bool Visible;
   @override
   Widget build(BuildContext context) {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.end,
       children: [
-        SizedBox(
-          width: 200,
-          height: 54,
-          child: TextButton(
-            style: TextButton.styleFrom(
-                shape: RoundedRectangleBorder(
-                  side: BorderSide(color: Colors.black54),
-                  borderRadius: BorderRadius.circular(
-                    8,
+        Visibility(
+          visible: Visible,
+          child: SizedBox(
+            width: 200,
+            height: 54,
+            child: TextButton(
+              style: TextButton.styleFrom(
+                  shape: RoundedRectangleBorder(
+                    side: BorderSide(color: Colors.black54),
+                    borderRadius: BorderRadius.circular(
+                      8,
+                    ),
                   ),
-                ),
-                backgroundColor: Color(0xFFE0E3E7)),
-            onPressed: onPressedButton1,
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Text(
-                  textButton1,
-                  style: TextStyles.regular15.copyWith(
-                    color: Colors.black,
+                  backgroundColor: Color(0xFFE0E3E7)),
+              onPressed: onPressedButton1,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Text(
+                    textButton1,
+                    style: TextStyles.regular15.copyWith(
+                      color: Colors.black,
+                    ),
                   ),
-                ),
-                SvgPicture.asset(imageButton1)
-              ],
+                  SvgPicture.asset(imageButton1)
+                ],
+              ),
             ),
           ),
         ),

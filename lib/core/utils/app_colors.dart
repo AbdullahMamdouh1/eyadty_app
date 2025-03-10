@@ -6,5 +6,11 @@ abstract class AppColors {
   static const Color blueColor = Color(0xFF4BAAD4);
   static const Color blackColor = Color(0xFF0C0C0C);
   static const Color greyColor = Color(0xFF757575);
-
 }
+
+const dynamic sizedBox = SizedBox(
+  height: 24,
+);
+
+
+

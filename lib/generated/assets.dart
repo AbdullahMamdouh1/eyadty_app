@@ -9,6 +9,7 @@ class Assets {
   static const String imagesAddLocationAlt = 'assets/images/add_location_alt.svg';
   static const String imagesApple = 'assets/images/apple.svg';
   static const String imagesArrowForward = 'assets/images/arrow_forward.svg';
+  static const String imagesBody = 'assets/images/Body.png';
   static const String imagesCall = 'assets/images/Call.svg';
   static const String imagesCheck = 'assets/images/Check.svg';
   static const String imagesClose = 'assets/images/close.svg';
@@ -18,7 +19,6 @@ class Assets {
   static const String imagesIconStar = 'assets/images/IconStar.svg';
   static const String imagesImage = 'assets/images/Image.png';
   static const String imagesImageteeth = 'assets/images/Imageteeth.png';
-  static const String imagesImagetouth = 'assets/images/Imagetouth.png';
   static const String imagesLock = 'assets/images/lock.svg';
   static const String imagesLogin = 'assets/images/login.svg';
   static const String imagesLoginPageHero = 'assets/images/LoginPageHero.png';
@@ -29,7 +29,6 @@ class Assets {
   static const String imagesSend = 'assets/images/send.svg';
   static const String imagesStar = 'assets/images/Star.svg';
   static const String imagesUpload = 'assets/images/upload.svg';
-  static const String imagesUploads = 'assets/images/Uploads.svg';
   static const String imagesVector = 'assets/images/Vector.svg';
 
 }
