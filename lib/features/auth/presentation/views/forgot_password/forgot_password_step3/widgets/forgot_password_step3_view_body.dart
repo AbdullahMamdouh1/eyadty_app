@@ -41,10 +41,10 @@ class _ForgotPasswordStep3ViewBodyState
             children: [
               Text("Create a New Password",
                   style:
-                      TextStyles.bold28.copyWith(color: AppColors.blackColor)),
+                      AppStyles.bold28.copyWith(color: AppColors.blackColor)),
               Text(
                 "Ensure your account stays secure with a strong password",
-                style: TextStyles.medium16.copyWith(color: AppColors.greyColor),
+                style: AppStyles.medium16.copyWith(color: AppColors.greyColor),
               ),
               SizedBox(
                 height: 24,

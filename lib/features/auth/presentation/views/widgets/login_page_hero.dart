@@ -42,7 +42,7 @@ class LoginPageHero extends StatelessWidget {
                     ),
                     Text(
                       "Back",
-                      style: TextStyles.regular15
+                      style: AppStyles.regular15
                           .copyWith(color: AppColors.blackColor),
                     )
                   ],

@@ -41,7 +41,7 @@ class CustomTextFormField extends StatelessWidget {
           keyboardType: textInputType,
           decoration: InputDecoration(
             suffixIcon: suffixIcon,
-            hintStyle: TextStyles.regular15.copyWith(
+            hintStyle: AppStyles.regular15.copyWith(
               color: const Color(0xFF949D9E),
             ),
             hintText: hintText,
@@ -110,7 +110,7 @@ class CustomTextFormField2 extends StatelessWidget {
 
             Text(
               text,
-              style: TextStyles.regular15,
+              style: AppStyles.regular15,
             ),
           ],
         ),
@@ -129,7 +129,7 @@ class CustomTextFormField2 extends StatelessWidget {
           obscureText: ispassword,
           decoration: InputDecoration(
               hintText: hintText,
-              hintStyle: TextStyles.regular15.copyWith(
+              hintStyle: AppStyles.regular15.copyWith(
                 color: const Color(0xFFB3B3B3),
               ),
               focusColor: Colors.red,

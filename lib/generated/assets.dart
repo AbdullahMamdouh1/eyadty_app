@@ -30,5 +30,6 @@ class Assets {
   static const String imagesStar = 'assets/images/Star.svg';
   static const String imagesUpload = 'assets/images/upload.svg';
   static const String imagesVector = 'assets/images/Vector.svg';
+  static const String imagesView = 'assets/images/view.svg';
 
 }

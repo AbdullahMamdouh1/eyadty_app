@@ -18,7 +18,7 @@ class _AccountSelectionState extends State<AccountSelection> {
         children: [
           Text(
             'Select Account Type',
-            style:TextStyles.regular15.copyWith(color: AppColors.blackColor),
+            style:AppStyles.regular15.copyWith(color: AppColors.blackColor),
           ),
           SizedBox(height: 20),
 
@@ -54,11 +54,11 @@ class _AccountSelectionState extends State<AccountSelection> {
                     children: [
                       Text(
                         'Free Account',
-                        style: TextStyles.regular15.copyWith(color: AppColors.blackColor),
+                        style: AppStyles.regular15.copyWith(color: AppColors.blackColor),
                       ),
                       Text(
                         'Access to E-Commerce and register your clinic to receive Bookings',
-                        style: TextStyles.regular15.copyWith(color: AppColors.greyColor),
+                        style: AppStyles.regular15.copyWith(color: AppColors.greyColor),
                       ),
                     ],
                   ),
@@ -101,11 +101,11 @@ class _AccountSelectionState extends State<AccountSelection> {
                     children: [
                       Text(
                         'Premium Account',
-                        style: TextStyles.regular15.copyWith(color: AppColors.blackColor),
+                        style: AppStyles.regular15.copyWith(color: AppColors.blackColor),
                       ),
                       Text(
                         'All in free plus Clinic Management System and verified booking badge',
-                        style: TextStyles.regular15.copyWith(color: AppColors.greyColor),
+                        style: AppStyles.regular15.copyWith(color: AppColors.greyColor),
                       ),
                     ],
                   ),

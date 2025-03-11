@@ -63,13 +63,13 @@ class _PinCodeVerificationLoginState extends State<PinCodeVerificationLogin> {
         ),
         Text(
           'Enter the 6-digit code sent to to:',
-          style: TextStyles.regular15.copyWith(color: AppColors.blackColor),
+          style: AppStyles.regular15.copyWith(color: AppColors.blackColor),
           textAlign: TextAlign.start,
         ),
         RichText(
           text: TextSpan(
               text: " +20 888 888 8888.",
-              style: TextStyles.semiBold15.copyWith(color: Color(0xff245266))),
+              style: AppStyles.semiBold15.copyWith(color: Color(0xff245266))),
           textAlign: TextAlign.center,
         ),
         const SizedBox(
@@ -170,7 +170,7 @@ class _PinCodeVerificationLoginState extends State<PinCodeVerificationLogin> {
                   children: [
                     Text(
                       "Didn’t receive OTP? ",
-                      style: TextStyles.regular15,
+                      style: AppStyles.regular15,
                     ),
                     GestureDetector(
                       onTap: () {
@@ -185,11 +185,11 @@ class _PinCodeVerificationLoginState extends State<PinCodeVerificationLogin> {
                         ),
                       ),
                     ),
-                    Text("after", style: TextStyles.semiBold15),
+                    Text("after", style: AppStyles.semiBold15),
                   ],
                 ),
                 Text("00:59",
-                    style: TextStyles.semiBold15
+                    style: AppStyles.semiBold15
                         .copyWith(color: AppColors.blueColor)),
               ],
             ),

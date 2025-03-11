@@ -34,7 +34,7 @@ class ForgotPasswordStep2Body extends StatelessWidget {
               ),
               Text(
                 "Verify Your Identity",
-                style: TextStyles.bold28.copyWith(color: AppColors.blackColor),
+                style: AppStyles.bold28.copyWith(color: AppColors.blackColor),
               ),
               SizedBox(
                 height: 24,

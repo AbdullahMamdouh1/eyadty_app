@@ -55,17 +55,17 @@ class ItemListing extends StatelessWidget {
               children: [
                 Text(
                   title,
-                  style: TextStyles.bold18,
+                  style: AppStyles.bold18,
                 ),
                 Row(
                   children: [
                     Text(
                       "\$${price}",
-                      style: TextStyles.bold18,
+                      style: AppStyles.bold18,
                     ),
                     Text(
                       "/ month",
-                      style: TextStyles.regular15,
+                      style: AppStyles.regular15,
                     ),
                   ],
                 ),
@@ -75,7 +75,7 @@ class ItemListing extends StatelessWidget {
               height: 8,
             ),
             Text(subTitle,
-                style: TextStyles.regular15.copyWith(color: Color(0xFF757575))),
+                style: AppStyles.regular15.copyWith(color: Color(0xFF757575))),
             SizedBox(
               height: 16,
             ),

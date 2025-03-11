@@ -17,14 +17,14 @@ class TitleText extends StatelessWidget {
         ),
         Text(
           Title,
-          style: TextStyles.bold24,
+          style: AppStyles.bold24,
         ),
         SizedBox(
           height: 8,
         ),
         Text(
           SubTitle,
-          style: TextStyles.semiBold20.copyWith(color: Color(0xFF757575)),
+          style: AppStyles.semiBold20.copyWith(color: Color(0xFF757575)),
         ),
       ],
     );

@@ -5,11 +5,11 @@ import '../../../../../../core/utils/app_text_styles.dart';
 import '../../../../../../core/widgets/custom_button.dart';
 import '../../../../../../core/widgets/custom_container_shape.dart';
 import '../../../../../../generated/assets.dart';
-import '../../widgets/item_listing.dart';
-import '../../widgets/title_text.dart';
+import '../../../../../listing/presentation/views/widgets/item_listing.dart';
+import '../../../../../listing/presentation/views/widgets/title_text.dart';
 
-class ListingAddMoreListingViewBody extends StatelessWidget {
-  const ListingAddMoreListingViewBody({super.key});
+class ListingManageListingViewBody extends StatelessWidget {
+  const ListingManageListingViewBody({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,21 +23,8 @@ class ListingAddMoreListingViewBody extends StatelessWidget {
           ),
           TitleText(
             Title: 'Manage Your Clinics',
-            SubTitle: 'View, edit, and grow your clinic’s online presence. ',
+            SubTitle: 'View, edit, and grow your clinic’s online presence.  ',
           ),
-          SizedBox(
-            height: 16,
-          ),
-          SizedBox(
-              width: 195,
-              child: Directionality(
-                  textDirection: TextDirection.rtl,
-                  child: CustomButton(
-                    onPressed: () {},
-                    text: 'Add Your First Clinic',
-                    image: Assets.imagesPlus,
-                    color: AppColors.greenColor,
-                  ))),
           SizedBox(
             height: 24,
           ),
@@ -48,7 +35,7 @@ class ListingAddMoreListingViewBody extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
-                    "Your Current Plan",
+                    "Your Active Clinics",
                     style: AppStyles.bold18,
                   ),
                   SizedBox(
@@ -99,45 +86,22 @@ class ListingAddMoreListingViewBody extends StatelessWidget {
                     subTitle:
                         'Orthodentist | 21 Makram Ebeid, Nasr City, Cairo, Egyot',
                     price: '50',
-                    image: Assets.imagesImage,
+                    image: Assets.imagesImageteeth,
                     customButton: Padding(
-                      padding: const EdgeInsets.only(right: 160.0),
+                      padding: const EdgeInsets.only(right: 135.0),
                       child: CustomButton(
                           onPressed: () {},
-                          text: "Resubmit ",
+                          text: "Manage Listing ",
                           image: Assets.imagesClose,
                           color: AppColors.greenColor),
                     ),
                     Width: 320,
-                    color: Color(0xFFD9D9D9),
-                  ),
-                  SizedBox(
-                    height: 24,
-                  ),
-                  ItemListing(
-                    title: 'Add a Clinic',
-                    subTitle:
-                        'Start building your presence by adding your first clinic today!',
-                    price: '50',
-                    image: Assets.imagesImage,
-                    customButton: Padding(
-                      padding: const EdgeInsets.only(right: 120.0),
-                      child: CustomButton(
-                          onPressed: () {},
-                          text: "Add A Clinic",
-                          image: Assets.imagesClose,
-                          color: AppColors.greenColor),
-                    ),
-                    Width: 280,
-                    color: Color(0xFFD9D9D9),
-                  ),
-                  SizedBox(
-                    height: 24,
+                    color: Colors.white,
                   ),
                 ],
               ),
             ),
-            Height: 2000,
+            Height: 1510,
           ),
           SizedBox(
             height: 20,

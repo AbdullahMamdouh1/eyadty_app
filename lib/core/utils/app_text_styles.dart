@@ -12,7 +12,7 @@ import 'package:flutter/material.dart';
 /// Bold.
 //static const FontWeight w700 = FontWeight._(6, 700);
 
-abstract class TextStyles {
+abstract class AppStyles {
   //    1 bold
   static const TextStyle bold18 =
       TextStyle(fontWeight: FontWeight.bold, fontSize: 18, fontFamily: "Karla");

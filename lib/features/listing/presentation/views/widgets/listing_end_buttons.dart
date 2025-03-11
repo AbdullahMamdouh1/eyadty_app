@@ -50,7 +50,7 @@ final bool Visible;
                 children: [
                   Text(
                     textButton1,
-                    style: TextStyles.regular15.copyWith(
+                    style: AppStyles.regular15.copyWith(
                       color: Colors.black,
                     ),
                   ),
@@ -109,7 +109,7 @@ final bool Visible;
                   children: [
                     Text(
                       "Back",
-                      style: TextStyles.regular15.copyWith(
+                      style: AppStyles.regular15.copyWith(
                         color: Colors.black,
                       ),
                     ),

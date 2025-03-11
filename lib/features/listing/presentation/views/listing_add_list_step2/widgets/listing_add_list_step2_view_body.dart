@@ -107,7 +107,7 @@ class _ListingAddListStep2ViewBodyState
                           children: [
                             Text(
                               "Working Hours",
-                              style: TextStyles.bold18,
+                              style: AppStyles.bold18,
                             ),
                             sizedBox,
                             Column(

@@ -22,14 +22,14 @@ class StepText extends StatelessWidget {
         ),
         Text(
           Title,
-          style: TextStyles.bold18,
+          style: AppStyles.bold18,
         ),
         SizedBox(
           height: 8,
         ),
         Text(
           SubTitle,
-          style: TextStyles.medium16.copyWith(color: AppColors.greyColor),
+          style: AppStyles.medium16.copyWith(color: AppColors.greyColor),
         ),
       ],
     );

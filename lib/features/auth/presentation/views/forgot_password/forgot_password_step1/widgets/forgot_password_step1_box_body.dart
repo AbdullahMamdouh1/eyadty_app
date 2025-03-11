@@ -48,10 +48,10 @@ class _ForgotPasswordStep1BoxBodyState
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text("Need Help restoring your Password?",
-                      style: TextStyles.regular15
+                      style: AppStyles.regular15
                           .copyWith(color: AppColors.greyColor)),
                   Text("Contact Support",
-                      style: TextStyles.semiBold15
+                      style: AppStyles.semiBold15
                           .copyWith(color: AppColors.blueColor))
                 ],
               ),
@@ -71,10 +71,10 @@ class _ForgotPasswordStep1BoxBodyState
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text("Did you remember your password already? ",
-                      style: TextStyles.regular15
+                      style: AppStyles.regular15
                           .copyWith(color: AppColors.greyColor)),
                   Text("Back to login screen",
-                      style: TextStyles.semiBold15
+                      style: AppStyles.semiBold15
                           .copyWith(color: AppColors.blueColor))
                 ],
               ),

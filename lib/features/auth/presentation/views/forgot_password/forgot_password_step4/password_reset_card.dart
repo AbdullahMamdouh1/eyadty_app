@@ -76,7 +76,7 @@ class PasswordResetCard extends StatelessWidget {
                               children: [
                                 Text(
                                   "Go to Login",
-                                  style: TextStyles.regular15.copyWith(
+                                  style: AppStyles.regular15.copyWith(
                                     color: Colors.grey[200],
                                   ),
                                 ),

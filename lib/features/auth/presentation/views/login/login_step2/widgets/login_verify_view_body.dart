@@ -34,7 +34,7 @@ class LoginVerifyViewBody extends StatelessWidget {
               ),
               Text(
                 "Log In to Your Account",
-                style: TextStyles.bold28.copyWith(color: AppColors.blackColor),
+                style: AppStyles.bold28.copyWith(color: AppColors.blackColor),
               ),
               SizedBox(
                 height: 24,

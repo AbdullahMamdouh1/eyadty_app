@@ -80,7 +80,7 @@ class _BoxLoginState extends State<BoxLogin> {
               Text(
                 "Forget Your Password?",
                 style:
-                    TextStyles.regular15.copyWith(color: AppColors.greyColor),
+                    AppStyles.regular15.copyWith(color: AppColors.greyColor),
               )
             ],
           ),

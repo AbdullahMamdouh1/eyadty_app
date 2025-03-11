@@ -63,13 +63,13 @@ class _PinCodeVerificationState extends State<PinCodeVerification> {
         ),
         Text(
           'Enter the 6-digit code sent to to:',
-          style: TextStyles.regular15.copyWith(color: AppColors.blackColor),
+          style: AppStyles.regular15.copyWith(color: AppColors.blackColor),
           textAlign: TextAlign.start,
         ),
         RichText(
           text: TextSpan(
               text: " +20 888 888 8888.",
-              style: TextStyles.semiBold15.copyWith(color: Color(0xff245266))),
+              style: AppStyles.semiBold15.copyWith(color: Color(0xff245266))),
           textAlign: TextAlign.center,
         ),
         SizedBox(
@@ -82,16 +82,16 @@ class _PinCodeVerificationState extends State<PinCodeVerification> {
               children: [
                 Text(
                   "Not your number? ",
-                  style: TextStyles.regular15,
+                  style: AppStyles.regular15,
                 ),
                 Text("Re enter your Phone ",
-                    style: TextStyles.semiBold15
+                    style: AppStyles.semiBold15
                         .copyWith(color: AppColors.blueColor)),
               ],
             ),
             Text("Number",
                 style:
-                    TextStyles.semiBold15.copyWith(color: AppColors.blueColor)),
+                    AppStyles.semiBold15.copyWith(color: AppColors.blueColor)),
           ],
         ),
         const SizedBox(
@@ -192,7 +192,7 @@ class _PinCodeVerificationState extends State<PinCodeVerification> {
                   children: [
                     Text(
                       "Didn’t receive OTP? ",
-                      style: TextStyles.regular15,
+                      style: AppStyles.regular15,
                     ),
                     GestureDetector(
                       onTap: () {
@@ -207,11 +207,11 @@ class _PinCodeVerificationState extends State<PinCodeVerification> {
                         ),
                       ),
                     ),
-                    Text("after", style: TextStyles.semiBold15),
+                    Text("after", style: AppStyles.semiBold15),
                   ],
                 ),
                 Text("00:59",
-                    style: TextStyles.semiBold15
+                    style: AppStyles.semiBold15
                         .copyWith(color: AppColors.blueColor)),
               ],
             ),

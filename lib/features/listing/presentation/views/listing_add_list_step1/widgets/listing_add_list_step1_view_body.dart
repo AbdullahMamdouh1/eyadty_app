@@ -111,7 +111,7 @@ class _ListingAddListStep1ViewBodyState
                       ),
                       Text(
                         "Clinic Address",
-                        style: TextStyles.bold18,
+                        style: AppStyles.bold18,
                       ),
                       SizedBox(
                         height: 24,

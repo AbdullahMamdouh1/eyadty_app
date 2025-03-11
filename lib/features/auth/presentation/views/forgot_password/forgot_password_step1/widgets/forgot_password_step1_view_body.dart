@@ -38,10 +38,10 @@ class _ForgotPasswordStep1ViewBodyState
             children: [
               Text("Forgot Your Password?",
                   style:
-                      TextStyles.bold28.copyWith(color: AppColors.blackColor)),
+                      AppStyles.bold28.copyWith(color: AppColors.blackColor)),
               Text(
                 "Enter your email or phone number, and we’ll send you a code to reset your password.",
-                style: TextStyles.medium16.copyWith(color: AppColors.greyColor),
+                style: AppStyles.medium16.copyWith(color: AppColors.greyColor),
               ),
               SizedBox(
                 height: 24,

@@ -15,11 +15,11 @@ class AlreadyHaveAccount extends StatelessWidget {
       children: [
         Text(
           "Already have Account? ",
-          style: TextStyles.regular15,
+          style: AppStyles.regular15,
         ),
         Text(
           "Login",
-          style: TextStyles.semiBold15.copyWith(color: AppColors.blueColor),
+          style: AppStyles.semiBold15.copyWith(color: AppColors.blueColor),
         )
       ],
     );
@@ -38,11 +38,11 @@ class DontHaveAccount extends StatelessWidget {
       children: [
         Text(
           "Don’t Have Account? ",
-          style: TextStyles.regular15,
+          style: AppStyles.regular15,
         ),
         Text(
           "Sign Up",
-          style: TextStyles.semiBold15.copyWith(color: AppColors.blueColor),
+          style: AppStyles.semiBold15.copyWith(color: AppColors.blueColor),
         )
       ],
     );

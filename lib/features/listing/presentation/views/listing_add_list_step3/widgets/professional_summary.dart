@@ -37,7 +37,7 @@ class ProfessionalSummary extends StatelessWidget {
       children: [
         Text(
           text,
-          style: TextStyles.regular15,
+          style: AppStyles.regular15,
         ),
         SizedBox(
           height: 8,
@@ -61,7 +61,7 @@ class ProfessionalSummary extends StatelessWidget {
             decoration: InputDecoration(
                 border: InputBorder.none,
                 hintText: hintText,
-                hintStyle: TextStyles.regular15.copyWith(
+                hintStyle: AppStyles.regular15.copyWith(
                   color: const Color(0xFFB3B3B3),
                 ),
                 labelStyle: TextStyle(

@@ -41,7 +41,7 @@ class CustomButton extends StatelessWidget {
             ),
             Text(
               text,
-              style: TextStyles.regular15.copyWith(
+              style: AppStyles.regular15.copyWith(
                 color: Colors.grey[200],
               ),
             ),
@@ -86,7 +86,7 @@ class CustomButton2 extends StatelessWidget {
             ),
             Text(
               text,
-              style: TextStyles.regular15.copyWith(
+              style: AppStyles.regular15.copyWith(
                 color: Colors.grey[200],
               ),
             ),

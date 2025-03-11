@@ -27,7 +27,7 @@ class CustomButtons {
           children: [
             Text(
               textButton1,
-              style: TextStyles.regular15.copyWith(
+              style: AppStyles.regular15.copyWith(
                 color: Colors.black,
               ),
             ),

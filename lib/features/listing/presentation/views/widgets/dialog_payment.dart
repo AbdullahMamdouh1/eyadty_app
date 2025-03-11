@@ -73,7 +73,7 @@ class _DialogPaymentState extends State<DialogPayment> {
                       Flexible(
                           child: Text(
                         "I confirm that the information provided is accurate and complete.",
-                        style: TextStyles.regular15,
+                        style: AppStyles.regular15,
                         maxLines: 2,
                       ))
                     ],
@@ -98,7 +98,7 @@ class _DialogPaymentState extends State<DialogPayment> {
                           onPressed: () {},
                           child: Text(
                             "Review",
-                            style: TextStyles.regular15.copyWith(
+                            style: AppStyles.regular15.copyWith(
                               color: Colors.black,
                             ),
                           ),

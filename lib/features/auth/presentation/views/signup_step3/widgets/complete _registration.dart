@@ -24,7 +24,7 @@ class _CompleteRegistrationState extends State<CompleteRegistration> {
       children: [
         Text(
           "Tell us more about yourself",
-          style: TextStyles.bold18.copyWith(color: AppColors.greenColor),
+          style: AppStyles.bold18.copyWith(color: AppColors.greenColor),
         ),
 
         SizedBox(
@@ -83,7 +83,7 @@ class _CompleteRegistrationState extends State<CompleteRegistration> {
         ),
         Text(
           "Tell us more about your work",
-          style: TextStyles.bold18.copyWith(color: AppColors.greenColor),
+          style: AppStyles.bold18.copyWith(color: AppColors.greenColor),
         ),
         SizedBox(
           height: 24,

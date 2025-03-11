@@ -2,10 +2,13 @@
 import 'package:flutter/material.dart';
 
 
- import 'features/listing/presentation/views/listing_add_list_step1/listing_add_list_step1_view.dart';
+ import 'features/Offers-and-promotion/presentation/views/Listing-Manage-Listing/listing_anage_listing_view.dart';
+import 'features/listing/presentation/views/listing_add_list_step1/listing_add_list_step1_view.dart';
 import 'features/listing/presentation/views/listing_add_list_step3/listing_add_list_step3_view.dart';
 import 'features/listing/presentation/views/listing_add_list_step4/listing_add_list_step4_view.dart';
+import 'features/listing/presentation/views/listing_add_list_step5/listing_add_list_step5_view.dart';
 import 'features/listing/presentation/views/listing_add_more-listing/listing_add_more-listing_view.dart';
+import 'features/listing/presentation/views/payout_dashboard/payout_dashboard_view.dart';
 import 'features/listing/presentation/views/widgets/dialog_payment.dart';
 
 void main() {
@@ -23,7 +26,7 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: DialogPayment() ,
+      home: ListingAnageListingView() ,
     );
   }
 }

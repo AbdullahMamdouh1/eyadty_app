@@ -22,7 +22,7 @@ class CustomSearch extends StatelessWidget {
               padding: const EdgeInsets.all(10.0),
               child: SvgPicture.asset(Assets.imagesSearch,height: 16,width: 12,),
             ),
-            hintStyle: TextStyles.regular15.copyWith(
+            hintStyle: AppStyles.regular15.copyWith(
               color: const Color(0xFF949D9E),
             ),
             hintText: "Find what you need quickly...",
