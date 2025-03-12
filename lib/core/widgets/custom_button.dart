@@ -96,3 +96,38 @@ class CustomButton2 extends StatelessWidget {
     );
   }
 }
+
+
+
+
+
+
+
+class CustomButton3 extends StatelessWidget {
+  const CustomButton3(
+      {super.key,
+        required this.onPressed,
+        required this.text,
+        required this.color, required this.ColorText});
+  final VoidCallback onPressed;
+  final String text;
+  final Color color;
+  final Color ColorText;
+
+  @override
+  Widget build(BuildContext context) {
+    return Container(
+      width: double.infinity,
+      height: 35,
+      decoration: BoxDecoration(
+          color: color,
+          border: Border.all(color: Colors.white),
+          borderRadius: BorderRadius.circular(10)),
+      child: Center(
+          child: Text(
+            text,
+            style: TextStyle(color: ColorText),
+          )),
+    );
+  }
+}

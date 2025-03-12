@@ -19,6 +19,7 @@ class Assets {
   static const String imagesIconStar = 'assets/images/IconStar.svg';
   static const String imagesImage = 'assets/images/Image.png';
   static const String imagesImageteeth = 'assets/images/Imageteeth.png';
+  static const String imagesLocalOffer = 'assets/images/local_offer.svg';
   static const String imagesLock = 'assets/images/lock.svg';
   static const String imagesLogin = 'assets/images/login.svg';
   static const String imagesLoginPageHero = 'assets/images/LoginPageHero.png';
@@ -27,6 +28,7 @@ class Assets {
   static const String imagesSave = 'assets/images/save.svg';
   static const String imagesSearch = 'assets/images/Search.svg';
   static const String imagesSend = 'assets/images/send.svg';
+  static const String imagesSort = 'assets/images/sort.svg';
   static const String imagesStar = 'assets/images/Star.svg';
   static const String imagesUpload = 'assets/images/upload.svg';
   static const String imagesVector = 'assets/images/Vector.svg';
