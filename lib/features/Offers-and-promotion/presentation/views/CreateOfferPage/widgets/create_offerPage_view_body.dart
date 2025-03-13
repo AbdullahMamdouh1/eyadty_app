@@ -6,9 +6,9 @@ import 'package:eyadty_app/core/widgets/custom_text_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import '../../../../../../core/widgets/CustomTextFormFieldHeight.dart';
 import '../../../../../../generated/assets.dart';
-import '../../../../../listing/presentation/views/listing_add_list_step3/widgets/professional_summary.dart';
-import '../../../../../listing/presentation/views/widgets/listing_end_buttons.dart';
+ import '../../../../../listing/presentation/views/widgets/listing_end_buttons.dart';
 import '../../../../../listing/presentation/views/widgets/title_text.dart';
 
 class CreateOfferpageViewBody extends StatelessWidget {
@@ -65,16 +65,14 @@ class CreateOfferpageViewBody extends StatelessWidget {
                         text: "Applicable Clinics",
                         hintText: "Select clinics"),
                     sizedBox,
-                    ProfessionalSummary(
+                    Customtextformfieldheight(
                       validator: (value) {
                         if (value == null || value.isEmpty) {
                           return 'Please enter some text';
                         }
                         return null;
                       },
-                      ispassword: false,
-                      textInputType: TextInputType.text,
-                      text: 'Description',
+                       text: 'Description',
                       hintText: 'Describe your promotion here...',
                     ),
                     sizedBox,
@@ -103,15 +101,14 @@ class CreateOfferpageViewBody extends StatelessWidget {
                       style: AppStyles.bold18,
                     ),
                     sizedBox,
-                    ProfessionalSummary(
+                    Customtextformfieldheight(
                       validator: (value) {
                         if (value == null || value.isEmpty) {
                           return 'Please enter some text';
                         }
                         return null;
                       },
-                      ispassword: false,
-                      textInputType: TextInputType.text,
+
                       text: 'Terms and Conditions',
                       hintText: 'Enter any restrictions or terms...',
                     ),

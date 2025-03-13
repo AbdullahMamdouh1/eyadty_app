@@ -2,30 +2,22 @@ import 'package:flutter/material.dart';
 
 import '../../../../../../core/utils/app_text_styles.dart';
 
-class ProfessionalSummary extends StatelessWidget {
-  final TextInputType textInputType;
-  final bool ispassword;
-  final String? labelText;
-  final IconData? prefixIcon;
-  final dynamic controller;
+class Customtextformfieldheight extends StatelessWidget {
+    final String? labelText;
+   final dynamic controller;
   final dynamic validator;
   final dynamic autovalidateMode;
-  final Widget? suffixIcon;
-  var onChangedd;
+   var onChangedd;
   final String text;
   final String hintText;
 
-  ProfessionalSummary({
+  Customtextformfieldheight({
     super.key,
-    required this.textInputType,
-    required this.ispassword,
-    this.labelText,
-    this.prefixIcon,
-    this.controller,
+     this.labelText,
+     this.controller,
     this.validator,
     this.autovalidateMode,
-    this.suffixIcon,
-    required this.text,
+     required this.text,
     required this.hintText,
   });
 
@@ -56,8 +48,8 @@ class ProfessionalSummary extends StatelessWidget {
             validator: validator,
             controller: controller,
 
-            keyboardType: textInputType,
-            obscureText: ispassword,
+            keyboardType: TextInputType.name,
+            obscureText: false,
             decoration: InputDecoration(
                 border: InputBorder.none,
                 hintText: hintText,

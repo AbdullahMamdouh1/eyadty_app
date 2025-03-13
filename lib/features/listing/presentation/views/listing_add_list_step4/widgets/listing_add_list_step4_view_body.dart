@@ -1,5 +1,4 @@
-import 'package:eyadty_app/features/listing/presentation/views/listing_add_list_step3/widgets/professional_summary.dart';
-import 'package:flutter/material.dart';
+ import 'package:flutter/material.dart';
 
 import '../../../../../../core/utils/app_colors.dart';
 import '../../../../../../core/widgets/custom_container_shape.dart';

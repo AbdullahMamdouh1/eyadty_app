@@ -90,10 +90,6 @@ class Table1 {
   }
 }
 
-
-
-
-
 class Table2 {
   TableShape({required Child, required double height}) {
     return CustomContainerShape(
@@ -121,7 +117,9 @@ class Table2 {
                         "Type",
                         style: AppStyles.semiBold15,
                       ),
-                      SizedBox(width: 8,),
+                      SizedBox(
+                        width: 8,
+                      ),
                       SvgPicture.asset(Assets.imagesSort)
                     ],
                   ),
@@ -147,12 +145,12 @@ class Table2 {
   ////////////////////////////////  TableInformation
 
   TableInformation(
-      {
-
-        required String PatientName,required String Type,
-        required String Date1, required dynamic ColorBool}) {
+      {required String PatientName,
+      required String Type,
+      required String Date1,
+      required dynamic ColorBool}) {
     return Container(
-      color: ColorBool ,
+      color: ColorBool,
       height: 45,
       child: Padding(
         padding: const EdgeInsets.only(left: 12.0, right: 12),
@@ -160,11 +158,10 @@ class Table2 {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Flexible(
-              child: Text(
-                Date1,
-                style: AppStyles.regular15,  maxLines: 2,
-                  overflow: TextOverflow.ellipsis
-              ),
+              child: Text(Date1,
+                  style: AppStyles.regular15,
+                  maxLines: 2,
+                  overflow: TextOverflow.ellipsis),
             ),
             SizedBox(
               width: 20,
@@ -178,12 +175,20 @@ class Table2 {
               ),
             ),
             SizedBox(width: 20),
-            Flexible(child: Text(Type , style: AppStyles.regular15,
+            Flexible(
+                child: Text(
+              Type,
+              style: AppStyles.regular15,
               maxLines: 2,
-              overflow: TextOverflow.ellipsis,))
+              overflow: TextOverflow.ellipsis,
+            ))
           ],
         ),
       ),
     );
   }
 }
+
+
+
+

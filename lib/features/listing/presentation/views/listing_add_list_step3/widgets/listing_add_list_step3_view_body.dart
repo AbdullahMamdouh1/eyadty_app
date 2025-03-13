@@ -1,7 +1,7 @@
-import 'package:eyadty_app/features/listing/presentation/views/listing_add_list_step3/widgets/professional_summary.dart';
-import 'package:flutter/material.dart';
+ import 'package:flutter/material.dart';
 
 import '../../../../../../core/utils/app_colors.dart';
+import '../../../../../../core/widgets/CustomTextFormFieldHeight.dart';
 import '../../../../../../core/widgets/custom_container_shape.dart';
 import '../../../../../../core/widgets/custom_text_field.dart';
 import '../../../../../../generated/assets.dart';
@@ -131,7 +131,7 @@ class _ListingAddListStep3ViewBodyState
                       hintText: 'Cairo University',
                     ),
                     sizedBox,
-                    ProfessionalSummary(
+                    Customtextformfieldheight(
                       validator: (value) {
                         if (value == null || value.isEmpty) {
                           return 'Please enter some text';
@@ -139,9 +139,7 @@ class _ListingAddListStep3ViewBodyState
                         return null;
                       },
                       controller: Controller,
-                      ispassword: false,
-                      textInputType: TextInputType.text,
-                      text: 'Professional Summary	',
+                       text: 'Professional Summary	',
                       hintText: 'Briefly describe your expertise.',
                     ),
                     sizedBox,

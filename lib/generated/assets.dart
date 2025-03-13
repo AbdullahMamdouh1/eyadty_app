@@ -27,7 +27,7 @@ class Assets {
   static const String imagesPlus = 'assets/images/plus.svg';
   static const String imagesSave = 'assets/images/save.svg';
   static const String imagesSearch = 'assets/images/Search.svg';
-  static const String imagesSend = 'assets/images/send.svg';
+  static const String imagesSend2 = 'assets/images/send2.svg';
   static const String imagesSort = 'assets/images/sort.svg';
   static const String imagesStar = 'assets/images/Star.svg';
   static const String imagesUpload = 'assets/images/upload.svg';
