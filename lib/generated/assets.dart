@@ -6,6 +6,7 @@ class Assets {
   static const String fontsKarlaMedium = 'assets/fonts/Karla-Medium.ttf';
   static const String fontsKarlaRegular = 'assets/fonts/Karla-Regular.ttf';
   static const String fontsKarlaSemiBold = 'assets/fonts/Karla-SemiBold.ttf';
+  static const String imagesAdd = 'assets/images/add.svg';
   static const String imagesAddLocationAlt = 'assets/images/add_location_alt.svg';
   static const String imagesApple = 'assets/images/apple.svg';
   static const String imagesArrowForward = 'assets/images/arrow_forward.svg';
@@ -16,6 +17,11 @@ class Assets {
   static const String imagesEdit = 'assets/images/edit.svg';
   static const String imagesEmail = 'assets/images/email.svg';
   static const String imagesGoogle = 'assets/images/google.svg';
+  static const String imagesHighlight1 = 'assets/images/Highlight1.svg';
+  static const String imagesHighlight2 = 'assets/images/Highlight2.svg';
+  static const String imagesHighlight3 = 'assets/images/Highlight3.svg';
+  static const String imagesHighlight4 = 'assets/images/Highlight4.svg';
+  static const String imagesHighlight5 = 'assets/images/Highlight5.svg';
   static const String imagesIconStar = 'assets/images/IconStar.svg';
   static const String imagesImage = 'assets/images/Image.png';
   static const String imagesImageteeth = 'assets/images/Imageteeth.png';

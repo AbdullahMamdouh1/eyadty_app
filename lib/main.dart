@@ -2,11 +2,16 @@
 import 'package:flutter/material.dart';
 
 
- import 'features/Offers-and-promotion/presentation/views/ClinicListingPage/listing_add_list_step5_view.dart';
+ import 'core/helper_functions/on_generate_routes.dart';
+import 'features/Apointments-and-patients/presentation/views/add_new_patient_page/add_new_patient_view.dart';
+import 'features/Apointments-and-patients/presentation/views/appointments_page/appointments_page_view.dart';
+import 'features/Apointments-and-patients/presentation/views/patients_page/patients_page_view.dart';
+import 'features/Offers-and-promotion/presentation/views/ClinicListingPage/listing_add_list_step5_view.dart';
 import 'features/Offers-and-promotion/presentation/views/CreateOfferPage/create_offerPage_view.dart';
 import 'features/Offers-and-promotion/presentation/views/ManageListingPage/manage_listing_page_view.dart';
 import 'features/Offers-and-promotion/presentation/views/OffersListingPage/offers_listing_page_view.dart';
 import 'features/adding_new_employee/presentation/views/employees_page/employees_page_view.dart';
+  import 'features/Apointments-and-patients/presentation/views/appointments_page/widgets/calendar.dart';
 import 'features/listing/presentation/views/listing_add_list_step1/listing_add_list_step1_view.dart';
 import 'features/listing/presentation/views/listing_add_list_step3/listing_add_list_step3_view.dart';
 import 'features/listing/presentation/views/listing_add_list_step4/listing_add_list_step4_view.dart';
@@ -30,7 +35,9 @@ class MyApp extends StatelessWidget {
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
-      home: EmployeesPageView() ,
+
+      initialRoute: AddNewPatientView.routeName ,
+      onGenerateRoute: onGenerateRoute,
     );
   }
 }
