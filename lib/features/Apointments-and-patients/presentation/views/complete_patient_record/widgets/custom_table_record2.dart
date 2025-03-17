@@ -4,7 +4,7 @@ import '../../../../../../core/utils/app_colors.dart';
 import '../../../../../../core/utils/app_text_styles.dart';
 import '../../../../../../core/widgets/custom_container_shape.dart';
 
-class CustomTable {
+class CustomTableRecord2 {
   TableShape({required Child, required double height}) {
     return CustomContainerShape(
       Child: Column(
@@ -26,8 +26,13 @@ class CustomTable {
                             "Time",
                             style: AppStyles.semiBold15,
                           ),
-                          SizedBox(width: 4,),
-                          Icon(Icons.star,color: Colors.green,)
+                          SizedBox(
+                            width: 4,
+                          ),
+                          Icon(
+                            Icons.star,
+                            color: Colors.green,
+                          )
                         ],
                       ),
                       SizedBox(
@@ -36,28 +41,33 @@ class CustomTable {
                           child: Divider(
                             color: Color(0xFF246C51),
                           )),
-                      SizedBox(height: 5,),
+                      SizedBox(
+                        height: 5,
+                      ),
                       Row(
                         children: [
                           Text(
-                            "Patient Name",
+                            "Reason",
                             style: AppStyles.semiBold15,
                           ),
-                          SizedBox(width: 30,),
-                          Icon(Icons.star,color: Colors.green,)
-
+                          SizedBox(
+                            width: 30,
+                          ),
+                          Icon(
+                            Icons.star,
+                            color: Colors.green,
+                          )
                         ],
                       ),
                     ],
                   ),
+                  SizedBox(),
                   Row(
                     children: [
                       Text(
-                        "ClinicPayment",
+                        "Notes",
                         style: AppStyles.semiBold15,
                       ),
-                      Icon(Icons.star,color: Color(0xFF3C4553),)
-
                     ],
                   ),
                   Text(
@@ -86,12 +96,13 @@ class CustomTable {
   ////////////////////////////////  TableInformation
 
   TableInformation(
-      { 
-        required VoidCallback onPressed,
-        required String Details,
-        required String FieldName,required String FieldName2, required dynamic ColorBool}) {
+      {required VoidCallback onPressed,
+      required String Details,
+      required String FieldName,
+      required String FieldName2,
+      required dynamic ColorBool}) {
     return Container(
-      color: ColorBool  ,
+      color: ColorBool,
       height: 64,
       child: Padding(
         padding: const EdgeInsets.only(left: 12.0, right: 12),
@@ -107,7 +118,7 @@ class CustomTable {
                       FieldName,
                       style: AppStyles.regular15,
                     ),
-                    ],
+                  ],
                 ),
                 SizedBox(
                     height: 2,
@@ -115,18 +126,16 @@ class CustomTable {
                     child: Divider(
                       color: Color(0xFF246C51),
                     )),
-                 Row(
+                Row(
                   children: [
                     Text(
                       FieldName2,
                       style: AppStyles.regular15,
                     ),
-
                   ],
                 ),
               ],
             ),
-
             SizedBox(
               width: 60,
             ),
@@ -138,14 +147,7 @@ class CustomTable {
                 overflow: TextOverflow.ellipsis,
               ),
             ),
-            Icon(Icons.star,color: Color(0xFF3C4553),),
-
             SizedBox(width: 20),
-            GestureDetector(
-                onTap: onPressed,
-                child: Icon(Icons.star,color: Color(0xFF3C4553),)
-
-            )
           ],
         ),
       ),

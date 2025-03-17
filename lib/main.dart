@@ -3,8 +3,10 @@ import 'package:flutter/material.dart';
 
 
  import 'core/helper_functions/on_generate_routes.dart';
+import 'features/Apointments-and-patients/presentation/views/ upload_medical_file_page/upload_medical_file_page_view.dart';
 import 'features/Apointments-and-patients/presentation/views/add_new_patient_page/add_new_patient_view.dart';
 import 'features/Apointments-and-patients/presentation/views/appointments_page/appointments_page_view.dart';
+import 'features/Apointments-and-patients/presentation/views/complete_patient_record/complete_patient_record_view.dart';
 import 'features/Apointments-and-patients/presentation/views/patients_page/patients_page_view.dart';
 import 'features/Offers-and-promotion/presentation/views/ClinicListingPage/listing_add_list_step5_view.dart';
 import 'features/Offers-and-promotion/presentation/views/CreateOfferPage/create_offerPage_view.dart';
@@ -36,7 +38,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
 
-      initialRoute: AddNewPatientView.routeName ,
+      initialRoute: CompletePatientRecordView.routeName ,
       onGenerateRoute: onGenerateRoute,
     );
   }

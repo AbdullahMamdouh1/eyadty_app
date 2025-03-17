@@ -30,6 +30,8 @@ class Assets {
   static const String imagesLogin = 'assets/images/login.svg';
   static const String imagesLoginPageHero = 'assets/images/LoginPageHero.png';
   static const String imagesLogo = 'assets/images/Logo.svg';
+  static const String imagesMoreVert = 'assets/images/more_vert.svg';
+  static const String imagesPerson = 'assets/images/person.png';
   static const String imagesPlus = 'assets/images/plus.svg';
   static const String imagesSave = 'assets/images/save.svg';
   static const String imagesSearch = 'assets/images/Search.svg';
