@@ -10,43 +10,49 @@ class CustomAppBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
-        child: Column(
-          children: [
-            Padding(
-              padding: const EdgeInsets.only(left: 24.0, right: 24, top: 12),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      SvgPicture.asset(Assets.imagesLogo),
-                      SvgPicture.asset(Assets.imagesStar),
-                    ],
-                  ),
-                  SizedBox(
-                    height: 6,
-                  ),
-                  Row(
-                    children: [
-                      SvgPicture.asset(Assets.imagesStar),
-                      SizedBox(
-                        width: 16,
-                      ),
-                      CustomSearch()
-                    ],
-                  ),
+      child: Column(
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(left: 24.0, right: 24, top: 12),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    SvgPicture.asset(Assets.imagesLogo),
+                    SvgPicture.asset(Assets.imagesStar),
+                  ],
+                ),
+                SizedBox(
+                  height: 6,
+                ),
+                Row(
+                  children: [
+                    GestureDetector(
+                    onTap: (){
+
+                      Scaffold.of(context).openDrawer();
+                    }
+                      ,
+                        child: SvgPicture.asset(Assets.imagesStar)),
+                    SizedBox(
+                      width: 16,
+                    ),
+                    CustomSearch()
+                  ],
+                ),
 
 
-                ],
-              ),
+              ],
             ),
-            SizedBox(
-              height: 12,
-            ),
-            Divider()
-          ],
-        ),
-      );
+          ),
+          SizedBox(
+            height: 12,
+          ),
+          Divider()
+        ],
+      ),
+    );
   }
 }

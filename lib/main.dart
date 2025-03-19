@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 
 
  import 'core/helper_functions/on_generate_routes.dart';
+import 'core/utils/app_colors.dart';
 import 'features/Apointments-and-patients/presentation/views/ upload_medical_file_page/upload_medical_file_page_view.dart';
 import 'features/Apointments-and-patients/presentation/views/add_new_patient_page/add_new_patient_view.dart';
 import 'features/Apointments-and-patients/presentation/views/appointments_page/appointments_page_view.dart';
@@ -38,8 +39,9 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
       ),
 
-      initialRoute: CompletePatientRecordView.routeName ,
-      onGenerateRoute: onGenerateRoute,
+      initialRoute: AppRoutes.employeesPageView,
+      onGenerateRoute: AppRoutes.onGenerateRoute,
+      navigatorObservers: [routeObserver],
     );
   }
 }

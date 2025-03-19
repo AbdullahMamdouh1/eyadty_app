@@ -2,6 +2,7 @@ import 'package:eyadty_app/features/Apointments-and-patients/presentation/views/
 import 'package:flutter/material.dart';
 
 import '../../../../../core/widgets/custom_app_bar.dart';
+import '../../../../drawer/custom_drawer.dart';
 
 class AppointmentsPageView extends StatelessWidget {
   static const routeName = "AppointmentsPageView";
@@ -10,7 +11,9 @@ class AppointmentsPageView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SafeArea(
+
       child: Scaffold(
+          drawer: CustomDrawer(),
           
           body: SingleChildScrollView(
             child: AppointmentsPageViewBody(),

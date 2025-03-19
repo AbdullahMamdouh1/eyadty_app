@@ -2,9 +2,12 @@ import 'package:eyadty_app/features/adding_new_employee/presentation/views/emplo
 import 'package:flutter/material.dart';
 
 import '../../../../../core/widgets/custom_app_bar.dart';
+import '../../../../drawer/custom_drawer.dart';
 
 class EmployeesPageView extends StatelessWidget {
-  const EmployeesPageView({super.key});
+  static const String routeName = 'EmployeesPageView';
+  const EmployeesPageView({super.key, required this.index});
+  final int index;
 
   @override
   Widget build(BuildContext context) {
@@ -15,6 +18,10 @@ class EmployeesPageView extends StatelessWidget {
         ),
         body: SingleChildScrollView(
           child: EmployeesPageViewBody(),
-        ));
+        ),
+      drawer: CustomDrawer(),
+
+    );
+
   }
 }

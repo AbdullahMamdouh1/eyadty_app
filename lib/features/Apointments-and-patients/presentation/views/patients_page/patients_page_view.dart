@@ -1,6 +1,7 @@
  import 'package:flutter/material.dart';
 
 import '../../../../../core/widgets/custom_app_bar.dart';
+import '../../../../drawer/custom_drawer.dart';
 import 'widgets/patients_page_view_body.dart';
 
 class  PatientsPageView extends StatelessWidget {
@@ -11,6 +12,7 @@ class  PatientsPageView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: CustomDrawer(),
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(118), // تحديد الارتفاع
         child: CustomAppBar(),

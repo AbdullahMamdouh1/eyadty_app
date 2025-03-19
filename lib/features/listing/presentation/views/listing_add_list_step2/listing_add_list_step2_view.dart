@@ -2,6 +2,7 @@ import 'package:eyadty_app/features/listing/presentation/views/listing_add_list_
 import 'package:flutter/material.dart';
 
 import '../../../../../core/widgets/custom_app_bar.dart';
+import '../../../../drawer/custom_drawer.dart';
 
 class ListingAddListStep2View extends StatelessWidget {
   const ListingAddListStep2View({super.key});
@@ -9,6 +10,7 @@ class ListingAddListStep2View extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      drawer: CustomDrawer(),
       appBar: PreferredSize(
         preferredSize: Size.fromHeight(118), // تحديد الارتفاع
         child: CustomAppBar(),
