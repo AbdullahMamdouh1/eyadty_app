@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../../../../core/utils/app_colors.dart';
 import '../../../../../../core/utils/app_text_styles.dart';
-import '../../../../../../generated/assets.dart';
-import '../../../../../core/widgets/custom_button.dart';
+ import '../../../../../core/widgets/custom_button.dart';
 import '../../../../auth/presentation/views/widgets/custom_check_box.dart';
 
 class DialogPayment extends StatefulWidget {
@@ -43,15 +42,10 @@ class _DialogPaymentState extends State<DialogPayment> {
                       ),
                     ],
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      const Text(
-                        'Confirm Your Listing Submission',
-                        style: TextStyle(
-                            fontSize: 18, fontWeight: FontWeight.bold),
-                      ),
-                    ],
+                  const Text(
+                    'Confirm Your Listing Submission',
+                    style: TextStyle(
+                        fontSize: 18, fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(height: 12),
                   const Text(
@@ -95,7 +89,9 @@ class _DialogPaymentState extends State<DialogPayment> {
                             ),
                             backgroundColor: Color(0xFFE0E3E7),
                           ),
-                          onPressed: () {},
+                          onPressed: () {
+                            context.pop();
+                          },
                           child: Text(
                             "Review",
                             style: AppStyles.regular15.copyWith(

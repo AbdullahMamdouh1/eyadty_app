@@ -1,11 +1,14 @@
 import 'dart:async';
 
+import 'package:eyadty_app/core/helper_functions/on_generate_routes.dart';
 import 'package:eyadty_app/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 
 import '../../../../../../core/utils/app_text_styles.dart';
 import '../../../../../../core/widgets/custom_button.dart';
+import '../../../../../../core/widgets/fitted_box.dart';
 import '../../../../../../generated/assets.dart';
 
 class PinCodeVerification extends StatefulWidget {
@@ -78,16 +81,18 @@ class _PinCodeVerificationState extends State<PinCodeVerification> {
         Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Row(
-              children: [
-                Text(
-                  "Not your number? ",
-                  style: AppStyles.regular15,
-                ),
-                Text("Re enter your Phone ",
-                    style: AppStyles.semiBold15
-                        .copyWith(color: AppColors.blueColor)),
-              ],
+            FittedBoxS(
+              child: Row(
+                children: [
+                  Text(
+                    "Not your number? ",
+                    style: AppStyles.regular15,
+                  ),
+                  Text("Re enter your Phone ",
+                      style: AppStyles.semiBold15
+                          .copyWith(color: AppColors.blueColor)),
+                ],
+              ),
             ),
             Text("Number",
                 style:
@@ -188,27 +193,30 @@ class _PinCodeVerificationState extends State<PinCodeVerification> {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(
-                  children: [
-                    Text(
-                      "Didn’t receive OTP? ",
-                      style: AppStyles.regular15,
-                    ),
-                    GestureDetector(
-                      onTap: () {
-                        snackBar("OTP resend!!");
-                      },
-                      child: const Text(
-                        "Resend Code ",
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16,
+                FittedBoxS(
+                  width: 250,
+                  child: Row(
+                    children: [
+                      Text(
+                        "Didn’t receive OTP? ",
+                        style: AppStyles.regular15,
+                      ),
+                      GestureDetector(
+                        onTap: () {
+                          snackBar("OTP resend!!");
+                        },
+                        child: const Text(
+                          "Resend Code ",
+                          style: TextStyle(
+                            color: Colors.blue,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
                         ),
                       ),
-                    ),
-                    Text("after", style: AppStyles.semiBold15),
-                  ],
+                      Text("after", style: AppStyles.semiBold15),
+                    ],
+                  ),
                 ),
                 Text("00:59",
                     style: AppStyles.semiBold15
@@ -236,10 +244,14 @@ class _PinCodeVerificationState extends State<PinCodeVerification> {
                 },
               );
             }
+
+            context.push(AppRoutes.signupStep3View);
           },
           text: "Verify My Account",
           color: AppColors.greenColor,
         ),
+        SizedBox(
+          height: 24,)
       ],
     );
   }

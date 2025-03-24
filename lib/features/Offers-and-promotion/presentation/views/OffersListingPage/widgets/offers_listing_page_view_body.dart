@@ -1,4 +1,6 @@
+import 'package:eyadty_app/core/helper_functions/on_generate_routes.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../../../../core/utils/app_colors.dart';
 import '../../../../../../core/widgets/custom_button.dart';
@@ -26,17 +28,17 @@ class OffersListingPageViewBody extends StatelessWidget {
                 'Create, update, and track your promotional offers to attract more patients to your clinic.',
           ),
           sizedBox,
-          SizedBox(
-            width: 175,
-            child: Directionality(
-                textDirection: TextDirection.rtl,
-                child: CustomButton(
-                  onPressed: () {},
-                  text: "Create New Offer",
-                  color: AppColors.greenColor,
-                  image: Assets.imagesLocalOffer,
-                )),
-          ),
+          Directionality(
+              textDirection: TextDirection.rtl,
+              child: CustomButton(
+                onPressed: () {
+                  context.push(AppRoutes.createOfferpageView);
+                },
+                text: "Create New Offer",
+                Width: 190,
+                color: AppColors.greenColor,
+                image: Assets.imagesLocalOffer,
+              )),
           SizedBox(
             height: 32,
           ),

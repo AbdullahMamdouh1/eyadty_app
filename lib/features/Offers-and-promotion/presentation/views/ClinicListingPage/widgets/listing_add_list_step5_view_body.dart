@@ -1,9 +1,12 @@
+import 'package:eyadty_app/core/helper_functions/on_generate_routes.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../../../../core/utils/app_colors.dart';
 import '../../../../../../core/utils/app_text_styles.dart';
 import '../../../../../../core/widgets/custom_button.dart';
 import '../../../../../../core/widgets/custom_container_shape.dart';
+import '../../../../../../core/widgets/fitted_box.dart';
 import '../../../../../../generated/assets.dart';
    import '../../../../../listing/presentation/views/widgets/listing_end_buttons.dart';
  import '../../../../../listing/presentation/views/widgets/title_text.dart';
@@ -59,19 +62,23 @@ class _ClinicListingPageViewBodyState
                     style: AppStyles.bold18,
                   ),
                   sizedBox,
-                  Row(
-                    children: [
-                      Image(image: AssetImage(Assets.imagesBody)),
-                      SizedBox(
-                        width: 8,
-                      ),
-                      Image(image: AssetImage(Assets.imagesBody)),
-                    ],
+                  FittedBoxS(
+                    child: Row(
+                      children: [
+                        Image(image: AssetImage(Assets.imagesBody)),
+                        SizedBox(
+                          width: 8,
+                        ),
+                        Image(image: AssetImage(Assets.imagesBody)),
+                      ],
+                    ),
                   ),
                   sizedBox,
                   ListingEndButtons(
                     onPressedButton1: () {},
-                    onPressedButton2: () {},
+                    onPressedButton2: () {
+                      context.push(AppRoutes.offersListingPageView);
+                    },
                     onPressedButtonSave: () {},
                     onPressedButtonBack: () {},
                     textButton1: '',
@@ -82,8 +89,7 @@ class _ClinicListingPageViewBodyState
                 ],
               ),
             ),
-            Height: 1500,
-          ),
+           ),
           SizedBox(
             height: 40,
           ),

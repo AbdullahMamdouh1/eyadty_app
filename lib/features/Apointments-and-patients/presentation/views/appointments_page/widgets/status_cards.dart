@@ -16,8 +16,7 @@ class StatusCards extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      height: 85,
-      child: Stack(
+       child: Stack(
         children: [
           SizedBox(
               width: 65,

@@ -1,5 +1,6 @@
 import 'package:eyadty_app/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../../../core/utils/app_text_styles.dart';
 import '../../../../../generated/assets.dart';
@@ -19,14 +20,17 @@ class LoginPageHero extends StatelessWidget {
         image: DecorationImage(
             image: AssetImage(Assets.imagesLoginPageHero), fit: BoxFit.fill),
       ),
-      child: GestureDetector(
-        onTap: () {},
-        child: Padding(
-          padding: const EdgeInsets.only(top: 24.0, left: 32),
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Container(
+      child: Padding(
+        padding: const EdgeInsets.only(top: 24.0, left: 32),
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+            GestureDetector(
+              onTap: (){
+
+                context.pop();
+              },
+              child: Container(
                 height: 40,
                 width: 82,
                 decoration: BoxDecoration(
@@ -48,8 +52,8 @@ class LoginPageHero extends StatelessWidget {
                   ],
                 ),
               ),
-            ],
-          ),
+            ),
+          ],
         ),
       ),
     );

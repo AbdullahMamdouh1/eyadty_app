@@ -32,16 +32,19 @@ class MyApp extends StatelessWidget {
 
    @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return MaterialApp.router(
        theme: ThemeData(
          scaffoldBackgroundColor: Colors.white,
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
       ),
+      debugShowCheckedModeBanner: false,
+      routerConfig: AppRoutes.router,
 
-      initialRoute: AppRoutes.employeesPageView,
-      onGenerateRoute: AppRoutes.onGenerateRoute,
-      navigatorObservers: [routeObserver],
+
+   //   initialRoute: AppRoutes.employeesPageView,
+   //   onGenerateRoute: AppRoutes.onGenerateRoute,
+   //   navigatorObservers: [routeObserver],
     );
   }
 }

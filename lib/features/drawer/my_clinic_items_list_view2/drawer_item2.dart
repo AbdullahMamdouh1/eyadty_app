@@ -8,18 +8,16 @@ class DrawerItem2 extends StatelessWidget {
       {super.key,
       required this.drawerItemModel,
       required this.isActive,
-      required this.rrr});
+       });
 
   final DrawerItemModel drawerItemModel;
   final bool isActive;
-  final bool rrr;
-  @override
+   @override
   Widget build(BuildContext context) {
     return isActive
         ? ActiveDrawerItem2(
             drawerItemModel: drawerItemModel,
-            rrr: rrr,
-          )
+           )
         : InActiveDrawerItem2(drawerItemModel: drawerItemModel);
   }
 }

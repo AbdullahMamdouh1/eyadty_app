@@ -6,6 +6,7 @@ import 'package:pin_code_fields/pin_code_fields.dart';
 
 import '../../../../../../../core/utils/app_text_styles.dart';
 import '../../../../../../../core/widgets/custom_button.dart';
+import '../../../../../../../core/widgets/fitted_box.dart';
 
 class PinCodeVerificationLogin extends StatefulWidget {
   const PinCodeVerificationLogin({
@@ -166,27 +167,30 @@ class _PinCodeVerificationLoginState extends State<PinCodeVerificationLogin> {
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Row(
-                  children: [
-                    Text(
-                      "Didn’t receive OTP? ",
-                      style: AppStyles.regular15,
-                    ),
-                    GestureDetector(
-                      onTap: () {
-                        snackBar("OTP resend!!");
-                      },
-                      child: const Text(
-                        "Resend Code ",
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16,
+                FittedBoxS(
+                  width: 250,
+                  child: Row(
+                    children: [
+                      Text(
+                        "Didn’t receive OTP? ",
+                        style: AppStyles.regular15,
+                      ),
+                      GestureDetector(
+                        onTap: () {
+                          snackBar("OTP resend!!");
+                        },
+                        child: const Text(
+                          "Resend Code ",
+                          style: TextStyle(
+                            color: Colors.blue,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
                         ),
                       ),
-                    ),
-                    Text("after", style: AppStyles.semiBold15),
-                  ],
+                      Text("after", style: AppStyles.semiBold15),
+                    ],
+                  ),
                 ),
                 Text("00:59",
                     style: AppStyles.semiBold15
@@ -218,6 +222,8 @@ class _PinCodeVerificationLoginState extends State<PinCodeVerificationLogin> {
           text: "Verify My Account",
           color: AppColors.greenColor,
         ),
+    SizedBox(
+    height: 24,)
       ],
     );
   }

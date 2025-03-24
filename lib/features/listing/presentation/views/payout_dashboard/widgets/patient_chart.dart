@@ -1,6 +1,8 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 
+import '../../../../../../core/widgets/fitted_box.dart';
+
 class PatientChart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -48,14 +50,16 @@ class PatientChart extends StatelessWidget {
             ),
           ),
           SizedBox(height: 8,),
-          Row(
-            crossAxisAlignment: CrossAxisAlignment.start,
-            mainAxisAlignment: MainAxisAlignment.start,
-            children: [
-              _buildIndicator(Colors.green, 'Follow Up Patients'),
-              SizedBox(width: 15),
-              _buildIndicator(Colors.blue, 'New Patients'),
-            ],
+          FittedBoxS(
+            child: Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              mainAxisAlignment: MainAxisAlignment.start,
+              children: [
+                _buildIndicator(Colors.green, 'Follow Up Patients'),
+                SizedBox(width: 15),
+                _buildIndicator(Colors.blue, 'New Patients'),
+              ],
+            ),
           ),
         ],
       ),

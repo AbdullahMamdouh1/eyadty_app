@@ -10,14 +10,17 @@ class AppointmentsPageView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
-
-      child: Scaffold(
-          drawer: CustomDrawer(),
-          
-          body: SingleChildScrollView(
+    return Scaffold(
+        drawer: CustomDrawer(),
+        appBar: PreferredSize(
+        preferredSize: Size.fromHeight(118), // تحديد الارتفاع
+    child: CustomAppBar(),
+    ),
+        
+        body: SafeArea(
+          child: SingleChildScrollView(
             child: AppointmentsPageViewBody(),
-          )),
-    );
+          ),
+        ));
   }
 }

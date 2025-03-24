@@ -7,7 +7,7 @@ class ForgotPasswordStep3View extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(child: ForgotPasswordStep3ViewBody()),
+      body: SafeArea(child: SingleChildScrollView(child: ForgotPasswordStep3ViewBody())),
     );
   }
 }

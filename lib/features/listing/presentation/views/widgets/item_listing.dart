@@ -27,9 +27,7 @@ class ItemListing extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 459,
-      width: Width,
-      decoration: BoxDecoration(
+       decoration: BoxDecoration(
           color: color,
           border: Border.all(
             color: Colors.grey,

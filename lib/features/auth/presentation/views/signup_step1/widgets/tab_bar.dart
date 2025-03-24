@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import '../../../../../../core/widgets/fitted_box.dart';
 import '../../../../../../generated/assets.dart';
 import 'box_signup_with_email.dart';
 import 'box_signup_with_phon.dart';
@@ -46,71 +47,75 @@ class _TabBarWidgetState extends State<TabBarWidget>
               controller: _tabController,
               isScrollable: false,
               tabs: [
-                Tab(
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: _tabController.index == 0
-                          ? Colors.green[100]
-                          : Colors.transparent,
-                      borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(20),
-                          bottomLeft: Radius.circular(20)),
-                    ),
-                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 0),
-                    child: Center(
-                      child: Row(
-                        children: [
-                          Text(
-                            'Sign Up With Phone', // الاسم الأول للتبويب
-                            style: TextStyle(
-                              color: _tabController.index == 0
-                                  ? Colors.black
-                                  : Colors.grey,
+                FittedBoxS(
+                  child: Tab(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: _tabController.index == 0
+                            ? Colors.green[100]
+                            : Colors.transparent,
+                        borderRadius: BorderRadius.only(
+                            topLeft: Radius.circular(20),
+                            bottomLeft: Radius.circular(20)),
+                      ),
+                      padding: EdgeInsets.symmetric(vertical: 10, horizontal: 0),
+                      child: Center(
+                        child: Row(
+                          children: [
+                            Text(
+                              'Sign Up With Phone', // الاسم الأول للتبويب
+                              style: TextStyle(
+                                color: _tabController.index == 0
+                                    ? Colors.black
+                                    : Colors.grey,
+                              ),
                             ),
-                          ),
-                          SizedBox(
-                            width: 4,
-                          ),
-                          SvgPicture.asset(
-                            Assets.imagesCall,
-                            color:
-                                _tabController.index == 0 ? null : Colors.black,
-                          )
-                        ],
+                            SizedBox(
+                              width: 4,
+                            ),
+                            SvgPicture.asset(
+                              Assets.imagesCall,
+                              color:
+                                  _tabController.index == 0 ? null : Colors.black,
+                            )
+                          ],
+                        ),
                       ),
                     ),
                   ),
                 ),
-                Tab(
-                  child: Container(
-                    decoration: BoxDecoration(
-                      color: _tabController.index == 1
-                          ? Colors.green[100]
-                          : Colors.transparent,
-                      borderRadius: BorderRadius.only(
-                          topRight: Radius.circular(20),
-                          bottomRight: Radius.circular(20)),
-                    ),
-                    padding: EdgeInsets.symmetric(vertical: 10, horizontal: 0),
-                    child: Center(
-                      child: Row(
-                        children: [
-                          Text(
-                            'Sign Up With Email', // الاسم الثالث للتبويب
-                            style: TextStyle(
-                              color: _tabController.index == 1
-                                  ? Colors.black
-                                  : Colors.grey,
+                FittedBoxS(
+                  child: Tab(
+                    child: Container(
+                      decoration: BoxDecoration(
+                        color: _tabController.index == 1
+                            ? Colors.green[100]
+                            : Colors.transparent,
+                        borderRadius: BorderRadius.only(
+                            topRight: Radius.circular(20),
+                            bottomRight: Radius.circular(20)),
+                      ),
+                      padding: EdgeInsets.symmetric(vertical: 10, horizontal: 0),
+                      child: Center(
+                        child: Row(
+                          children: [
+                            Text(
+                              'Sign Up With Email', // الاسم الثالث للتبويب
+                              style: TextStyle(
+                                color: _tabController.index == 1
+                                    ? Colors.black
+                                    : Colors.grey,
+                              ),
                             ),
-                          ),
-                          SizedBox(
-                            width: 4,
-                          ),
-                          SvgPicture.asset(Assets.imagesEmail,
-                              color: _tabController.index == 1
-                                  ? Colors.green
-                                  : null)
-                        ],
+                            SizedBox(
+                              width: 4,
+                            ),
+                            SvgPicture.asset(Assets.imagesEmail,
+                                color: _tabController.index == 1
+                                    ? Colors.green
+                                    : null)
+                          ],
+                        ),
                       ),
                     ),
                   ),

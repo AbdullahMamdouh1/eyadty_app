@@ -1,4 +1,6 @@
- import 'package:flutter/material.dart';
+ import 'package:eyadty_app/core/helper_functions/on_generate_routes.dart';
+import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../../../../core/utils/app_colors.dart';
 import '../../../../../../core/widgets/custom_container_shape.dart';
@@ -74,21 +76,29 @@ class _ListingAddListStep4ViewBodyState
                   SizedBox(
                     height: 80,
                   ),
-                  Row(
-                    children: [
-                      Image(image: AssetImage(Assets.imagesBody)),
-                      SizedBox(
-                        width: 8,
-                      ),
-                      Image(image: AssetImage(Assets.imagesBody)),
-                    ],
+                  FittedBox(
+                    alignment: AlignmentDirectional.centerStart,
+                    fit: BoxFit.scaleDown,
+                    child: Row(
+                      children: [
+                        Image(image: AssetImage(Assets.imagesBody)),
+                        SizedBox(
+                          width: 8,
+                        ),
+                        Image(image: AssetImage(Assets.imagesBody)),
+                      ],
+                    ),
                   ),
                   sizedBox,
                   ListingEndButtons(
                     onPressedButton1: () {},
-                    onPressedButton2: () {},
+                    onPressedButton2: () {
+                      context.push(AppRoutes.listingAddListStep5View);
+                    },
                     onPressedButtonSave: () {},
-                    onPressedButtonBack: () {},
+                    onPressedButtonBack: () {
+                      context.pop();
+                    },
                     textButton1: 'Upload Your Image',
                     textButton2: 'Upload Multimedia',
                     imageButton1: Assets.imagesUpload,
@@ -97,8 +107,7 @@ class _ListingAddListStep4ViewBodyState
                 ],
               ),
             ),
-            Height: 750,
-          ),
+           ),
           SizedBox(
             height: 40,
           )

@@ -1,5 +1,7 @@
+import 'package:eyadty_app/core/helper_functions/on_generate_routes.dart';
 import 'package:eyadty_app/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../../../../core/utils/app_text_styles.dart';
 import '../../../../../../core/widgets/custom_button.dart';
@@ -41,43 +43,41 @@ class ManageListingPageViewBody extends StatelessWidget {
                   SizedBox(
                     height: 24,
                   ),
-                  Expanded(
-                    child: SizedBox(
-                      child: ListView.builder(
-                        itemCount: 3,
-                        itemBuilder: (context, index) {
-                          return Padding(
-                            padding: const EdgeInsets.only(bottom: 24.0),
-                            child: ItemListing(
-                              title: 'Clinic Name',
-                              subTitle:
-                                  'Orthodentist | 21 Makram Ebeid, Nasr City, Cairo, Egyot',
-                              price: '50',
-                              image: Assets.imagesImageteeth,
-                              customButton: Padding(
-                                padding: const EdgeInsets.only(right: 120.0),
-                                child: CustomButton(
-                                    onPressed: () {},
-                                    text: "Manage Listing ",
-                                    image: Assets.imagesClose,
-                                    color: AppColors.greenColor),
-                              ),
-                              Width: 320,
-                              color: Colors.white,
+                  SizedBox(
+                    height: SizeConfig.screenHeight,
+                    child: ListView.builder(
+                      itemCount: 3,
+                      itemBuilder: (context, index) {
+                        return Padding(
+                          padding: const EdgeInsets.only(bottom: 24.0),
+                          child: ItemListing(
+                            title: 'Clinic Name',
+                            subTitle:
+                                'Orthodentist | 21 Makram Ebeid, Nasr City, Cairo, Egyot',
+                            price: '50',
+                            image: Assets.imagesImageteeth,
+                            customButton: Padding(
+                              padding: const EdgeInsets.only(right: 100.0),
+                              child: CustomButton(
+                                  onPressed: () {
+                                    context.push(AppRoutes.clinicListingPageView);
+                                  },
+                                  text: "Manage Listing ",
+                                  image: Assets.imagesClose,
+                                  color: AppColors.greenColor),
                             ),
-                          );
-                        },
-                      ),
+                            Width: 320,
+                            color: Colors.white,
+                          ),
+                        );
+                      },
                     ),
                   ),
-                  SizedBox(
-                    height: 24,
-                  ),
+
                 ],
               ),
             ),
-            Height: 600,
-          ),
+           ),
           SizedBox(
             height: 20,
           )

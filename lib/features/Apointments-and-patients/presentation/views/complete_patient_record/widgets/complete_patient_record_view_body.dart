@@ -42,16 +42,14 @@ class _CompletePatientRecordViewBodyState
                 'No medical record uploaded. Add details and files to complete the profile.',
           ),
           SizedBox(height: 24),
-          SizedBox(
-            width: 175,
-            child: Directionality(
-              textDirection: TextDirection.rtl,
-              child: CustomButton(
-                onPressed: () {},
-                text: "Log Patient Visit",
-                color: AppColors.greenColor,
-                image: Assets.imagesAdd,
-              ),
+          Directionality(
+            textDirection: TextDirection.rtl,
+            child: CustomButton(
+              onPressed: () {},
+              Width: 190,
+              text: "Log Patient Visit",
+              color: AppColors.greenColor,
+              image: Assets.imagesAdd,
             ),
           ),
           SizedBox(height: 32),
@@ -80,25 +78,22 @@ class _CompletePatientRecordViewBodyState
                           },
                         ),
                         SizedBox(width: 12),
-                        Text("Send Invitation to Create Patient Account"),
+                        Text("Send Invitation to \nCreate Patient Account"),
                       ],
                     ),
                     SizedBox(height: 16),
-                    SizedBox(
-                      width: 155,
-                      child: CustomButton(
-                        onPressed: () {},
-                        text: "Save Changes",
-                        color: AppColors.greenColor,
-                        image: Assets.imagesSave,
-                      ),
+                    CustomButton(
+                      onPressed: () {},
+                      text: "Save Changes",
+                      Width: 170,
+                      color: AppColors.greenColor,
+                      image: Assets.imagesSave,
                     ),
                   ],
                 ),
               ),
             ),
-            Height: 1365,
-          ),
+           ),
           SizedBox(
             height: 40,
           ),
@@ -126,8 +121,7 @@ class _CompletePatientRecordViewBodyState
                 ],
               ),
             ),
-            Height: 770,
-          ),
+           ),
           SizedBox(
             height: 35,
           )

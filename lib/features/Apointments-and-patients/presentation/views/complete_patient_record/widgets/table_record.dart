@@ -61,8 +61,7 @@ class TableRecord {
           Child,
         ],
       ),
-      Height: height,
-    );
+     );
   }
 
   ////////////////////////////////  TableInformation

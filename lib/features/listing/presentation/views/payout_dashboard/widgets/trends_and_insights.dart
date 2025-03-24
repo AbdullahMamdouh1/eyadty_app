@@ -44,8 +44,7 @@ class  TrendsAndInsights extends StatelessWidget {
           ],
         ),
       ),
-      Height: 435,
-    );
+     );
 
   }
 }

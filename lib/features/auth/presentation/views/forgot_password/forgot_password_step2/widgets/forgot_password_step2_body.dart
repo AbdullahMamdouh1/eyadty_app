@@ -44,8 +44,7 @@ class ForgotPasswordStep2Body extends StatelessWidget {
                   padding: const EdgeInsets.only(left: 29.0, right: 29),
                   child: PinCodeVerificationForgotPassword(),
                 ),
-                Height: 445,
-              ),
+               ),
               SizedBox(
                 height: 120,
               ),

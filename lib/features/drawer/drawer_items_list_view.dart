@@ -1,5 +1,7 @@
+import 'package:eyadty_app/core/helper_functions/on_generate_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../core/utils/app_colors.dart';
 import '../../generated/assets.dart';
@@ -24,24 +26,13 @@ class _DrawerItemsListViewState extends State<DrawerItemsListView>
         title: 'Listing', image: Assets.imagesLibraryAddCheck),
     const DrawerItemModel(
         title: 'My Clinic', image: Assets.imagesLibraryAddCheck),
-    const DrawerItemModel(title: 'Shop', image: Assets.imagesStorefront),
+    const DrawerItemModel(title: 'Payment', image: Assets.imagesStorefront),
     const DrawerItemModel(
         title: 'Profile and Settings', image: Assets.imagesSettings),
     const DrawerItemModel(
         title: 'Help and Support', image: Assets.imagesSupportAgent),
   ];
 
-  @override
-  void didChangeDependencies() {
-    super.didChangeDependencies();
-    routeObserver.subscribe(this, ModalRoute.of(context)!);
-  }
-
-  @override
-  void dispose() {
-    routeObserver.unsubscribe(this);
-    super.dispose();
-  }
 
   @override
   void didPushNext() {
@@ -80,9 +71,26 @@ class _DrawerItemsListViewState extends State<DrawerItemsListView>
               MyClinicSelect = (index == 2);
             });
 
-            if (index == 3) {
-              Navigator.pushNamed(context, 'EmployeesPageView');
+
+            switch (index) {
+              case 1:
+                context.push(AppRoutes.listingAddMoreListingView);
+                break;
+              case 5:
+                context.push(AppRoutes.loginStep1View);
+                break;
+              case 3:
+                context.push(AppRoutes.paymentPageView);
+                break;
+
+
+              default:
+                print("");
             }
+
+
+
+
           },
           child: Padding(
             padding: const EdgeInsets.only(top: 20),

@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../../../../core/utils/app_colors.dart';
 import '../../../../../../core/utils/app_text_styles.dart';
 import '../../../../../../generated/assets.dart';
+import '../../../../core/widgets/fitted_box.dart';
 
 class EmployeeAddedSuccessfully extends StatelessWidget {
   const EmployeeAddedSuccessfully({super.key});
@@ -35,15 +37,17 @@ class EmployeeAddedSuccessfully extends StatelessWidget {
                       ),
                     ],
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      const Text(
-                        'Employee Added Successfully!',
-                        style: TextStyle(
-                            fontSize: 18, fontWeight: FontWeight.bold),
-                      ),
-                    ],
+                  FittedBoxS(
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        const Text(
+                          'Employee Added Successfully!',
+                          style: TextStyle(
+                              fontSize: 18, fontWeight: FontWeight.bold),
+                        ),
+                      ],
+                    ),
                   ),
                   const SizedBox(height: 12),
                   const Text(
@@ -74,17 +78,16 @@ class EmployeeAddedSuccessfully extends StatelessWidget {
                             ),
                             backgroundColor: AppColors.greenColor,
                           ),
-                          onPressed: () {},
-                          child: Row(
-                            mainAxisAlignment: MainAxisAlignment.center,
-                            children: [
-                              Text(
-                                "Customize Role",
-                                style: AppStyles.regular15.copyWith(
-                                  color: Colors.grey[200],
-                                ),
+                          onPressed: () {
+                            context.pop();
+                          },
+                          child: Center(
+                            child: Text(
+                              "Customize Role",
+                              style: AppStyles.regular15.copyWith(
+                                color: Colors.grey[200],
                               ),
-                            ],
+                            ),
                           ),
                         ),
                       ),

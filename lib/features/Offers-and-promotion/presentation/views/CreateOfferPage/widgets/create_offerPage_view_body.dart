@@ -30,17 +30,15 @@ class CreateOfferpageViewBody extends StatelessWidget {
                 'Fill in the details to create a promotion and attract more patients to your clinic.',
           ),
           sizedBox,
-          SizedBox(
-            width: 175,
-            child: Directionality(
-                textDirection: TextDirection.rtl,
-                child: CustomButton(
-                  onPressed: () {},
-                  text: "Create New Offer",
-                  color: AppColors.greenColor,
-                  image: Assets.imagesLocalOffer,
-                )),
-          ),
+          Directionality(
+              textDirection: TextDirection.rtl,
+              child: CustomButton(
+                onPressed: () {},
+                text: "Create New Offer",
+                Width: 190,
+                color: AppColors.greenColor,
+                image: Assets.imagesLocalOffer,
+              )),
           sizedBox,
           CustomContainerShape(
               Child: Padding(
@@ -147,7 +145,7 @@ class CreateOfferpageViewBody extends StatelessWidget {
                   ],
                 ),
               ),
-              Height: 1150),
+                ),
           SizedBox(
             height: 40,
           )

@@ -1,4 +1,6 @@
+import 'package:eyadty_app/core/helper_functions/on_generate_routes.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../../../../core/utils/app_colors.dart';
 import '../../../../../../core/utils/app_text_styles.dart';
@@ -60,19 +62,25 @@ class _ListingAddListStep5ViewBodyState
                     style: AppStyles.bold18,
                   ),
                   sizedBox,
-                  Row(
-                    children: [
-                      Image(image: AssetImage(Assets.imagesBody)),
-                      SizedBox(
-                        width: 8,
-                      ),
-                      Image(image: AssetImage(Assets.imagesBody)),
-                    ],
+                  FittedBox(
+                    alignment: AlignmentDirectional.centerStart,
+                    fit: BoxFit.scaleDown,
+                    child: Row(
+                      children: [
+                        Image(image: AssetImage(Assets.imagesBody)),
+                        SizedBox(
+                          width: 8,
+                        ),
+                        Image(image: AssetImage(Assets.imagesBody)),
+                      ],
+                    ),
                   ),
                   sizedBox,
                   ListingEndButtons(
                     onPressedButton1: () {},
-                    onPressedButton2: () {},
+                    onPressedButton2: () {
+                      context.push(AppRoutes.dialogPayment);
+                    },
                     onPressedButtonSave: () {},
                     onPressedButtonBack: () {},
                     textButton1: '',
@@ -83,8 +91,7 @@ class _ListingAddListStep5ViewBodyState
                 ],
               ),
             ),
-            Height: 1500,
-          ),
+           ),
           SizedBox(
             height: 40,
           ),

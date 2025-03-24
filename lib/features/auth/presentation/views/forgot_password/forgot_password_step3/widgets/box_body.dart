@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
+import '../../../../../../../core/helper_functions/on_generate_routes.dart';
 import '../../../../../../../core/utils/app_colors.dart';
 import '../../../../../../../core/widgets/custom_button.dart';
 import '../../../../../../../core/widgets/custom_container_shape.dart';
@@ -64,13 +66,17 @@ class BoxBody extends StatelessWidget {
               ),
               CustomButton(
                 text: 'Reset Password',
-                onPressed: () {},
+                onPressed: () {
+                  context.push(AppRoutes.passwordResetCard);
+                },
                 image: Assets.imagesLock,
                 color: AppColors.greenColor,
-              )
+              ),
+              sizedBox
             ],
           ),
         ),
-        Height: 465);
+
+        );
   }
 }

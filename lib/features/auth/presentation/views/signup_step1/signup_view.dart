@@ -14,7 +14,7 @@ class _SignupViewState extends State<SignupView> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: SingleChildScrollView(child: SignupViewBody()),
+      body: SafeArea(child: SingleChildScrollView(child: SignupViewBody())),
     );
   }
 }

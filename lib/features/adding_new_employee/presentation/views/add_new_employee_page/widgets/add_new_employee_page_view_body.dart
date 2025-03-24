@@ -1,6 +1,8 @@
+import 'package:eyadty_app/core/helper_functions/on_generate_routes.dart';
 import 'package:eyadty_app/core/utils/app_colors.dart';
 import 'package:eyadty_app/core/widgets/custom_container_shape.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../../../../core/widgets/custom_button.dart';
 import '../../../../../../core/widgets/custom_text_field.dart';
@@ -100,7 +102,10 @@ class  AddNewEmployeePageViewBody extends StatelessWidget {
 
 
               CustomButton(
-                onPressed: () {},
+                onPressed: () {
+
+                  context.push(AppRoutes.employeeAddedSuccessfully);
+                },
                 text: 'Send Invitation',
                 image: Assets.imagesSend2,
                 color: AppColors.greenColor,
@@ -110,7 +115,7 @@ class  AddNewEmployeePageViewBody extends StatelessWidget {
 
 
             ],),
-          ),Height: 610,),
+          ) ),
           SizedBox(height: 40,)
 
 

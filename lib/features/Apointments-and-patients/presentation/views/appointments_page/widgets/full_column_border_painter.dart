@@ -11,7 +11,7 @@ class FullColumnBorderPainter extends CustomPainter {
       ..style = PaintingStyle.stroke;
 
     const double spacing = 4;
-    const double columnWidth = 45;
+    const double columnWidth = 42;
     const double columnSpacing = 10;
 
     for (int i = 0; i < 7; i++) {

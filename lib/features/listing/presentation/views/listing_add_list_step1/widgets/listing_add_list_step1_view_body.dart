@@ -1,5 +1,7 @@
+import 'package:eyadty_app/core/helper_functions/on_generate_routes.dart';
 import 'package:eyadty_app/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../../../../core/utils/app_text_styles.dart';
 import '../../../../../../core/widgets/custom_container_shape.dart';
@@ -223,9 +225,14 @@ class _ListingAddListStep1ViewBodyState
 
                       ListingEndButtons(
                         onPressedButton1: () {},
-                        onPressedButton2: () {},
+                        onPressedButton2: () {
+
+                          context.push(AppRoutes.listingAddListStep2View);
+                        },
                         onPressedButtonSave: () {},
-                        onPressedButtonBack: () {},
+                        onPressedButtonBack: () {
+                          context.pop();
+                        },
                         textButton1: 'Pin Location on Map',
                         textButton2: 'Add Operational Information',
                         imageButton1: Assets.imagesAddLocationAlt,
@@ -234,8 +241,7 @@ class _ListingAddListStep1ViewBodyState
                     ],
                   )),
             ),
-            Height: 1270,
-          ),
+           ),
           SizedBox(
             height: 40,
           )

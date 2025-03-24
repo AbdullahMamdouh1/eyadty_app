@@ -27,8 +27,11 @@ class SignupViewBody extends StatelessWidget {
         SizedBox(
           height: 32,
         ),
-        StepsLine(
-          color1: Colors.green,
+        Padding(
+          padding: const EdgeInsets.only(left: 16.0),
+          child: StepsLine(
+            color1: Colors.green,
+          ),
         ),
         StepText(
           Title: 'Step 1 of 3:',

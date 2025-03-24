@@ -9,7 +9,7 @@ import 'package:flutter/material.dart';
    @override
    Widget build(BuildContext context) {
      return Scaffold(
-       body: SingleChildScrollView(child: ForgotPasswordStep1ViewBody()),
+       body: SafeArea(child: SingleChildScrollView(child: ForgotPasswordStep1ViewBody())),
      );
    }
  }

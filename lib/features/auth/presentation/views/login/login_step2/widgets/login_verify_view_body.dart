@@ -13,6 +13,7 @@ class LoginVerifyViewBody extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenHeight = MediaQuery.of(context).size.height;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
@@ -33,7 +34,7 @@ class LoginVerifyViewBody extends StatelessWidget {
                 height: 24,
               ),
               Text(
-                "Log In to Your Account",
+                "Verify Your Identity",
                 style: AppStyles.bold28.copyWith(color: AppColors.blackColor),
               ),
               SizedBox(
@@ -44,8 +45,7 @@ class LoginVerifyViewBody extends StatelessWidget {
                   padding: const EdgeInsets.only(left: 29.0, right: 29),
                   child: PinCodeVerificationLogin(),
                 ),
-                Height: 445,
-              ),
+               ),
               SizedBox(
                 height: 120,
               ),

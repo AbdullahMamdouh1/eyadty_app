@@ -1,6 +1,8 @@
- import 'package:flutter/material.dart';
+ import 'package:eyadty_app/core/utils/app_colors.dart';
+import 'package:flutter/material.dart';
 
 import '../../../../../../core/widgets/custom_container_shape.dart';
+import '../../../../../../core/widgets/fitted_box.dart';
 import '../../widgets/steps_line.dart';
 import '../../widgets/already_have_account.dart';
 import '../../widgets/end_text.dart';
@@ -31,10 +33,12 @@ class SignupStep3ViewBody extends StatelessWidget {
               SizedBox(
                 height: 32,
               ),
-              StepsLine(
-                color1: Colors.green,
-                color2: Colors.green,
-                color3: Colors.green,
+              FittedBoxS(
+                child: StepsLine(
+                  color1: Colors.green,
+                  color2: Colors.green,
+                  color3: Colors.green,
+                ),
               ),
               SizedBox(
                 height: 8,
@@ -54,7 +58,7 @@ class SignupStep3ViewBody extends StatelessWidget {
         child: CustomContainerShape(Child:Padding(
           padding: const EdgeInsets.all(24.0),
           child: CompleteRegistration(),
-        ), Height: 1170, ),
+        )  ),
       ),
       SizedBox(height:96,),
       EndText(),

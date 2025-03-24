@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import '../../../../../../core/widgets/fitted_box.dart';
 import '../../widgets/custom_check_box.dart';
 
 class PolicyText extends StatefulWidget {
@@ -18,38 +19,40 @@ class _PolicyTextState extends State<PolicyText> {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        CustomCheckBox(
-          onChecked: (value) {
-            isTermsAccepted = value;
-            widget.onChanged(value);
-            setState(() {});
-          },
-          isChecked: isTermsAccepted,
-        ),
-        SizedBox(
-          width: 10,
-        ),
-        Column(
-          crossAxisAlignment: CrossAxisAlignment.start,
-          children: [
-            Text("By signing up, you agree to our"),
-            Row(
-              children: [
-                Text(
-                  "Terms & Conditions ",
-                  style: TextStyle(color: Colors.blue),
-                ),
-                Text("and "),
-                Text("Privacy ", style: TextStyle(color: Colors.blue)),
-              ],
-            ),
-            Text("Policy.", style: TextStyle(color: Colors.blue)),
-          ],
-        )
-      ],
+    return FittedBoxS(
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          CustomCheckBox(
+            onChecked: (value) {
+              isTermsAccepted = value;
+              widget.onChanged(value);
+              setState(() {});
+            },
+            isChecked: isTermsAccepted,
+          ),
+          SizedBox(
+            width: 10,
+          ),
+          Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text("By signing up, you agree to our"),
+              Row(
+                children: [
+                  Text(
+                    "Terms & Conditions ",
+                    style: TextStyle(color: Colors.blue),
+                  ),
+                  Text("and "),
+                  Text("Privacy ", style: TextStyle(color: Colors.blue)),
+                ],
+              ),
+              Text("Policy.", style: TextStyle(color: Colors.blue)),
+            ],
+          )
+        ],
+      ),
     );
   }
 }

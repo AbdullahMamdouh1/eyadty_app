@@ -1,4 +1,6 @@
+import 'package:eyadty_app/core/helper_functions/on_generate_routes.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../../../../../core/utils/app_colors.dart';
 import '../../../../../../../core/utils/app_text_styles.dart';
@@ -60,7 +62,9 @@ class _ForgotPasswordStep1BoxBodyState
               ),
               CustomButton(
                 image: Assets.imagesLogin,
-                onPressed: () {},
+                onPressed: () {
+                  context.push(AppRoutes.forgotPasswordStep2View);
+                },
                 text: 'Send Code',
                 color: AppColors.greenColor,
               ),
@@ -81,6 +85,6 @@ class _ForgotPasswordStep1BoxBodyState
             ],
           ),
         ),
-        Height: 400);
+        );
   }
 }

@@ -1,11 +1,14 @@
 import 'dart:async';
 
+import 'package:eyadty_app/core/helper_functions/on_generate_routes.dart';
 import 'package:eyadty_app/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 
 import '../../../../../../../core/utils/app_text_styles.dart';
 import '../../../../../../../core/widgets/custom_button.dart';
+import '../../../../../../../core/widgets/fitted_box.dart';
 
 class PinCodeVerificationForgotPassword extends StatefulWidget {
   const PinCodeVerificationForgotPassword({
@@ -160,46 +163,51 @@ class _PinCodeVerificationForgotPasswordState extends State<PinCodeVerificationF
         const SizedBox(
           height: 120,
         ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Row(
-                  children: [
-                    Text(
-                      "Didn’t receive OTP? ",
-                      style: AppStyles.regular15,
-                    ),
-                    GestureDetector(
-                      onTap: () {
-                        snackBar("OTP resend!!");
-                      },
-                      child: const Text(
-                        "Resend Code ",
-                        style: TextStyle(
-                          color: Colors.blue,
-                          fontWeight: FontWeight.bold,
-                          fontSize: 16,
+        FittedBoxS(
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Row(
+                    children: [
+                      Text(
+                        "Didn’t receive OTP? ",
+                        style: AppStyles.regular15,
+                      ),
+                      GestureDetector(
+                        onTap: () {
+
+
+                          snackBar("OTP resend!!");
+                        },
+                        child: const Text(
+                          "Resend Code ",
+                          style: TextStyle(
+                            color: Colors.blue,
+                            fontWeight: FontWeight.bold,
+                            fontSize: 16,
+                          ),
                         ),
                       ),
-                    ),
-                    Text("after", style: AppStyles.semiBold15),
-                  ],
-                ),
-                Text("00:59",
-                    style: AppStyles.semiBold15
-                        .copyWith(color: AppColors.blueColor)),
-              ],
-            ),
-          ],
+                      Text("after", style: AppStyles.semiBold15),
+                    ],
+                  ),
+                  Text("00:59",
+                      style: AppStyles.semiBold15
+                          .copyWith(color: AppColors.blueColor)),
+                ],
+              ),
+            ],
+          ),
         ),
         SizedBox(
           height: 24,
         ),
         CustomButton2(
           onPressed: () {
+            context.push(AppRoutes.forgotPasswordStep3View);
             formKey.currentState!.validate();
             // conditions for validating
             if (currentText.length != 6 || currentText != "123456") {
@@ -218,6 +226,7 @@ class _PinCodeVerificationForgotPasswordState extends State<PinCodeVerificationF
           text: "Verify My Account",
           color: AppColors.greenColor,
         ),
+        sizedBox
       ],
     );
   }

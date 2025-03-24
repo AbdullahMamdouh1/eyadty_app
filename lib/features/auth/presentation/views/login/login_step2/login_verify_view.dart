@@ -7,7 +7,7 @@ class LoginVerifyView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SingleChildScrollView(child: LoginVerifyViewBody()),
+      body: SafeArea(child: SingleChildScrollView(child: LoginVerifyViewBody())),
     );
   }
 }

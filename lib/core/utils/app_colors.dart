@@ -14,4 +14,12 @@ const dynamic sizedBox = SizedBox(
 
 
 
-final RouteObserver<ModalRoute<void>> routeObserver = RouteObserver<ModalRoute<void>>();
+class SizeConfig {
+  static double screenWidth = 0;
+  static double screenHeight = 0;
+
+  void init(BuildContext context) {
+    screenWidth = MediaQuery.of(context).size.width;
+    screenHeight = MediaQuery.of(context).size.height;
+  }
+}

@@ -4,21 +4,23 @@ class  CustomContainerShape extends StatelessWidget {
   const CustomContainerShape({
     super.key,
     required this.Child,
-    required this.Height,
-  });
+   });
   final Widget Child;
-  final double Height;
-  @override
+   @override
   Widget build(BuildContext context) {
     return Container(
-      height: Height,
-      width: double.infinity,
+
       decoration: BoxDecoration(
           border: Border.all(
             color: Colors.grey,
           ),
           borderRadius: BorderRadius.circular(8)),
-      child: Child,
+      child: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          Child,
+        ],
+      ),
     );
   }
 }

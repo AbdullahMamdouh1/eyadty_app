@@ -33,7 +33,7 @@ final bool Visible;
         Visibility(
           visible: Visible,
           child: SizedBox(
-            width: 200,
+            width: 230,
             height: 54,
             child: TextButton(
               style: TextButton.styleFrom(
@@ -78,7 +78,7 @@ final bool Visible;
           mainAxisAlignment: MainAxisAlignment.end,
           children: [
             SizedBox(
-              width: 155,
+              width: 170,
               child: Directionality(
                 textDirection: TextDirection.rtl,
                 child: CustomButton(
@@ -92,7 +92,7 @@ final bool Visible;
               width: 16,
             ),
             SizedBox(
-              width: 60,
+              width: 80,
               height: 54,
               child: TextButton(
                 style: TextButton.styleFrom(

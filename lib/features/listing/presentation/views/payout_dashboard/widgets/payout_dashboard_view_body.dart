@@ -1,11 +1,9 @@
-import 'package:eyadty_app/core/utils/app_text_styles.dart';
-import 'package:eyadty_app/features/listing/presentation/views/payout_dashboard/widgets/trends_and_insights.dart';
+ import 'package:eyadty_app/features/listing/presentation/views/payout_dashboard/widgets/trends_and_insights.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../../core/utils/app_colors.dart';
 import '../../widgets/title_text.dart';
-import 'patient_chart.dart';
-import 'current_cycle _overview.dart';
+ import 'current_cycle _overview.dart';
 import 'statement_details.dart';
 
 class PayoutDashboardViewBody extends StatelessWidget {

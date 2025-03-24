@@ -46,8 +46,7 @@ class Table1 {
           Child,
         ],
       ),
-      Height: height,
-    );
+     );
   }
 
   ////////////////////////////////  TableInformation
@@ -138,8 +137,7 @@ class Table2 {
           Child,
         ],
       ),
-      Height: height,
-    );
+     );
   }
 
   ////////////////////////////////  TableInformation

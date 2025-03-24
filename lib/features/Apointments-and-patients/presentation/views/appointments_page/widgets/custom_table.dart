@@ -79,8 +79,7 @@ class CustomTable {
           Child,
         ],
       ),
-      Height: height,
-    );
+     );
   }
 
   ////////////////////////////////  TableInformation

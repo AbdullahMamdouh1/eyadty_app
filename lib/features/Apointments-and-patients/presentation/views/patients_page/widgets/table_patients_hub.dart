@@ -63,8 +63,7 @@ class TablePatientsHub {
 
         ],
       ),
-      Height: height,
-    );
+     );
   }
 
   ////////////////////////////////  TableInformation

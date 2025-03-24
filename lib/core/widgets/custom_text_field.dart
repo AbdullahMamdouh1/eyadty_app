@@ -123,11 +123,14 @@ class CustomTextFormField2 extends StatelessWidget {
           //  mount char maxLength:3,
 
           validator: validator,
+
           controller: controller,
+
 
           keyboardType: textInputType,
           obscureText: ispassword,
           decoration: InputDecoration(
+            suffixIcon: suffixIcon,
               hintText: hintText,
               hintStyle: AppStyles.regular15.copyWith(
                 color: const Color(0xFFB3B3B3),

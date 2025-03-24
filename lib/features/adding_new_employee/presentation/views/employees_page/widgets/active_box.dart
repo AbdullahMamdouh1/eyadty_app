@@ -28,11 +28,12 @@ class ActiveBox extends StatelessWidget {
               children: [
                 SizedBox(
                   height: 35,
-                  width: 90,
+
                   child: CustomButton(
                       onPressed: () {},
                       text: "Active",
                       image: Assets.imagesTrue,
+                      Width: 100,
                       color: Colors.green),
                 ),
                 SizedBox(

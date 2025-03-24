@@ -5,6 +5,7 @@ import '../../../../../../core/utils/app_colors.dart';
 import '../../../../../../core/utils/app_text_styles.dart';
 import '../../../../../../core/widgets/custom_button.dart';
 import '../../../../../../core/widgets/custom_container_shape.dart';
+import '../../../../../../core/widgets/fitted_box.dart';
 import '../../../../../../generated/assets.dart';
 import 'income_chart.dart';
 
@@ -35,7 +36,7 @@ class CurrentCycleOverview extends StatelessWidget {
             SizedBox(
               height: 16,
             ),
-            RowButtons(),
+            FittedBoxS(child: RowButtons()),
             sizedBox,
             IncomeChart(),
             SizedBox(
@@ -50,8 +51,7 @@ class CurrentCycleOverview extends StatelessWidget {
           ],
         ),
       ),
-      Height: 445,
-    );
+     );
     ;
   }
 }

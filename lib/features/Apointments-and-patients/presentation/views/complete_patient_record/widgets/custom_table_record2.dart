@@ -89,8 +89,7 @@ class CustomTableRecord2 {
           Child,
         ],
       ),
-      Height: height,
-    );
+     );
   }
 
   ////////////////////////////////  TableInformation

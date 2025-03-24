@@ -37,11 +37,9 @@ class ActiveDrawerItem2 extends StatelessWidget {
   const ActiveDrawerItem2({
     super.key,
     required this.drawerItemModel,
-    required this.rrr,
-  });
+   });
 
   final DrawerItemModel drawerItemModel;
-  final bool rrr;
 
   @override
   Widget build(BuildContext context) {

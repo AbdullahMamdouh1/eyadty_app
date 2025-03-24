@@ -1,6 +1,8 @@
+import 'package:eyadty_app/core/helper_functions/on_generate_routes.dart';
 import 'package:eyadty_app/core/utils/app_colors.dart';
  import 'package:eyadty_app/features/auth/presentation/views/signup_step3/widgets/account_selection.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../../../../core/utils/app_text_styles.dart';
 import '../../../../../../core/widgets/custom_button.dart';
@@ -164,7 +166,10 @@ class _CompleteRegistrationState extends State<CompleteRegistration> {
         ),
         CustomButton2(
           color: AppColors.greenColor,
-          onPressed: () {},
+          onPressed: () {
+
+            context.push(AppRoutes.payoutDashboardView);
+          },
           text: 'Create My Account',
         ),
 

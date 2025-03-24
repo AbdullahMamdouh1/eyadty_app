@@ -1,7 +1,9 @@
+import 'package:eyadty_app/core/helper_functions/on_generate_routes.dart';
 import 'package:eyadty_app/core/utils/app_colors.dart';
 import 'package:eyadty_app/core/widgets/custom_button.dart';
 import 'package:eyadty_app/features/auth/presentation/views/widgets/custom_check_box.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../../../../core/widgets/custom_container_shape.dart';
 import '../../../../../../generated/assets.dart';
@@ -35,16 +37,16 @@ class _AddNewPatientViewBodyState extends State<AddNewPatientViewBody> {
                 'Create a new patient record and invite them to access their medical history online.',
           ),
           SizedBox(height: 24),
-          SizedBox(
-            width: 175,
-            child: Directionality(
-              textDirection: TextDirection.rtl,
-              child: CustomButton(
-                onPressed: () {},
-                text: "Add New Patient",
-                color: AppColors.greenColor,
-                image: Assets.imagesAdd,
-              ),
+          Directionality(
+            textDirection: TextDirection.rtl,
+            child: CustomButton(
+              onPressed: () {
+                context.push(AppRoutes.uploadMedicalFilePageView);
+              },
+              text: "Add New Patient",
+              Width: 190,
+              color: AppColors.greenColor,
+              image: Assets.imagesAdd,
             ),
           ),
           SizedBox(height: 32),
@@ -73,25 +75,22 @@ class _AddNewPatientViewBodyState extends State<AddNewPatientViewBody> {
                           },
                         ),
                         SizedBox(width: 12),
-                        Text("Send Invitation to Create Patient Account"),
+                        Text("Send Invitation to \nCreate Patient Account"),
                       ],
                     ),
                     SizedBox(height: 16),
-                    SizedBox(
-                      width: 155,
-                      child: CustomButton(
-                        onPressed: () {},
-                        text: "Save Changes",
-                        color: AppColors.greenColor,
-                        image: Assets.imagesSave,
-                      ),
+                    CustomButton(
+                      onPressed: () {},
+                      text: "Save Changes",
+                      Width: 170,
+                      color: AppColors.greenColor,
+                      image: Assets.imagesSave,
                     ),
                   ],
                 ),
               ),
             ),
-            Height: 1565,
-          ),
+           ),
           SizedBox(
             height: 40,
           )

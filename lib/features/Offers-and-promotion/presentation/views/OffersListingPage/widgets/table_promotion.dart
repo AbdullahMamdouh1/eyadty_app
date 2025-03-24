@@ -24,21 +24,16 @@ class TablePromotion {
                     children: [
                       CustomCheckBox(isChecked: false, onChecked: (bool value) {  },),
                       Text(
-                        "Promotion Title	",
+                        "Promotion \nTitle	",
                         style: AppStyles.semiBold15,
                       ),
                       Text(
-                        "Clinics              ",
+                        "Clinics     ",
                         style: AppStyles.semiBold15,
                       ),
-                      Row(
-                        children: [
-                          Text(
-                            "Validity \n Period	",
-                            style: AppStyles.semiBold15,
-                          ),
-
-                        ],
+                      Text(
+                        "Validity \n Period	",
+                        style: AppStyles.semiBold15,
                       ),
                     ],
                   ),
@@ -59,8 +54,7 @@ class TablePromotion {
             RowButton(),
         ],
       ),
-      Height: height,
-    );
+     );
   }
 
   ////////////////////////////////  TableInformation
@@ -72,7 +66,7 @@ class TablePromotion {
         required dynamic ColorBool}) {
     return Container(
       color: ColorBool ,
-      height: 65,
+      height: 75,
       child: Padding(
         padding: const EdgeInsets.only(left: 12.0, right: 0),
         child: Row(

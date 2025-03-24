@@ -8,7 +8,7 @@ class SignupStep3View extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(child: SingleChildScrollView(child: SignupStep3ViewBody())),
+      body: SafeArea(child: SafeArea(child: SingleChildScrollView(child: SignupStep3ViewBody()))),
     );
   }
 }

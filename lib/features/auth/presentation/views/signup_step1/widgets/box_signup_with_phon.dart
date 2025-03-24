@@ -1,4 +1,6 @@
+import 'package:eyadty_app/core/helper_functions/on_generate_routes.dart';
 import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../../../../core/widgets/custom_button.dart';
 import '../../../../../../core/widgets/custom_text_field.dart';
@@ -92,7 +94,10 @@ class _BoxSignupWithPhonState extends State<BoxSignupWithPhon> {
                 height: 24,
               ),
               CustomButton(
-                onPressed: () {},
+                onPressed: () {
+
+                  context.push(AppRoutes.signupStep2View);
+                },
                 text: 'Sign Up',
                 image: Assets.imagesLogin,
                 color: Colors.green,

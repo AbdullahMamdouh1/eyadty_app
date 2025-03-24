@@ -1,5 +1,7 @@
 import 'package:flutter/widgets.dart';
+import 'package:go_router/go_router.dart';
 
+import '../../../core/helper_functions/on_generate_routes.dart';
 import '../../../generated/assets.dart';
 import '../../../models/drawer_item_model.dart';
 import 'drawer_item2.dart';
@@ -15,7 +17,6 @@ class DrawerItemsListView2 extends StatefulWidget {
 
 class _DrawerItemsListView2State extends State<DrawerItemsListView2> {
   int activeIndex = 0;
-  bool eee = false;
 
   final List<DrawerItemModel> items = [
     const DrawerItemModel(
@@ -40,12 +41,30 @@ class _DrawerItemsListView2State extends State<DrawerItemsListView2> {
               });
             }
 
-            if (activeIndex == index) {
-              setState(() {
-                activeIndex = index;
-                eee = (index == 1);
-              });
+            switch (index) {
+              case 0:
+                context.push(AppRoutes.appointmentsPageView);
+                break;
+              case 1:
+                context.push(AppRoutes.patientsPageView);
+                break;
+              case 3:
+                context.push(AppRoutes.manageListingPageView);
+                break;
+              case 4:
+                context.push(AppRoutes.employeesPageView);
+                break;
+
+
+              default:
+                print("");
             }
+
+
+
+
+
+
           },
           child: Padding(
             padding: const EdgeInsets.only(top: 20),
@@ -56,7 +75,6 @@ class _DrawerItemsListView2State extends State<DrawerItemsListView2> {
                 DrawerItem2(
                   drawerItemModel: items[index],
                   isActive: activeIndex == index,
-                  rrr: eee,
                 ),
               ],
             ),

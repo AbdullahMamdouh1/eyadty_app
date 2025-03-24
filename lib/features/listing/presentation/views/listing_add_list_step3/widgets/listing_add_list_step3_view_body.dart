@@ -1,4 +1,6 @@
- import 'package:flutter/material.dart';
+ import 'package:eyadty_app/core/helper_functions/on_generate_routes.dart';
+import 'package:flutter/material.dart';
+import 'package:go_router/go_router.dart';
 
 import '../../../../../../core/utils/app_colors.dart';
 import '../../../../../../core/widgets/CustomTextFormFieldHeight.dart';
@@ -145,9 +147,13 @@ class _ListingAddListStep3ViewBodyState
                     sizedBox,
                     ListingEndButtons(
                       onPressedButton1: () {},
-                      onPressedButton2: () {},
+                      onPressedButton2: () {
+                        context.push(AppRoutes.listingAddListStep4View);
+                      },
                       onPressedButtonSave: () {},
-                      onPressedButtonBack: () {},
+                      onPressedButtonBack: () {
+                        context.pop();
+                      },
                       textButton1: 'Upload Your Image',
                       textButton2: 'Upload Multimedia',
                       imageButton1: Assets.imagesUpload,
@@ -157,8 +163,7 @@ class _ListingAddListStep3ViewBodyState
                 ),
               ),
             ),
-            Height: 1020,
-          ),
+           ),
           SizedBox(
             height: 40,
           )
