@@ -1,6 +1,7 @@
 import 'package:eyadty_app/core/routing/routes.dart';
 import 'package:eyadty_app/features/Offers-and-promotion/presentation/views/CreateOfferPage/create_offerPage_view.dart';
 import 'package:eyadty_app/features/auth/presentation/views/forgot_password/forgot_password_step4/password_reset_card.dart';
+import 'package:eyadty_app/features/promotions/presentation/campaign_history_view.dart';
 import 'package:eyadty_app/features/promotions/presentation/promotions_view.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -185,6 +186,10 @@ class AppRouter {
       GoRoute(
         path: Routes.newCampaign4,
         builder: (context, state) => const NewCampaignStep4View(),
+      ),
+      GoRoute(
+        path: Routes.campaignHistory,
+        builder: (context, state) => const CampaignHistoryView(),
       ),
     ],
     errorBuilder: (context, state) => Scaffold(

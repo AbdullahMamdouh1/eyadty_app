@@ -26,4 +26,16 @@ class AppStyle {
     fontWeight: FontWeight.w500,
     fontFamily: 'Karla',
   );
+  static TextStyle tableHeader = TextStyle(
+    fontSize: 16.sp,
+    color: Color(0xff3C4553),
+    fontFamily: 'Karla',
+    fontWeight: FontWeight.bold,
+  );
+  static TextStyle tableItem = TextStyle(
+    color: Color(0xff505C6F),
+    fontSize: 14.sp,
+    fontWeight: FontWeight.w500,
+    fontFamily: 'Karla',
+  );
 }

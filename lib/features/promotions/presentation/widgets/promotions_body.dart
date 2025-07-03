@@ -1,8 +1,8 @@
 import 'package:eyadty_app/core/style/app_style.dart';
 import 'package:eyadty_app/core/utils/spacing.dart';
 import 'package:eyadty_app/features/promotions/presentation/widgets/custom_app_bar_of_promotions.dart';
+import 'package:eyadty_app/features/promotions/presentation/widgets/promotions_bottom_container.dart';
 import 'package:eyadty_app/features/promotions/presentation/widgets/promotions_bottom_options.dart';
-import 'package:eyadty_app/features/promotions/presentation/widgets/promotions_bottom_section.dart';
 import 'package:eyadty_app/features/promotions/presentation/widgets/promotions_middle_container.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
@@ -38,7 +38,7 @@ class PromotionsBody extends StatelessWidget {
                   verticalSpace(24),
                   PromotionsMiddleContainer(),
                   verticalSpace(24),
-                  PromotionsBottomSection(),
+                  PromotionsBottomContainer(),
                 ],
               )),
             ),

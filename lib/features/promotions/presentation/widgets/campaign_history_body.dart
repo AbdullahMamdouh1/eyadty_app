@@ -1,15 +1,16 @@
 import 'package:eyadty_app/core/style/app_style.dart';
 import 'package:eyadty_app/core/utils/spacing.dart';
+import 'package:eyadty_app/features/promotions/presentation/widgets/campaign_history_bottom_options.dart';
 import 'package:eyadty_app/features/promotions/presentation/widgets/custom_app_bar_of_promotions.dart';
-import 'package:eyadty_app/features/promotions/presentation/widgets/new_campaign_final_bottom.dart';
-import 'package:eyadty_app/features/promotions/presentation/widgets/new_campaing_step_4_column.dart';
+import 'package:eyadty_app/features/promotions/presentation/widgets/promotions_table.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../../core/routing/routes.dart';
 import 'shared_main_container.dart';
 
-class NewCampaginStep4 extends StatelessWidget {
-  const NewCampaginStep4({super.key});
+class CampaignHistoryBody extends StatelessWidget {
+  const CampaignHistoryBody({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -20,7 +21,7 @@ class NewCampaginStep4 extends StatelessWidget {
           slivers: [
             SliverToBoxAdapter(
               child: CustomAppBar(
-                text: 'Create New Campaign',
+                text: 'Campaign History',
                 textStyle: AppStyle.mainAppBar,
                 onPressed: () {
                   context.pop();
@@ -29,7 +30,7 @@ class NewCampaginStep4 extends StatelessWidget {
             ),
             SliverFillRemaining(
               hasScrollBody: false,
-              child: SharedParentContainer(child: NewCampaingStep4Column()),
+              child: SharedParentContainer(child: PromotionsTable()),
             ),
             SliverToBoxAdapter(
               child: verticalSpace(42),
@@ -38,9 +39,9 @@ class NewCampaginStep4 extends StatelessWidget {
         ),
         Positioned(
           bottom: 0,
-          child: NewCampaignFinalBottom(
+          child: CampaignHistoryBottomOptions(
             nextOnPressed: () {
-              // context.push(Routes.);
+              context.push(Routes.newCampaign1);
             },
           ),
         )
