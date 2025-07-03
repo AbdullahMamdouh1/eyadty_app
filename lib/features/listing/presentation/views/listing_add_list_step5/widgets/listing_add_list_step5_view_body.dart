@@ -1,12 +1,12 @@
-import 'package:eyadty_app/core/helper_functions/on_generate_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../../../../core/routing/routes.dart';
 import '../../../../../../core/utils/app_colors.dart';
+import '../../../../../../core/utils/app_images.dart';
 import '../../../../../../core/utils/app_text_styles.dart';
 import '../../../../../../core/widgets/custom_container_shape.dart';
-import '../../../../../../generated/assets.dart';
-  import '../../widgets/listing_end_buttons.dart';
+import '../../widgets/listing_end_buttons.dart';
 import '../../widgets/listing_steps_line.dart';
 import '../../widgets/title_text.dart';
 import 'basic_information.dart';
@@ -67,11 +67,11 @@ class _ListingAddListStep5ViewBodyState
                     fit: BoxFit.scaleDown,
                     child: Row(
                       children: [
-                        Image(image: AssetImage(Assets.imagesBody)),
+                        Image(image: AssetImage(AppImages.imagesBody)),
                         SizedBox(
                           width: 8,
                         ),
-                        Image(image: AssetImage(Assets.imagesBody)),
+                        Image(image: AssetImage(AppImages.imagesBody)),
                       ],
                     ),
                   ),
@@ -79,24 +79,22 @@ class _ListingAddListStep5ViewBodyState
                   ListingEndButtons(
                     onPressedButton1: () {},
                     onPressedButton2: () {
-                      context.push(AppRoutes.dialogPayment);
+                      context.push(Routes.dialogPayment);
                     },
                     onPressedButtonSave: () {},
                     onPressedButtonBack: () {},
                     textButton1: '',
                     textButton2: 'Submit Your Listing',
-                    imageButton1: Assets.imagesUpload,
+                    imageButton1: AppImages.imagesUpload,
                     Visible: false,
                   )
                 ],
               ),
             ),
-           ),
+          ),
           SizedBox(
             height: 40,
           ),
-
-
         ],
       ),
     );

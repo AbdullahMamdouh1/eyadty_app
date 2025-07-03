@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../../../../../core/helper_functions/on_generate_routes.dart';
+import '../../../../../../core/routing/routes.dart';
 import '../../../../../../core/utils/app_colors.dart';
+import '../../../../../../core/utils/app_images.dart';
 import '../../../../../../core/utils/app_text_styles.dart';
-import '../../../../../../generated/assets.dart';
 
 class PasswordResetCard extends StatelessWidget {
   const PasswordResetCard({super.key});
@@ -74,7 +74,7 @@ class PasswordResetCard extends StatelessWidget {
                                 backgroundColor: AppColors.greenColor,
                               ),
                               onPressed: () {
-                                context.push(AppRoutes.loginStep1View);
+                                context.push(Routes.loginStep1View);
                               },
                               child: Row(
                                 mainAxisAlignment: MainAxisAlignment.center,
@@ -88,7 +88,7 @@ class PasswordResetCard extends StatelessWidget {
                                   SizedBox(
                                     width: 8,
                                   ),
-                                  SvgPicture.asset(Assets.imagesLogin),
+                                  SvgPicture.asset(AppImages.imagesLogin),
                                 ],
                               ),
                             ),

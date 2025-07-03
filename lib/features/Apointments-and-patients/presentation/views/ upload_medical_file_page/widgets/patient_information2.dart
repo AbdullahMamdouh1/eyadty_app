@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../../../../../../core/utils/app_images.dart';
 import '../../../../../../core/utils/app_text_styles.dart';
 import '../../../../../../core/widgets/custom_text_field.dart';
-import '../../../../../../generated/assets.dart';
 import 'patient_controller2.dart';
 
 class PatientInformation2 extends StatelessWidget {
@@ -17,11 +17,11 @@ class PatientInformation2 extends StatelessWidget {
         Row(
           children: [
             CircleAvatar(
-              backgroundImage: AssetImage(Assets.imagesPerson),
+              backgroundImage: AssetImage(AppImages.imagesPerson),
             ),
-            SizedBox(width: 5,),
-
-
+            SizedBox(
+              width: 5,
+            ),
             Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -32,7 +32,6 @@ class PatientInformation2 extends StatelessWidget {
           ],
         ),
         SizedBox(height: 24),
-
 
         // Gender Field
         CustomTextFormField2(

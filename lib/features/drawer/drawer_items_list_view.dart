@@ -1,10 +1,9 @@
-import 'package:eyadty_app/core/helper_functions/on_generate_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../core/utils/app_colors.dart';
-import '../../generated/assets.dart';
+import '../../core/routing/routes.dart';
+import '../../core/utils/app_images.dart';
 import '../../models/drawer_item_model.dart';
 import 'drawer_item.dart';
 
@@ -21,18 +20,17 @@ class _DrawerItemsListViewState extends State<DrawerItemsListView>
   bool MyClinicSelect = false;
 
   final List<DrawerItemModel> items = [
-    const DrawerItemModel(title: 'Dashboard', image: Assets.imagesDashboard),
+    const DrawerItemModel(title: 'Dashboard', image: AppImages.imagesDashboard),
     const DrawerItemModel(
-        title: 'Listing', image: Assets.imagesLibraryAddCheck),
+        title: 'Listing', image: AppImages.imagesLibraryAddCheck),
     const DrawerItemModel(
-        title: 'My Clinic', image: Assets.imagesLibraryAddCheck),
-    const DrawerItemModel(title: 'Payment', image: Assets.imagesStorefront),
+        title: 'My Clinic', image: AppImages.imagesLibraryAddCheck),
+    const DrawerItemModel(title: 'Payment', image: AppImages.imagesStorefront),
     const DrawerItemModel(
-        title: 'Profile and Settings', image: Assets.imagesSettings),
+        title: 'Profile and Settings', image: AppImages.imagesSettings),
     const DrawerItemModel(
-        title: 'Help and Support', image: Assets.imagesSupportAgent),
+        title: 'Help and Support', image: AppImages.imagesSupportAgent),
   ];
-
 
   @override
   void didPushNext() {
@@ -71,26 +69,20 @@ class _DrawerItemsListViewState extends State<DrawerItemsListView>
               MyClinicSelect = (index == 2);
             });
 
-
             switch (index) {
               case 1:
-                context.push(AppRoutes.listingAddMoreListingView);
+                context.push(Routes.listingAddMoreListingView);
                 break;
               case 5:
-                context.push(AppRoutes.loginStep1View);
+                context.push(Routes.loginStep1View);
                 break;
               case 3:
-                context.push(AppRoutes.paymentPageView);
+                context.push(Routes.paymentPageView);
                 break;
-
 
               default:
                 print("");
             }
-
-
-
-
           },
           child: Padding(
             padding: const EdgeInsets.only(top: 20),

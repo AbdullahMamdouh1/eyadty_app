@@ -1,15 +1,15 @@
-import 'package:eyadty_app/core/helper_functions/on_generate_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../../../../core/routing/routes.dart';
 import '../../../../../../core/utils/app_colors.dart';
+import '../../../../../../core/utils/app_images.dart';
 import '../../../../../../core/widgets/custom_button.dart';
-import '../../../../../../generated/assets.dart';
 import '../../../../../listing/presentation/views/widgets/title_text.dart';
 import 'list_view_item_patients_hub.dart';
 import 'table_patients_hub.dart';
 
-class  PatientsPageViewBody extends StatelessWidget {
+class PatientsPageViewBody extends StatelessWidget {
   PatientsPageViewBody({super.key});
   final table5 = TablePatientsHub();
   @override
@@ -32,13 +32,12 @@ class  PatientsPageViewBody extends StatelessWidget {
               textDirection: TextDirection.rtl,
               child: CustomButton(
                 onPressed: () {
-
-                  context.push(AppRoutes.addNewPatientView);
+                  context.push(Routes.addNewPatientView);
                 },
                 text: "Add New Patient",
                 Width: 190,
                 color: AppColors.greenColor,
-                image: Assets.imagesAdd,
+                image: AppImages.imagesAdd,
               )),
           SizedBox(
             height: 32,
@@ -102,10 +101,7 @@ class  PatientsPageViewBody extends StatelessWidget {
           SizedBox(
             height: 20,
           ),
-
-          table5.TableShape(
-              Child: ListViewItemPatientsHub(),
-              height: 400),
+          table5.TableShape(Child: ListViewItemPatientsHub(), height: 400),
           SizedBox(
             height: 50,
           )

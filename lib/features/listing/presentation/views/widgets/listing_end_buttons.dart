@@ -3,8 +3,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../../../../../core/utils/app_colors.dart';
+import '../../../../../core/utils/app_images.dart';
 import '../../../../../core/widgets/custom_button.dart';
-import '../../../../../generated/assets.dart';
 
 class ListingEndButtons extends StatelessWidget {
   const ListingEndButtons({
@@ -15,7 +15,8 @@ class ListingEndButtons extends StatelessWidget {
     required this.onPressedButtonBack,
     required this.textButton1,
     required this.imageButton1,
-    required this.textButton2, required this.Visible,
+    required this.textButton2,
+    required this.Visible,
   });
   final VoidCallback onPressedButton1;
   final VoidCallback onPressedButton2;
@@ -24,7 +25,7 @@ class ListingEndButtons extends StatelessWidget {
   final String textButton1;
   final String imageButton1;
   final String textButton2;
-final bool Visible;
+  final bool Visible;
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -68,7 +69,7 @@ final bool Visible;
           child: CustomButton(
               onPressed: onPressedButton2,
               text: textButton2,
-              image: Assets.imagesArrowForward,
+              image: AppImages.imagesArrowForward,
               color: AppColors.greenColor),
         ),
         SizedBox(
@@ -84,7 +85,7 @@ final bool Visible;
                 child: CustomButton(
                     onPressed: onPressedButtonSave,
                     text: "Save As Draft ",
-                    image: Assets.imagesSave,
+                    image: AppImages.imagesSave,
                     color: AppColors.blueColor),
               ),
             ),

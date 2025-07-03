@@ -1,26 +1,28 @@
-import 'package:eyadty_app/core/helper_functions/on_generate_routes.dart';
 import 'package:eyadty_app/core/utils/app_colors.dart';
 import 'package:eyadty_app/core/widgets/custom_button.dart';
 import 'package:eyadty_app/features/auth/presentation/views/widgets/custom_check_box.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../../../../core/routing/routes.dart';
+import '../../../../../../core/utils/app_images.dart';
 import '../../../../../../core/widgets/custom_container_shape.dart';
-import '../../../../../../generated/assets.dart';
 import '../../../../../listing/presentation/views/widgets/title_text.dart';
 import 'emergency_contact2.dart';
 import 'medical_history2.dart';
 import 'patient_controller2.dart';
 import 'patient_information2.dart';
 
-class  UploadMedicalFilePageViewBody extends StatefulWidget {
-  UploadMedicalFilePageViewBody({super.key});
+class UploadMedicalFilePageViewBody extends StatefulWidget {
+  const UploadMedicalFilePageViewBody({super.key});
 
   @override
-  State<UploadMedicalFilePageViewBody> createState() => _UploadMedicalFilePageViewBodyState();
+  State<UploadMedicalFilePageViewBody> createState() =>
+      _UploadMedicalFilePageViewBodyState();
 }
 
-class _UploadMedicalFilePageViewBodyState extends State<UploadMedicalFilePageViewBody> {
+class _UploadMedicalFilePageViewBodyState
+    extends State<UploadMedicalFilePageViewBody> {
   final Controller = PatientController2();
 
   @override
@@ -44,7 +46,7 @@ class _UploadMedicalFilePageViewBodyState extends State<UploadMedicalFilePageVie
               Width: 190,
               text: "Add New Patient",
               color: AppColors.greenColor,
-              image: Assets.imagesAdd,
+              image: AppImages.imagesAdd,
             ),
           ),
           SizedBox(height: 32),
@@ -79,18 +81,18 @@ class _UploadMedicalFilePageViewBodyState extends State<UploadMedicalFilePageVie
                     SizedBox(height: 16),
                     CustomButton(
                       onPressed: () {
-                        context.push(AppRoutes.completePatientRecordView);
+                        context.push(Routes.completePatientRecordView);
                       },
                       text: "Save Changes",
                       Width: 170,
                       color: AppColors.greenColor,
-                      image: Assets.imagesSave,
+                      image: AppImages.imagesSave,
                     ),
                   ],
                 ),
               ),
             ),
-           ),
+          ),
           SizedBox(
             height: 40,
           )

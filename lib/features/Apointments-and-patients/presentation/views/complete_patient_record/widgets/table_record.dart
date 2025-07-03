@@ -1,12 +1,10 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../../../../../../core/utils/app_colors.dart';
+import '../../../../../../core/utils/app_images.dart';
 import '../../../../../../core/utils/app_text_styles.dart';
 import '../../../../../../core/widgets/custom_container_shape.dart';
-import '../../../../../../generated/assets.dart';
 
 class TableRecord {
   TableShape({required Child, required double height}) {
@@ -30,7 +28,7 @@ class TableRecord {
                       SizedBox(
                         width: 10,
                       ),
-                      SvgPicture.asset(Assets.imagesSort)
+                      SvgPicture.asset(AppImages.imagesSort)
                     ],
                   ),
                   Row(
@@ -42,10 +40,10 @@ class TableRecord {
                       SizedBox(
                         width: 10,
                       ),
-                      SvgPicture.asset(Assets.imagesSort)
+                      SvgPicture.asset(AppImages.imagesSort)
                     ],
                   ),
-                  SvgPicture.asset(Assets.imagesMoreVert)
+                  SvgPicture.asset(AppImages.imagesMoreVert)
                 ],
               ),
             ),
@@ -61,7 +59,7 @@ class TableRecord {
           Child,
         ],
       ),
-     );
+    );
   }
 
   ////////////////////////////////  TableInformation
@@ -97,7 +95,7 @@ class TableRecord {
             SizedBox(width: 20),
             GestureDetector(
                 onTap: onPressed,
-                child: SvgPicture.asset(Assets.imagesMoreVert))
+                child: SvgPicture.asset(AppImages.imagesMoreVert))
           ],
         ),
       ),

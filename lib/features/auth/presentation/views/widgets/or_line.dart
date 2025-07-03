@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../../../../../core/utils/app_images.dart';
 import '../../../../../core/widgets/custom_button.dart';
-import '../../../../../generated/assets.dart';
 import 'end_text.dart';
 
 class OrLine extends StatelessWidget {
@@ -43,7 +43,7 @@ class OrLine extends StatelessWidget {
           child: CustomButton(
             onPressed: () {},
             text: 'Sign Up with Google',
-            image: Assets.imagesGoogle,
+            image: AppImages.imagesGoogle,
             color: Colors.blue,
           ),
         ),
@@ -55,7 +55,7 @@ class OrLine extends StatelessWidget {
           child: CustomButton(
             onPressed: () {},
             text: 'Sign Up with Apple',
-            image: Assets.imagesApple,
+            image: AppImages.imagesApple,
             color: Colors.blue,
           ),
         ),
@@ -70,4 +70,3 @@ class OrLine extends StatelessWidget {
     );
   }
 }
-

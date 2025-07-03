@@ -3,8 +3,8 @@ import 'package:eyadty_app/core/utils/app_text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import '../../../core/utils/app_images.dart';
 import '../../../core/widgets/custom_container_shape.dart';
-import '../../../generated/assets.dart';
 
 class WhatIncluded extends StatelessWidget {
   const WhatIncluded({
@@ -46,7 +46,7 @@ class WhatIncluded extends StatelessWidget {
               sizedBox,
               Row(
                 children: [
-                  SvgPicture.asset(Assets.imagesShoppingCart),
+                  SvgPicture.asset(AppImages.imagesShoppingCart),
                   SizedBox(
                     width: 7,
                   ),
@@ -59,7 +59,7 @@ class WhatIncluded extends StatelessWidget {
               sizedBox,
               Row(
                 children: [
-                  SvgPicture.asset(Assets.imagesCheckCircle),
+                  SvgPicture.asset(AppImages.imagesCheckCircle),
                   SizedBox(
                     width: 7,
                   ),
@@ -72,7 +72,7 @@ class WhatIncluded extends StatelessWidget {
               sizedBox,
               Row(
                 children: [
-                  SvgPicture.asset(Assets.imagesSecurity),
+                  SvgPicture.asset(AppImages.imagesSecurity),
                   SizedBox(
                     width: 7,
                   ),

@@ -1,11 +1,10 @@
- import 'package:eyadty_app/core/helper_functions/on_generate_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../../../../core/routing/routes.dart';
 import '../../../../../../core/utils/app_colors.dart';
+import '../../../../../../core/utils/app_images.dart';
 import '../../../../../../core/widgets/custom_container_shape.dart';
-import '../../../../../../core/widgets/custom_text_field.dart';
-import '../../../../../../generated/assets.dart';
 import '../../widgets/listing_end_buttons.dart';
 import '../../widgets/listing_steps_line.dart';
 import '../../widgets/title_text.dart';
@@ -52,27 +51,27 @@ class _ListingAddListStep4ViewBodyState
                   button.buildButton(
                       onPressedButton1: () {},
                       textButton1: "Upload Clinic Logo ",
-                      imageButton1: Assets.imagesUpload),
+                      imageButton1: AppImages.imagesUpload),
                   sizedBox,
                   button.buildButton(
                       onPressedButton1: () {},
                       textButton1: "Upload Doctor Photo",
-                      imageButton1: Assets.imagesUpload),
+                      imageButton1: AppImages.imagesUpload),
                   sizedBox,
                   button.buildButton(
                       onPressedButton1: () {},
                       textButton1: "Upload Clinic Photos",
-                      imageButton1: Assets.imagesUpload),
+                      imageButton1: AppImages.imagesUpload),
                   sizedBox,
                   button.buildButton(
                       onPressedButton1: () {},
                       textButton1: "Upload Certifications",
-                      imageButton1: Assets.imagesUpload),
+                      imageButton1: AppImages.imagesUpload),
                   sizedBox,
                   button.buildButton(
                       onPressedButton1: () {},
                       textButton1: "Upload Video",
-                      imageButton1: Assets.imagesUpload),
+                      imageButton1: AppImages.imagesUpload),
                   SizedBox(
                     height: 80,
                   ),
@@ -81,11 +80,11 @@ class _ListingAddListStep4ViewBodyState
                     fit: BoxFit.scaleDown,
                     child: Row(
                       children: [
-                        Image(image: AssetImage(Assets.imagesBody)),
+                        Image(image: AssetImage(AppImages.imagesBody)),
                         SizedBox(
                           width: 8,
                         ),
-                        Image(image: AssetImage(Assets.imagesBody)),
+                        Image(image: AssetImage(AppImages.imagesBody)),
                       ],
                     ),
                   ),
@@ -93,7 +92,7 @@ class _ListingAddListStep4ViewBodyState
                   ListingEndButtons(
                     onPressedButton1: () {},
                     onPressedButton2: () {
-                      context.push(AppRoutes.listingAddListStep5View);
+                      context.push(Routes.listingAddListStep5View);
                     },
                     onPressedButtonSave: () {},
                     onPressedButtonBack: () {
@@ -101,13 +100,13 @@ class _ListingAddListStep4ViewBodyState
                     },
                     textButton1: 'Upload Your Image',
                     textButton2: 'Upload Multimedia',
-                    imageButton1: Assets.imagesUpload,
+                    imageButton1: AppImages.imagesUpload,
                     Visible: false,
                   )
                 ],
               ),
             ),
-           ),
+          ),
           SizedBox(
             height: 40,
           )

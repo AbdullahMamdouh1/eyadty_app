@@ -1,16 +1,11 @@
 import 'package:eyadty_app/features/listing/presentation/views/payout_dashboard/widgets/patient_chart.dart';
-import 'package:eyadty_app/features/listing/presentation/views/payout_dashboard/widgets/row_buttons.dart';
 import 'package:eyadty_app/features/listing/presentation/views/payout_dashboard/widgets/trends_buttons.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../../../core/utils/app_colors.dart';
 import '../../../../../../core/utils/app_text_styles.dart';
-import '../../../../../../core/widgets/custom_button.dart';
 import '../../../../../../core/widgets/custom_container_shape.dart';
-import '../../../../../../generated/assets.dart';
-import 'income_chart.dart';
 
-class  TrendsAndInsights extends StatelessWidget {
+class TrendsAndInsights extends StatelessWidget {
   const TrendsAndInsights({super.key});
 
   @override
@@ -25,26 +20,25 @@ class  TrendsAndInsights extends StatelessWidget {
               "Trends and Insights",
               style: AppStyles.bold18,
             ),
-
             SizedBox(
               height: 16,
             ),
-            TrendsButtons(text: 'Last Week',),
+            TrendsButtons(
+              text: 'Last Week',
+            ),
             SizedBox(
               height: 16,
             ),
-            TrendsButtons(text: 'Earnings Trends',),
-
-
-          SizedBox(
-            height: 20,
-          ),
+            TrendsButtons(
+              text: 'Earnings Trends',
+            ),
+            SizedBox(
+              height: 20,
+            ),
             PatientChart(),
-
           ],
         ),
       ),
-     );
-
+    );
   }
 }

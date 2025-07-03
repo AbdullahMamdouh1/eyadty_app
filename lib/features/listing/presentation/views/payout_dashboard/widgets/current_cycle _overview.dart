@@ -2,11 +2,11 @@ import 'package:eyadty_app/features/listing/presentation/views/payout_dashboard/
 import 'package:flutter/material.dart';
 
 import '../../../../../../core/utils/app_colors.dart';
+import '../../../../../../core/utils/app_images.dart';
 import '../../../../../../core/utils/app_text_styles.dart';
 import '../../../../../../core/widgets/custom_button.dart';
 import '../../../../../../core/widgets/custom_container_shape.dart';
 import '../../../../../../core/widgets/fitted_box.dart';
-import '../../../../../../generated/assets.dart';
 import 'income_chart.dart';
 
 class CurrentCycleOverview extends StatelessWidget {
@@ -46,12 +46,11 @@ class CurrentCycleOverview extends StatelessWidget {
               onPressed: () {},
               text: 'View Details',
               color: AppColors.greenColor,
-              image: Assets.imagesView,
+              image: AppImages.imagesView,
             )
           ],
         ),
       ),
-     );
-    ;
+    );
   }
 }
