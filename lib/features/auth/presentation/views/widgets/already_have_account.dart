@@ -1,7 +1,7 @@
-import 'package:eyadty_app/core/helper_functions/on_generate_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../../../core/routing/routes.dart';
 import '../../../../../core/utils/app_colors.dart';
 import '../../../../../core/utils/app_text_styles.dart';
 
@@ -20,8 +20,8 @@ class AlreadyHaveAccount extends StatelessWidget {
           style: AppStyles.regular15,
         ),
         GestureDetector(
-          onTap: (){
-            context.push(AppRoutes.loginStep1View);
+          onTap: () {
+            context.push(Routes.loginStep1View);
           },
           child: Text(
             "Login",
@@ -48,8 +48,8 @@ class DontHaveAccount extends StatelessWidget {
           style: AppStyles.regular15,
         ),
         GestureDetector(
-          onTap: (){
-            context.push(AppRoutes.signupView);
+          onTap: () {
+            context.push(Routes.signupView);
           },
           child: Text(
             "Sign Up",

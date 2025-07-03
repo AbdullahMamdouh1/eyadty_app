@@ -1,12 +1,12 @@
- import 'package:eyadty_app/core/helper_functions/on_generate_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../../../../core/routing/routes.dart';
 import '../../../../../../core/utils/app_colors.dart';
+import '../../../../../../core/utils/app_images.dart';
 import '../../../../../../core/widgets/CustomTextFormFieldHeight.dart';
 import '../../../../../../core/widgets/custom_container_shape.dart';
 import '../../../../../../core/widgets/custom_text_field.dart';
-import '../../../../../../generated/assets.dart';
 import '../../widgets/listing_end_buttons.dart';
 import '../../widgets/listing_steps_line.dart';
 import '../../widgets/title_text.dart';
@@ -141,14 +141,14 @@ class _ListingAddListStep3ViewBodyState
                         return null;
                       },
                       controller: Controller,
-                       text: 'Professional Summary	',
+                      text: 'Professional Summary	',
                       hintText: 'Briefly describe your expertise.',
                     ),
                     sizedBox,
                     ListingEndButtons(
                       onPressedButton1: () {},
                       onPressedButton2: () {
-                        context.push(AppRoutes.listingAddListStep4View);
+                        context.push(Routes.listingAddListStep4View);
                       },
                       onPressedButtonSave: () {},
                       onPressedButtonBack: () {
@@ -156,14 +156,14 @@ class _ListingAddListStep3ViewBodyState
                       },
                       textButton1: 'Upload Your Image',
                       textButton2: 'Upload Multimedia',
-                      imageButton1: Assets.imagesUpload,
+                      imageButton1: AppImages.imagesUpload,
                       Visible: true,
                     )
                   ],
                 ),
               ),
             ),
-           ),
+          ),
           SizedBox(
             height: 40,
           )

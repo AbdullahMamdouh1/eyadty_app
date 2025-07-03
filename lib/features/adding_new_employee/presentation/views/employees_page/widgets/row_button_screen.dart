@@ -1,12 +1,12 @@
-import 'package:eyadty_app/core/helper_functions/on_generate_routes.dart';
 import 'package:eyadty_app/core/utils/app_text_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../../../../core/routing/routes.dart';
 import '../../../../../../core/utils/app_colors.dart';
+import '../../../../../../core/utils/app_images.dart';
 import '../../../../../../core/widgets/custom_button.dart';
 import '../../../../../../core/widgets/fitted_box.dart';
-import '../../../../../../generated/assets.dart';
 
 class RowButtonScreen extends StatelessWidget {
   const RowButtonScreen({
@@ -29,11 +29,11 @@ class RowButtonScreen extends StatelessWidget {
             textDirection: TextDirection.rtl,
             child: CustomButton(
                 onPressed: () {
-                  context.push(AppRoutes.addNewEmployeePageView);
+                  context.push(Routes.addNewEmployeePageView);
                 },
                 text: "Add New Employee",
                 Width: 200,
-                image: Assets.imagesAdd,
+                image: AppImages.imagesAdd,
                 color: AppColors.greenColor),
           )
         ],

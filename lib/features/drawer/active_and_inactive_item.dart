@@ -1,6 +1,5 @@
 import 'package:eyadty_app/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_svg/svg.dart';
 
 import '../../core/utils/app_text_styles.dart';
@@ -74,10 +73,7 @@ class ActiveDrawerItem extends StatelessWidget {
                   ),
                 ],
               )),
-          if (MyClinicSelect)
-            Column(
-              children: [SizedBox(height: 370, child: CustomDrawer2())],
-            ),
+          if (MyClinicSelect) CustomDrawer2(),
         ],
       ),
     );

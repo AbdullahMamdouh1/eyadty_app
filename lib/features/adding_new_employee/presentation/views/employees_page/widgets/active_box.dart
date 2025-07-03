@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 import '../../../../../../core/utils/app_colors.dart';
+import '../../../../../../core/utils/app_images.dart';
 import '../../../../../../core/utils/app_text_styles.dart';
 import '../../../../../../core/widgets/custom_button.dart';
-import '../../../../../../generated/assets.dart';
 
 class ActiveBox extends StatelessWidget {
   const ActiveBox({
@@ -28,11 +28,10 @@ class ActiveBox extends StatelessWidget {
               children: [
                 SizedBox(
                   height: 35,
-
                   child: CustomButton(
                       onPressed: () {},
                       text: "Active",
-                      image: Assets.imagesTrue,
+                      image: AppImages.imagesTrue,
                       Width: 100,
                       color: Colors.green),
                 ),
@@ -43,7 +42,7 @@ class ActiveBox extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     CircleAvatar(
-                      backgroundImage: AssetImage(Assets.imagesPerson),
+                      backgroundImage: AssetImage(AppImages.imagesPerson),
                       radius: 25,
                     ),
                     SizedBox(

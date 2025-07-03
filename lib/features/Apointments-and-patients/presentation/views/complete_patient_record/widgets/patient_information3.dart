@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
+import '../../../../../../core/utils/app_images.dart';
 import '../../../../../../core/utils/app_text_styles.dart';
 import '../../../../../../core/widgets/custom_text_field.dart';
-import '../../../../../../generated/assets.dart';
 import 'patient_controller3.dart';
 
 class PatientInformation3 extends StatelessWidget {
@@ -17,7 +17,7 @@ class PatientInformation3 extends StatelessWidget {
         Row(
           children: [
             CircleAvatar(
-              backgroundImage: AssetImage(Assets.imagesPerson),
+              backgroundImage: AssetImage(AppImages.imagesPerson),
             ),
             SizedBox(
               width: 5,

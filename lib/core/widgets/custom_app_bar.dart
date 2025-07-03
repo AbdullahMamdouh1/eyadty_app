@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../../generated/assets.dart';
+import '../utils/app_images.dart';
 import 'custom_search.dart';
 
 class CustomAppBar extends StatelessWidget {
@@ -20,8 +20,8 @@ class CustomAppBar extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    SvgPicture.asset(Assets.imagesLogo),
-                    SvgPicture.asset(Assets.imagesStar),
+                    SvgPicture.asset(AppImages.imagesLogo),
+                    SvgPicture.asset(AppImages.imagesStar),
                   ],
                 ),
                 SizedBox(
@@ -30,20 +30,16 @@ class CustomAppBar extends StatelessWidget {
                 Row(
                   children: [
                     GestureDetector(
-                    onTap: (){
-
-                      Scaffold.of(context).openDrawer();
-                    }
-                      ,
-                        child: SvgPicture.asset(Assets.imagesStar)),
+                        onTap: () {
+                          Scaffold.of(context).openDrawer();
+                        },
+                        child: SvgPicture.asset(AppImages.imagesStar)),
                     SizedBox(
                       width: 16,
                     ),
                     CustomSearch()
                   ],
                 ),
-
-
               ],
             ),
           ),

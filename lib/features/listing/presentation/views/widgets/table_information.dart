@@ -2,9 +2,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../../../core/utils/app_colors.dart';
+import '../../../../../core/utils/app_images.dart';
 import '../../../../../core/utils/app_text_styles.dart';
 import '../../../../../core/widgets/custom_container_shape.dart';
-import '../../../../../generated/assets.dart';
 
 class Table1 {
   TableShape({required Child, required double height}) {
@@ -46,7 +46,7 @@ class Table1 {
           Child,
         ],
       ),
-     );
+    );
   }
 
   ////////////////////////////////  TableInformation
@@ -81,7 +81,7 @@ class Table1 {
             ),
             SizedBox(width: 20),
             GestureDetector(
-                onTap: onPressed, child: SvgPicture.asset(Assets.imagesEdit))
+                onTap: onPressed, child: SvgPicture.asset(AppImages.imagesEdit))
           ],
         ),
       ),
@@ -119,7 +119,7 @@ class Table2 {
                       SizedBox(
                         width: 8,
                       ),
-                      SvgPicture.asset(Assets.imagesSort)
+                      SvgPicture.asset(AppImages.imagesSort)
                     ],
                   ),
                 ],
@@ -137,7 +137,7 @@ class Table2 {
           Child,
         ],
       ),
-     );
+    );
   }
 
   ////////////////////////////////  TableInformation
@@ -186,7 +186,3 @@ class Table2 {
     );
   }
 }
-
-
-
-

@@ -1,0 +1,38 @@
+class Routes {
+  static const String patientsPageView = '/patients';
+  static const String completePatientRecordView = '/completePatientRecord';
+  static const String appointmentsPageView = '/appointments';
+  static const String addNewPatientView = '/addNewPatient';
+  static const String uploadMedicalFilePageView = '/uploadMedicalFile';
+  static const String employeesPageView = '/employeesPageView';
+  static const String employeeAddedSuccessfully = '/employeeAddedSuccessfully';
+  static const String addNewEmployeePageView = '/addNewEmployee';
+  static const String signupStep3View = '/signupStep3';
+  static const String signupStep2View = '/signupStep2';
+  static const String signupView = '/signup';
+  static const String loginVerifyView = '/loginVerify';
+  static const String loginStep1View = '/loginStep1';
+  static const String passwordResetCard = '/passwordResetCard';
+  static const String forgotPasswordStep3View = '/forgotPasswordStep3';
+  static const String forgotPasswordStep2View = '/forgotPasswordStep2';
+  static const String forgotPasswordStep1View = '/forgotPasswordStep1';
+  static const String offersListingPageView = '/offersListing';
+  static const String manageListingPageView = '/manageListing';
+  static const String createOfferpageView = '/createOffer';
+  static const String clinicListingPageView = '/clinicListing';
+  static const String payoutDashboardView = '/payoutDashboard';
+  static const String listingAddMoreListingView = '/listingAddMoreListing';
+  static const String listingAddListStep5View = '/listingAddListStep5';
+  static const String listingAddListStep4View = '/listingAddListStep4';
+  static const String listingAddListStep3View = '/listingAddListStep3';
+  static const String listingAddListStep2View = '/listingAddListStep2';
+  static const String listingAddListStep1View = '/listingAddListStep1';
+  static const String dialogPayment = '/DialogPayment';
+  static const String paymentPageView = '/PaymentPageView';
+  static const promotionsView = '/promotionsView';
+  static const newCampaign1 = '/newCampaign1';
+  static const newCampaign2 = '/newCampaign2';
+  static const newCampaign3 = '/newCampaign3';
+
+  static const campaignHistory = '/campaignHistory';
+}

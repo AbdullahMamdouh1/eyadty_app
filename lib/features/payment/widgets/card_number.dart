@@ -2,9 +2,9 @@ import 'package:eyadty_app/features/payment/widgets/save_card.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
+import '../../../core/utils/app_images.dart';
 import '../../../core/widgets/custom_container_shape.dart';
 import '../../../core/widgets/custom_text_field.dart';
-import '../../../generated/assets.dart';
 
 class CardNumber extends StatelessWidget {
   const CardNumber({
@@ -30,7 +30,7 @@ class CardNumber extends StatelessWidget {
               CustomTextFormField2(
                   textInputType: TextInputType.name,
                   ispassword: false,
-                  suffixIcon: SvgPicture.asset(Assets.imagesBadges),
+                  suffixIcon: SvgPicture.asset(AppImages.imagesBadges),
                   text: "",
                   hintText: "Card Number"),
               CustomTextFormField2(

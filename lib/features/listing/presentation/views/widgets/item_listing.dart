@@ -1,12 +1,9 @@
 import 'package:flutter/material.dart';
 
-import '../../../../../core/utils/app_colors.dart';
 import '../../../../../core/utils/app_text_styles.dart';
-import '../../../../../core/widgets/custom_button.dart';
-import '../../../../../generated/assets.dart';
 
 class ItemListing extends StatelessWidget {
-  ItemListing({
+  const ItemListing({
     super.key,
     required this.title,
     required this.subTitle,
@@ -27,7 +24,7 @@ class ItemListing extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-       decoration: BoxDecoration(
+      decoration: BoxDecoration(
           color: color,
           border: Border.all(
             color: Colors.grey,
@@ -58,7 +55,7 @@ class ItemListing extends StatelessWidget {
                 Row(
                   children: [
                     Text(
-                      "\$${price}",
+                      "\$$price",
                       style: AppStyles.bold18,
                     ),
                     Text(

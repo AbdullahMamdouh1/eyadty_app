@@ -1,12 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
+import '../../../../../../core/utils/app_images.dart';
 import '../../../../../../core/widgets/fitted_box.dart';
-import '../../../../../../generated/assets.dart';
 import 'box_signup_with_email.dart';
 import 'box_signup_with_phon.dart';
 
 class TabBarWidget extends StatefulWidget {
+  const TabBarWidget({super.key});
+
   @override
   _TabBarWidgetState createState() => _TabBarWidgetState();
 }
@@ -58,7 +60,8 @@ class _TabBarWidgetState extends State<TabBarWidget>
                             topLeft: Radius.circular(20),
                             bottomLeft: Radius.circular(20)),
                       ),
-                      padding: EdgeInsets.symmetric(vertical: 10, horizontal: 0),
+                      padding:
+                          EdgeInsets.symmetric(vertical: 10, horizontal: 0),
                       child: Center(
                         child: Row(
                           children: [
@@ -74,9 +77,10 @@ class _TabBarWidgetState extends State<TabBarWidget>
                               width: 4,
                             ),
                             SvgPicture.asset(
-                              Assets.imagesCall,
-                              color:
-                                  _tabController.index == 0 ? null : Colors.black,
+                              AppImages.imagesCall,
+                              color: _tabController.index == 0
+                                  ? null
+                                  : Colors.black,
                             )
                           ],
                         ),
@@ -95,7 +99,8 @@ class _TabBarWidgetState extends State<TabBarWidget>
                             topRight: Radius.circular(20),
                             bottomRight: Radius.circular(20)),
                       ),
-                      padding: EdgeInsets.symmetric(vertical: 10, horizontal: 0),
+                      padding:
+                          EdgeInsets.symmetric(vertical: 10, horizontal: 0),
                       child: Center(
                         child: Row(
                           children: [
@@ -110,7 +115,7 @@ class _TabBarWidgetState extends State<TabBarWidget>
                             SizedBox(
                               width: 4,
                             ),
-                            SvgPicture.asset(Assets.imagesEmail,
+                            SvgPicture.asset(AppImages.imagesEmail,
                                 color: _tabController.index == 1
                                     ? Colors.green
                                     : null)
@@ -124,7 +129,7 @@ class _TabBarWidgetState extends State<TabBarWidget>
               indicatorColor: Colors.transparent,
             ),
           ),
-          Container(
+          SizedBox(
             height: 570,
             child: TabBarView(
               controller: _tabController,

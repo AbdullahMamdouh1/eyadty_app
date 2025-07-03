@@ -1,10 +1,10 @@
-import 'package:eyadty_app/core/helper_functions/on_generate_routes.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../../../../core/routing/routes.dart';
+import '../../../../../../core/utils/app_images.dart';
 import '../../../../../../core/widgets/custom_button.dart';
 import '../../../../../../core/widgets/custom_text_field.dart';
-import '../../../../../../generated/assets.dart';
 import 'policy_text.dart';
 
 class BoxSignupWithPhon extends StatefulWidget {
@@ -95,11 +95,10 @@ class _BoxSignupWithPhonState extends State<BoxSignupWithPhon> {
               ),
               CustomButton(
                 onPressed: () {
-
-                  context.push(AppRoutes.signupStep2View);
+                  context.push(Routes.signupStep2View);
                 },
                 text: 'Sign Up',
-                image: Assets.imagesLogin,
+                image: AppImages.imagesLogin,
                 color: Colors.green,
               ),
             ],

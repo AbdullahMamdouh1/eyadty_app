@@ -1,10 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 import 'package:go_router/go_router.dart';
 
 import '../../../../../../core/utils/app_colors.dart';
 import '../../../../../../core/utils/app_text_styles.dart';
-import '../../../../../../generated/assets.dart';
 import '../../../../core/widgets/fitted_box.dart';
 
 class EmployeeAddedSuccessfully extends StatelessWidget {

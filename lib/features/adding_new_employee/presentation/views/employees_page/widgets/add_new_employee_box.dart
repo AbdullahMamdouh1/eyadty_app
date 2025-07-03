@@ -2,9 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 import '../../../../../../core/utils/app_colors.dart';
+import '../../../../../../core/utils/app_images.dart';
 import '../../../../../../core/utils/app_text_styles.dart';
-import '../../../../../../core/widgets/custom_button.dart';
-import '../../../../../../generated/assets.dart';
 
 class AddNewEmployeeBox extends StatelessWidget {
   const AddNewEmployeeBox({
@@ -29,7 +28,7 @@ class AddNewEmployeeBox extends StatelessWidget {
                   backgroundColor: AppColors.greenColor,
                   radius: 25,
                   child: SvgPicture.asset(
-                    Assets.imagesStar,
+                    AppImages.imagesStar,
                     color: Colors.white,
                   ),
                 ),

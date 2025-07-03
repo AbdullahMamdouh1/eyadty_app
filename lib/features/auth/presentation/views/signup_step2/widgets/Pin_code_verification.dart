@@ -1,21 +1,20 @@
 import 'dart:async';
 
-import 'package:eyadty_app/core/helper_functions/on_generate_routes.dart';
 import 'package:eyadty_app/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 
+import '../../../../../../core/routing/routes.dart';
 import '../../../../../../core/utils/app_text_styles.dart';
 import '../../../../../../core/widgets/custom_button.dart';
 import '../../../../../../core/widgets/fitted_box.dart';
-import '../../../../../../generated/assets.dart';
 
 class PinCodeVerification extends StatefulWidget {
   const PinCodeVerification({
-    Key? key,
+    super.key,
     this.phoneNumber,
-  }) : super(key: key);
+  });
 
   final String? phoneNumber;
 
@@ -245,13 +244,14 @@ class _PinCodeVerificationState extends State<PinCodeVerification> {
               );
             }
 
-            context.push(AppRoutes.signupStep3View);
+            context.push(Routes.signupStep3View);
           },
           text: "Verify My Account",
           color: AppColors.greenColor,
         ),
         SizedBox(
-          height: 24,)
+          height: 24,
+        )
       ],
     );
   }

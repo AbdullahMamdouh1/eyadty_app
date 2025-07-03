@@ -3,9 +3,9 @@ import 'package:eyadty_app/core/widgets/custom_button.dart';
 import 'package:eyadty_app/features/auth/presentation/views/widgets/custom_check_box.dart';
 import 'package:flutter/material.dart';
 
+import '../../../../../../core/utils/app_images.dart';
 import '../../../../../../core/utils/app_text_styles.dart';
 import '../../../../../../core/widgets/custom_container_shape.dart';
-import '../../../../../../generated/assets.dart';
 import '../../../../../listing/presentation/views/widgets/title_text.dart';
 import 'custom_table_record2.dart';
 import 'emergency_contact3.dart';
@@ -16,7 +16,7 @@ import 'patient_information3.dart';
 import 'uploaded_medical_records.dart';
 
 class CompletePatientRecordViewBody extends StatefulWidget {
-  CompletePatientRecordViewBody({super.key});
+  const CompletePatientRecordViewBody({super.key});
 
   @override
   State<CompletePatientRecordViewBody> createState() =>
@@ -49,7 +49,7 @@ class _CompletePatientRecordViewBodyState
               Width: 190,
               text: "Log Patient Visit",
               color: AppColors.greenColor,
-              image: Assets.imagesAdd,
+              image: AppImages.imagesAdd,
             ),
           ),
           SizedBox(height: 32),
@@ -87,13 +87,13 @@ class _CompletePatientRecordViewBodyState
                       text: "Save Changes",
                       Width: 170,
                       color: AppColors.greenColor,
-                      image: Assets.imagesSave,
+                      image: AppImages.imagesSave,
                     ),
                   ],
                 ),
               ),
             ),
-           ),
+          ),
           SizedBox(
             height: 40,
           ),
@@ -121,7 +121,7 @@ class _CompletePatientRecordViewBodyState
                 ],
               ),
             ),
-           ),
+          ),
           SizedBox(
             height: 35,
           )

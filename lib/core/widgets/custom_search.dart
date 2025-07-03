@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 
-import '../../generated/assets.dart';
+import '../utils/app_images.dart';
 import '../utils/app_text_styles.dart';
 
 class CustomSearch extends StatelessWidget {
@@ -14,13 +14,14 @@ class CustomSearch extends StatelessWidget {
         height: 40,
         width: 50,
         child: TextFormField(
-      
-      
-      
-           decoration: InputDecoration(
+          decoration: InputDecoration(
             suffixIcon: Padding(
               padding: const EdgeInsets.all(10.0),
-              child: SvgPicture.asset(Assets.imagesSearch,height: 16,width: 12,),
+              child: SvgPicture.asset(
+                AppImages.imagesSearch,
+                height: 16,
+                width: 12,
+              ),
             ),
             hintStyle: AppStyles.regular15.copyWith(
               color: const Color(0xFF949D9E),

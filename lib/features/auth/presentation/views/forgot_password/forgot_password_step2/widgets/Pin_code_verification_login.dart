@@ -1,20 +1,20 @@
 import 'dart:async';
 
-import 'package:eyadty_app/core/helper_functions/on_generate_routes.dart';
 import 'package:eyadty_app/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:pin_code_fields/pin_code_fields.dart';
 
+import '../../../../../../../core/routing/routes.dart';
 import '../../../../../../../core/utils/app_text_styles.dart';
 import '../../../../../../../core/widgets/custom_button.dart';
 import '../../../../../../../core/widgets/fitted_box.dart';
 
 class PinCodeVerificationForgotPassword extends StatefulWidget {
   const PinCodeVerificationForgotPassword({
-    Key? key,
+    super.key,
     this.phoneNumber,
-  }) : super(key: key);
+  });
 
   final String? phoneNumber;
 
@@ -23,7 +23,8 @@ class PinCodeVerificationForgotPassword extends StatefulWidget {
       _PinCodeVerificationForgotPasswordState();
 }
 
-class _PinCodeVerificationForgotPasswordState extends State<PinCodeVerificationForgotPassword> {
+class _PinCodeVerificationForgotPasswordState
+    extends State<PinCodeVerificationForgotPassword> {
   TextEditingController textEditingController = TextEditingController();
   // ..text = "123456";
 
@@ -178,8 +179,6 @@ class _PinCodeVerificationForgotPasswordState extends State<PinCodeVerificationF
                       ),
                       GestureDetector(
                         onTap: () {
-
-
                           snackBar("OTP resend!!");
                         },
                         child: const Text(
@@ -207,7 +206,7 @@ class _PinCodeVerificationForgotPasswordState extends State<PinCodeVerificationF
         ),
         CustomButton2(
           onPressed: () {
-            context.push(AppRoutes.forgotPasswordStep3View);
+            context.push(Routes.forgotPasswordStep3View);
             formKey.currentState!.validate();
             // conditions for validating
             if (currentText.length != 6 || currentText != "123456") {

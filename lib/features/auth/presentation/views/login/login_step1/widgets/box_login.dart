@@ -1,10 +1,10 @@
-import 'package:eyadty_app/core/helper_functions/on_generate_routes.dart';
 import 'package:eyadty_app/core/utils/app_colors.dart';
+import 'package:eyadty_app/core/utils/app_images.dart';
 import 'package:eyadty_app/core/widgets/custom_button.dart';
-import 'package:eyadty_app/generated/assets.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../../../../../core/routing/routes.dart';
 import '../../../../../../../core/utils/app_text_styles.dart';
 import '../../../../../../../core/widgets/custom_text_field.dart';
 
@@ -72,18 +72,18 @@ class _BoxLoginState extends State<BoxLogin> {
               ),
               CustomButton(
                 onPressed: () {
-                  context.push(AppRoutes.loginVerifyView);
+                  context.push(Routes.loginVerifyView);
                 },
                 text: 'Log In',
-                image: Assets.imagesLogin,
+                image: AppImages.imagesLogin,
                 color: Colors.green,
               ),
               SizedBox(
                 height: 44,
               ),
               GestureDetector(
-                onTap: (){
-                  context.push(AppRoutes.forgotPasswordStep1View);
+                onTap: () {
+                  context.push(Routes.forgotPasswordStep1View);
                 },
                 child: Text(
                   "Forget Your Password?",

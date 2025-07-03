@@ -2,8 +2,8 @@ import 'package:eyadty_app/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../../../core/utils/app_images.dart';
 import '../../../../../core/utils/app_text_styles.dart';
-import '../../../../../generated/assets.dart';
 
 class LoginPageHero extends StatelessWidget {
   const LoginPageHero({
@@ -18,7 +18,7 @@ class LoginPageHero extends StatelessWidget {
       decoration: BoxDecoration(
         color: Colors.blue,
         image: DecorationImage(
-            image: AssetImage(Assets.imagesLoginPageHero), fit: BoxFit.fill),
+            image: AssetImage(AppImages.imagesLoginPageHero), fit: BoxFit.fill),
       ),
       child: Padding(
         padding: const EdgeInsets.only(top: 24.0, left: 32),
@@ -26,8 +26,7 @@ class LoginPageHero extends StatelessWidget {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             GestureDetector(
-              onTap: (){
-
+              onTap: () {
                 context.pop();
               },
               child: Container(

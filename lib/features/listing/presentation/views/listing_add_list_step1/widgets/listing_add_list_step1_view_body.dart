@@ -1,12 +1,12 @@
-import 'package:eyadty_app/core/helper_functions/on_generate_routes.dart';
 import 'package:eyadty_app/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../../../../core/routing/routes.dart';
+import '../../../../../../core/utils/app_images.dart';
 import '../../../../../../core/utils/app_text_styles.dart';
 import '../../../../../../core/widgets/custom_container_shape.dart';
 import '../../../../../../core/widgets/custom_text_field.dart';
-import '../../../../../../generated/assets.dart';
 import '../../widgets/listing_end_buttons.dart';
 import '../../widgets/listing_steps_line.dart';
 import '../../widgets/title_text.dart';
@@ -226,8 +226,7 @@ class _ListingAddListStep1ViewBodyState
                       ListingEndButtons(
                         onPressedButton1: () {},
                         onPressedButton2: () {
-
-                          context.push(AppRoutes.listingAddListStep2View);
+                          context.push(Routes.listingAddListStep2View);
                         },
                         onPressedButtonSave: () {},
                         onPressedButtonBack: () {
@@ -235,13 +234,13 @@ class _ListingAddListStep1ViewBodyState
                         },
                         textButton1: 'Pin Location on Map',
                         textButton2: 'Add Operational Information',
-                        imageButton1: Assets.imagesAddLocationAlt,
+                        imageButton1: AppImages.imagesAddLocationAlt,
                         Visible: true,
                       )
                     ],
                   )),
             ),
-           ),
+          ),
           SizedBox(
             height: 40,
           )

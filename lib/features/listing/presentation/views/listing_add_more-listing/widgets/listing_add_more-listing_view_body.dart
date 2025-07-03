@@ -1,12 +1,12 @@
-import 'package:eyadty_app/core/helper_functions/on_generate_routes.dart';
 import 'package:eyadty_app/core/utils/app_colors.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../../../../core/routing/routes.dart';
+import '../../../../../../core/utils/app_images.dart';
 import '../../../../../../core/utils/app_text_styles.dart';
 import '../../../../../../core/widgets/custom_button.dart';
 import '../../../../../../core/widgets/custom_container_shape.dart';
-import '../../../../../../generated/assets.dart';
 import '../../widgets/item_listing.dart';
 import '../../widgets/title_text.dart';
 
@@ -19,7 +19,6 @@ class ListingAddMoreListingViewBody extends StatelessWidget {
       padding: const EdgeInsets.only(left: 20.0, right: 20),
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
-
         children: [
           SizedBox(
             height: 32,
@@ -33,15 +32,14 @@ class ListingAddMoreListingViewBody extends StatelessWidget {
           ),
           SizedBox(
               width: 220,
-
               child: Directionality(
                   textDirection: TextDirection.rtl,
                   child: CustomButton(
                     onPressed: () {
-                      context.push(AppRoutes.listingAddListStep1View);
+                      context.push(Routes.listingAddListStep1View);
                     },
                     text: 'Add Your First Clinic',
-                    image: Assets.imagesPlus,
+                    image: AppImages.imagesPlus,
                     color: AppColors.greenColor,
                   ))),
           SizedBox(
@@ -65,12 +63,12 @@ class ListingAddMoreListingViewBody extends StatelessWidget {
                     subTitle:
                         'Orthodentist | 21 Makram Ebeid, Nasr City, Cairo, Egyot',
                     price: '50',
-                    image: Assets.imagesImageteeth,
+                    image: AppImages.imagesImageteeth,
                     customButton: CustomButton(
                         onPressed: () {},
                         Width: 90,
                         text: "Edit ",
-                        image: Assets.imagesClose,
+                        image: AppImages.imagesClose,
                         color: AppColors.greenColor),
                     Width: 320,
                     color: Colors.white,
@@ -83,12 +81,12 @@ class ListingAddMoreListingViewBody extends StatelessWidget {
                     subTitle:
                         'Orthodentist | 21 Makram Ebeid, Nasr City, Cairo, Egyot',
                     price: '50',
-                    image: Assets.imagesImageteeth,
+                    image: AppImages.imagesImageteeth,
                     customButton: CustomButton(
                         onPressed: () {},
                         Width: 180,
                         text: "Manage Listing ",
-                        image: Assets.imagesClose,
+                        image: AppImages.imagesClose,
                         color: AppColors.greenColor),
                     Width: 320,
                     color: Colors.white,
@@ -101,12 +99,12 @@ class ListingAddMoreListingViewBody extends StatelessWidget {
                     subTitle:
                         'Orthodentist | 21 Makram Ebeid, Nasr City, Cairo, Egyot',
                     price: '50',
-                    image: Assets.imagesImage,
+                    image: AppImages.imagesImage,
                     customButton: CustomButton(
                         onPressed: () {},
                         Width: 140,
                         text: "Resubmit ",
-                        image: Assets.imagesClose,
+                        image: AppImages.imagesClose,
                         color: AppColors.greenColor),
                     Width: 320,
                     color: Color(0xFFD9D9D9),
@@ -119,12 +117,12 @@ class ListingAddMoreListingViewBody extends StatelessWidget {
                     subTitle:
                         'Start building your presence by adding your first clinic today!',
                     price: '50',
-                    image: Assets.imagesImage,
+                    image: AppImages.imagesImage,
                     customButton: CustomButton(
                         onPressed: () {},
                         text: "Add A Clinic",
                         Width: 160,
-                        image: Assets.imagesClose,
+                        image: AppImages.imagesClose,
                         color: AppColors.greenColor),
                     Width: 280,
                     color: Color(0xFFD9D9D9),
@@ -135,7 +133,7 @@ class ListingAddMoreListingViewBody extends StatelessWidget {
                 ],
               ),
             ),
-           ),
+          ),
           SizedBox(
             height: 20,
           )

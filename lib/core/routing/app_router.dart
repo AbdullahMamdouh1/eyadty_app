@@ -1,5 +1,7 @@
+import 'package:eyadty_app/core/routing/routes.dart';
 import 'package:eyadty_app/features/Offers-and-promotion/presentation/views/CreateOfferPage/create_offerPage_view.dart';
 import 'package:eyadty_app/features/auth/presentation/views/forgot_password/forgot_password_step4/password_reset_card.dart';
+import 'package:eyadty_app/features/promotions/presentation/promotions_view.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
@@ -14,7 +16,6 @@ import '../../features/Offers-and-promotion/presentation/views/OffersListingPage
 import '../../features/adding_new_employee/presentation/views/add_new_employee_page/add_new_employee_page_view.dart';
 import '../../features/adding_new_employee/presentation/views/employee_added_successfully.dart';
 import '../../features/adding_new_employee/presentation/views/employees_page/employees_page_view.dart';
-
 import '../../features/auth/presentation/views/forgot_password/forgot_password_step1/forgot_password_step1_view.dart';
 import '../../features/auth/presentation/views/forgot_password/forgot_password_step2/forgot_password_step2_view.dart';
 import '../../features/auth/presentation/views/forgot_password/forgot_password_step3/forgot_password_step3_view.dart';
@@ -32,167 +33,153 @@ import '../../features/listing/presentation/views/listing_add_more-listing/listi
 import '../../features/listing/presentation/views/payout_dashboard/payout_dashboard_view.dart';
 import '../../features/listing/presentation/views/widgets/dialog_payment.dart';
 import '../../features/payment/Payment-page_view.dart';
+import '../../features/promotions/presentation/new_campaign_step1_view.dart';
+import '../../features/promotions/presentation/new_campaign_step2_view.dart';
+import '../../features/promotions/presentation/new_campaign_step3_view.dart';
 
-class AppRoutes {
-  static const String patientsPageView = '/patients';
-  static const String completePatientRecordView = '/completePatientRecord';
-  static const String appointmentsPageView = '/appointments';
-  static const String addNewPatientView = '/addNewPatient';
-  static const String uploadMedicalFilePageView = '/uploadMedicalFile';
-  static const String employeesPageView = '/employeesPageView';
-  static const String employeeAddedSuccessfully = '/employeeAddedSuccessfully';
-  static const String addNewEmployeePageView = '/addNewEmployee';
-  static const String signupStep3View = '/signupStep3';
-  static const String signupStep2View = '/signupStep2';
-  static const String signupView = '/signup';
-  static const String loginVerifyView = '/loginVerify';
-  static const String loginStep1View = '/loginStep1';
-  static const String passwordResetCard = '/passwordResetCard';
-  static const String forgotPasswordStep3View = '/forgotPasswordStep3';
-  static const String forgotPasswordStep2View = '/forgotPasswordStep2';
-  static const String forgotPasswordStep1View = '/forgotPasswordStep1';
-  static const String offersListingPageView = '/offersListing';
-  static const String manageListingPageView = '/manageListing';
-  static const String createOfferpageView = '/createOffer';
-  static const String clinicListingPageView = '/clinicListing';
-  static const String payoutDashboardView = '/payoutDashboard';
-  static const String listingAddMoreListingView = '/listingAddMoreListing';
-  static const String listingAddListStep5View = '/listingAddListStep5';
-  static const String listingAddListStep4View = '/listingAddListStep4';
-  static const String listingAddListStep3View = '/listingAddListStep3';
-  static const String listingAddListStep2View = '/listingAddListStep2';
-  static const String listingAddListStep1View = '/listingAddListStep1';
-  static const String dialogPayment = '/DialogPayment';
-  static const String paymentPageView = '/PaymentPageView';
-
-
-
+class AppRouter {
   static final GoRouter router = GoRouter(
-    initialLocation: loginStep1View,
+    initialLocation: Routes.loginStep1View,
     routes: [
       GoRoute(
-        path: patientsPageView,
+        path: Routes.patientsPageView,
         builder: (context, state) => const PatientsPageView(),
       ),
       GoRoute(
-        path: completePatientRecordView,
+        path: Routes.completePatientRecordView,
         builder: (context, state) => const CompletePatientRecordView(),
       ),
       GoRoute(
-        path: appointmentsPageView,
+        path: Routes.appointmentsPageView,
         builder: (context, state) => const AppointmentsPageView(),
       ),
       GoRoute(
-        path: addNewPatientView,
+        path: Routes.addNewPatientView,
         builder: (context, state) => const AddNewPatientView(),
       ),
       GoRoute(
-        path: uploadMedicalFilePageView,
+        path: Routes.uploadMedicalFilePageView,
         builder: (context, state) => const UploadMedicalFilePageView(),
       ),
       GoRoute(
-        path: employeesPageView,
+        path: Routes.employeesPageView,
         builder: (context, state) => const EmployeesPageView(
           index: 1,
         ),
       ),
       GoRoute(
-        path: employeeAddedSuccessfully,
+        path: Routes.employeeAddedSuccessfully,
         builder: (context, state) => const EmployeeAddedSuccessfully(),
       ),
       GoRoute(
-        path: addNewEmployeePageView,
+        path: Routes.addNewEmployeePageView,
         builder: (context, state) => const AddNewEmployeePageView(
           index: 1,
         ),
       ),
       GoRoute(
-        path: signupStep3View,
+        path: Routes.signupStep3View,
         builder: (context, state) => const SignupStep3View(),
       ),
       GoRoute(
-        path: signupStep2View,
+        path: Routes.signupStep2View,
         builder: (context, state) => const SignupStep2View(),
       ),
       GoRoute(
-        path: signupView,
+        path: Routes.signupView,
         builder: (context, state) => const SignupView(),
       ),
       GoRoute(
-        path: loginVerifyView,
+        path: Routes.loginVerifyView,
         builder: (context, state) => const LoginVerifyView(),
       ),
       GoRoute(
-        path: loginStep1View,
+        path: Routes.loginStep1View,
         builder: (context, state) => const LoginStep1View(),
       ),
       GoRoute(
-        path: passwordResetCard,
+        path: Routes.passwordResetCard,
         builder: (context, state) => const PasswordResetCard(),
       ),
       GoRoute(
-        path: forgotPasswordStep3View,
+        path: Routes.forgotPasswordStep3View,
         builder: (context, state) => const ForgotPasswordStep3View(),
       ),
       GoRoute(
-        path: forgotPasswordStep2View,
+        path: Routes.forgotPasswordStep2View,
         builder: (context, state) => const ForgotPasswordStep2View(),
       ),
       GoRoute(
-        path: forgotPasswordStep1View,
+        path: Routes.forgotPasswordStep1View,
         builder: (context, state) => const ForgotPasswordStep1View(),
       ),
       GoRoute(
-        path: offersListingPageView,
+        path: Routes.offersListingPageView,
         builder: (context, state) => const OffersListingPageView(),
       ),
       GoRoute(
-        path: manageListingPageView,
+        path: Routes.manageListingPageView,
         builder: (context, state) => const ManageListingPageView(),
       ),
       GoRoute(
-        path: createOfferpageView,
+        path: Routes.createOfferpageView,
         builder: (context, state) => const CreateOfferpageView(),
       ),
       GoRoute(
-        path: clinicListingPageView,
+        path: Routes.clinicListingPageView,
         builder: (context, state) => const ClinicListingPageView(),
       ),
       GoRoute(
-        path: payoutDashboardView,
+        path: Routes.payoutDashboardView,
         builder: (context, state) => const PayoutDashboardView(),
       ),
       GoRoute(
-        path: listingAddMoreListingView,
+        path: Routes.listingAddMoreListingView,
         builder: (context, state) => const ListingAddMoreListingView(),
       ),
       GoRoute(
-        path: listingAddListStep5View,
+        path: Routes.listingAddListStep5View,
         builder: (context, state) => const ListingAddListStep5View(),
       ),
       GoRoute(
-        path: listingAddListStep4View,
+        path: Routes.listingAddListStep4View,
         builder: (context, state) => const ListingAddListStep4View(),
       ),
       GoRoute(
-        path: listingAddListStep3View,
+        path: Routes.listingAddListStep3View,
         builder: (context, state) => const ListingAddListStep3View(),
       ),
       GoRoute(
-        path: listingAddListStep2View,
+        path: Routes.listingAddListStep2View,
         builder: (context, state) => const ListingAddListStep2View(),
       ),
       GoRoute(
-        path: listingAddListStep1View,
+        path: Routes.listingAddListStep1View,
         builder: (context, state) => const ListingAddListStep1View(),
       ),
       GoRoute(
-        path: dialogPayment,
+        path: Routes.dialogPayment,
         builder: (context, state) => const DialogPayment(),
       ),
       GoRoute(
-        path: paymentPageView,
+        path: Routes.paymentPageView,
         builder: (context, state) => const PaymentPageView(),
+      ),
+      GoRoute(
+        path: Routes.promotionsView,
+        builder: (context, state) => const PromotionsView(),
+      ),
+      GoRoute(
+        path: Routes.newCampaign1,
+        builder: (context, state) => const NewCampaignStep1View(),
+      ),
+      GoRoute(
+        path: Routes.newCampaign2,
+        builder: (context, state) => const NewCampaignStep2View(),
+      ),
+      GoRoute(
+        path: Routes.newCampaign3,
+        builder: (context, state) => const NewCampaignStep3View(),
       ),
     ],
     errorBuilder: (context, state) => Scaffold(

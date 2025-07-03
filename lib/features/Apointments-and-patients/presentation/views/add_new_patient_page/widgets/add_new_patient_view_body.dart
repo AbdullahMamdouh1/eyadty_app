@@ -1,12 +1,12 @@
-import 'package:eyadty_app/core/helper_functions/on_generate_routes.dart';
 import 'package:eyadty_app/core/utils/app_colors.dart';
 import 'package:eyadty_app/core/widgets/custom_button.dart';
 import 'package:eyadty_app/features/auth/presentation/views/widgets/custom_check_box.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
+import '../../../../../../core/routing/routes.dart';
+import '../../../../../../core/utils/app_images.dart';
 import '../../../../../../core/widgets/custom_container_shape.dart';
-import '../../../../../../generated/assets.dart';
 import '../../../../../listing/presentation/views/widgets/title_text.dart';
 import 'emergency_contact.dart';
 import 'medical_history.dart';
@@ -14,7 +14,7 @@ import 'patient_controller.dart';
 import 'patient_information.dart';
 
 class AddNewPatientViewBody extends StatefulWidget {
-  AddNewPatientViewBody({super.key});
+  const AddNewPatientViewBody({super.key});
 
   @override
   State<AddNewPatientViewBody> createState() => _AddNewPatientViewBodyState();
@@ -41,12 +41,12 @@ class _AddNewPatientViewBodyState extends State<AddNewPatientViewBody> {
             textDirection: TextDirection.rtl,
             child: CustomButton(
               onPressed: () {
-                context.push(AppRoutes.uploadMedicalFilePageView);
+                context.push(Routes.uploadMedicalFilePageView);
               },
               text: "Add New Patient",
               Width: 190,
               color: AppColors.greenColor,
-              image: Assets.imagesAdd,
+              image: AppImages.imagesAdd,
             ),
           ),
           SizedBox(height: 32),
@@ -84,13 +84,13 @@ class _AddNewPatientViewBodyState extends State<AddNewPatientViewBody> {
                       text: "Save Changes",
                       Width: 170,
                       color: AppColors.greenColor,
-                      image: Assets.imagesSave,
+                      image: AppImages.imagesSave,
                     ),
                   ],
                 ),
               ),
             ),
-           ),
+          ),
           SizedBox(
             height: 40,
           )

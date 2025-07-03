@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import '../../../../../../core/widgets/fitted_box.dart';
 
 class PatientChart extends StatelessWidget {
+  const PatientChart({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -49,7 +51,9 @@ class PatientChart extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 8,),
+          SizedBox(
+            height: 8,
+          ),
           FittedBoxS(
             child: Row(
               crossAxisAlignment: CrossAxisAlignment.start,
@@ -75,17 +79,15 @@ class PatientChart extends StatelessWidget {
         x: index,
         barRods: [
           BarChartRodData(
-            toY: followUpPatients[index].toDouble(),
-            color: Colors.green,
-            width: 12,
-            borderRadius: BorderRadius.all(Radius.zero)
-          ),
+              toY: followUpPatients[index].toDouble(),
+              color: Colors.green,
+              width: 12,
+              borderRadius: BorderRadius.all(Radius.zero)),
           BarChartRodData(
             toY: newPatients[index].toDouble(),
             color: Colors.lightBlue,
             width: 12,
-              borderRadius: BorderRadius.all(Radius.zero),
-
+            borderRadius: BorderRadius.all(Radius.zero),
           ),
         ],
         barsSpace: 4,
