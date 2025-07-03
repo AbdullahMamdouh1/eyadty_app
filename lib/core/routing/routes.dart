@@ -33,6 +33,6 @@ class Routes {
   static const newCampaign1 = '/newCampaign1';
   static const newCampaign2 = '/newCampaign2';
   static const newCampaign3 = '/newCampaign3';
-
+  static const newCampaign4 = '/newCampaign4';
   static const campaignHistory = '/campaignHistory';
 }

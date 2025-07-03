@@ -4,15 +4,22 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class NewCampaignItemContainer extends StatelessWidget {
   const NewCampaignItemContainer(
-      {super.key, required this.text, this.suffix, this.enabled = true});
+      {super.key,
+      required this.text,
+      this.suffix,
+      this.enabled = true,
+      this.maxLines = 1});
   final String text;
   final Widget? suffix;
   final bool enabled;
+  final int maxLines;
   @override
   Widget build(BuildContext context) {
     return TextFormField(
       enabled: enabled,
+      maxLines: maxLines,
       decoration: InputDecoration(
+        hintMaxLines: maxLines,
         hint: Text(
           text,
           style: AppStyle.campaignContainer,

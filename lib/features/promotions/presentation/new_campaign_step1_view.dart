@@ -1,4 +1,4 @@
-import 'package:eyadty_app/features/promotions/presentation/widgets/new_campagin_step_1.dart';
+import 'package:eyadty_app/features/promotions/presentation/widgets/new_campaign_step_1.dart';
 import 'package:flutter/material.dart';
 
 class NewCampaignStep1View extends StatelessWidget {

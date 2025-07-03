@@ -17,7 +17,7 @@ class PromotionsTopContainer extends StatelessWidget {
         DropDownContainer(),
         verticalSpace(24),
         TopContainerItem(
-          containerColor: Color(0xffC3D8D0),
+          containerColor: Color(0xffC3D8D0).withValues(alpha: 0.38),
           titleColor: Color(0xff1A4D3A),
           title: 'Total Reach',
           number: '5',

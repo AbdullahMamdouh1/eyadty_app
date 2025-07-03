@@ -2,15 +2,14 @@ import 'package:eyadty_app/core/style/app_style.dart';
 import 'package:eyadty_app/core/utils/spacing.dart';
 import 'package:eyadty_app/features/promotions/presentation/widgets/custom_app_bar_of_promotions.dart';
 import 'package:eyadty_app/features/promotions/presentation/widgets/new_campaign_bottom_options.dart';
+import 'package:eyadty_app/features/promotions/presentation/widgets/new_campaing_step_4_column.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 
-import '../../../../core/routing/routes.dart';
-import 'new_campaing_step_3_column.dart';
 import 'shared_main_container.dart';
 
-class NewCampaginStep3 extends StatelessWidget {
-  const NewCampaginStep3({super.key});
+class NewCampaginStep4 extends StatelessWidget {
+  const NewCampaginStep4({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -30,7 +29,7 @@ class NewCampaginStep3 extends StatelessWidget {
             ),
             SliverFillRemaining(
               hasScrollBody: false,
-              child: SharedParentContainer(child: NewCampaingStep3Column()),
+              child: SharedParentContainer(child: NewCampaingStep4Column()),
             ),
             SliverToBoxAdapter(
               child: verticalSpace(42),
@@ -41,7 +40,7 @@ class NewCampaginStep3 extends StatelessWidget {
           bottom: 0,
           child: NewCampaignBottomOptions(
             nextOnPressed: () {
-              context.push(Routes.newCampaign4);
+              // context.push(Routes.);
             },
           ),
         )

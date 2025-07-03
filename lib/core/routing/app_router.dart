@@ -36,6 +36,7 @@ import '../../features/payment/Payment-page_view.dart';
 import '../../features/promotions/presentation/new_campaign_step1_view.dart';
 import '../../features/promotions/presentation/new_campaign_step2_view.dart';
 import '../../features/promotions/presentation/new_campaign_step3_view.dart';
+import '../../features/promotions/presentation/new_campaign_step4_view.dart';
 
 class AppRouter {
   static final GoRouter router = GoRouter(
@@ -180,6 +181,10 @@ class AppRouter {
       GoRoute(
         path: Routes.newCampaign3,
         builder: (context, state) => const NewCampaignStep3View(),
+      ),
+      GoRoute(
+        path: Routes.newCampaign4,
+        builder: (context, state) => const NewCampaignStep4View(),
       ),
     ],
     errorBuilder: (context, state) => Scaffold(

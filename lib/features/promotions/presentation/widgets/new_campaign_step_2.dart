@@ -16,28 +16,26 @@ class NewCampaginStep2 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        Expanded(
-          child: CustomScrollView(
-            physics: BouncingScrollPhysics(),
-            slivers: [
-              SliverToBoxAdapter(
-                child: CustomAppBar(
-                  text: 'Create New Campaign',
-                  textStyle: AppStyle.mainAppBar,
-                  onPressed: () {
-                    context.pop();
-                  },
-                ),
+        CustomScrollView(
+          physics: BouncingScrollPhysics(),
+          slivers: [
+            SliverToBoxAdapter(
+              child: CustomAppBar(
+                text: 'Create New Campaign',
+                textStyle: AppStyle.mainAppBar,
+                onPressed: () {
+                  context.pop();
+                },
               ),
-              SliverFillRemaining(
-                hasScrollBody: false,
-                child: SharedParentContainer(child: NewCampaingStep2Column()),
-              ),
-              SliverToBoxAdapter(
-                child: verticalSpace(42),
-              )
-            ],
-          ),
+            ),
+            SliverFillRemaining(
+              hasScrollBody: false,
+              child: SharedParentContainer(child: NewCampaingStep2Column()),
+            ),
+            SliverToBoxAdapter(
+              child: verticalSpace(42),
+            )
+          ],
         ),
         Positioned(
           bottom: 0,

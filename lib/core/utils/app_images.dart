@@ -72,4 +72,5 @@ class AppImages {
   static const history = 'assets/images/history.svg';
   static const campaign = 'assets/images/campaign.svg';
   static const save2 = 'assets/images/save2.svg';
+  static const drag = 'assets/images/drag.svg';
 }
