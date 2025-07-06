@@ -15,6 +15,7 @@ abstract class AppColors {
   static const mainBorderColor = Color(0xffA2ABB9);
   static const childBorderColor = Color(0xffD9D9D9);
   static const secondaryFontColor = Color(0xffF5F5F5);
+  static const tableIconColor = Color(0xff246C51);
 }
 
 SizedBox sizedBox = SizedBox(

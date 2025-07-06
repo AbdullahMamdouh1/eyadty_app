@@ -18,7 +18,7 @@ class PromotionsTable extends StatelessWidget {
       child: Table(
         border: TableBorder.all(
             color: AppColors.lightGrey,
-            borderRadius: BorderRadius.circular(12.r)),
+            borderRadius: BorderRadius.circular(8.r)),
         columnWidths: const {
           0: FlexColumnWidth(3), // Promotion Name & Target Audience
           1: FlexColumnWidth(1.5), // Status & Reach
@@ -27,8 +27,9 @@ class PromotionsTable extends StatelessWidget {
         children: [
           // Header Row
           TableRow(
-            decoration: const BoxDecoration(
+            decoration: BoxDecoration(
               color: Color(0xFFD8F0E7),
+              borderRadius: BorderRadius.circular(8.r),
             ),
             children: [
               buildHeaderCell('Promotion Name\nTarget Audience'),

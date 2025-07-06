@@ -1,6 +1,6 @@
 import 'package:eyadty_app/core/style/app_style.dart';
-import 'package:eyadty_app/features/Offers-and-promotion/presentation/views/OffersListingPage/widgets/offers_listing_page_view_body.dart';
-import 'package:eyadty_app/features/Offers-and-promotion/presentation/views/OffersListingPage/widgets/offers_view_bottom_option.dart';
+import 'package:eyadty_app/features/Offers/presentation/views/OffersListingPage/widgets/offers_listing_page_view_body.dart';
+import 'package:eyadty_app/features/Offers/presentation/views/OffersListingPage/widgets/offers_view_bottom_option.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 

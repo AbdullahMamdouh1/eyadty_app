@@ -35,4 +35,6 @@ class Routes {
   static const newCampaign3 = '/newCampaign3';
   static const newCampaign4 = '/newCampaign4';
   static const campaignHistory = '/campaignHistory';
+  static const inventoryManagementView = '/inventoryManagement';
+  static const addItemFromInventoryView = '/addItemFromInventoryView';
 }

@@ -1,6 +1,6 @@
 import 'package:eyadty_app/core/utils/app_colors.dart';
 import 'package:eyadty_app/core/utils/spacing.dart';
-import 'package:eyadty_app/features/Offers-and-promotion/presentation/views/CreateOfferPage/widgets/upload_promotional_banner.dart'
+import 'package:eyadty_app/features/Offers/presentation/views/CreateOfferPage/widgets/upload_promotional_banner.dart'
     show UploadPromotionalBanner;
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
