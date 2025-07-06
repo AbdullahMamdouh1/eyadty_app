@@ -45,8 +45,8 @@ class _ListingAddListStep1ViewBodyState
             color1: AppColors.greenColor,
           ),
           TitleText(
-            Title: 'Step 1 of 5: Basic Information',
-            SubTitle: 'Enter clinic name, address, and contact details.',
+            title: 'Step 1 of 5: Basic Information',
+            subTitle: 'Enter clinic name, address, and contact details.',
           ),
           SizedBox(
             height: 24,

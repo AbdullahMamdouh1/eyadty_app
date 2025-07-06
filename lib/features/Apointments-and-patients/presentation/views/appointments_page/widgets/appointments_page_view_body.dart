@@ -7,12 +7,11 @@ import 'list_view_item_appointments.dart';
 import 'status_cards_row.dart';
 
 class AppointmentsPageViewBody extends StatelessWidget {
-    AppointmentsPageViewBody({super.key});
+  AppointmentsPageViewBody({super.key});
   final table = CustomTable();
 
   @override
   Widget build(BuildContext context) {
-
     return Padding(
       padding: const EdgeInsets.only(right: 15.0, left: 15),
       child: Column(
@@ -22,8 +21,8 @@ class AppointmentsPageViewBody extends StatelessWidget {
             height: 32,
           ),
           TitleText(
-            Title: "Manage Your Clinics",
-            SubTitle: "View, edit, and grow your clinic’s online presence. ",
+            title: "Manage Your Clinics",
+            subTitle: "View, edit, and grow your clinic’s online presence. ",
           ),
           SizedBox(
             height: 30,
@@ -38,8 +37,9 @@ class AppointmentsPageViewBody extends StatelessWidget {
             height: 16,
           ),
           table.TableShape(Child: ListViewItemAppointments(), height: 400),
-          SizedBox(height: 40,)
-
+          SizedBox(
+            height: 40,
+          )
         ],
       ),
     );

@@ -24,8 +24,8 @@ class ListingAddMoreListingViewBody extends StatelessWidget {
             height: 32,
           ),
           TitleText(
-            Title: 'Manage Your Clinics',
-            SubTitle: 'View, edit, and grow your clinic’s online presence. ',
+            title: 'Manage Your Clinics',
+            subTitle: 'View, edit, and grow your clinic’s online presence. ',
           ),
           SizedBox(
             height: 16,

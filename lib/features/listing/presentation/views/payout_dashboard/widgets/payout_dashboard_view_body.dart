@@ -1,9 +1,9 @@
- import 'package:eyadty_app/features/listing/presentation/views/payout_dashboard/widgets/trends_and_insights.dart';
+import 'package:eyadty_app/features/listing/presentation/views/payout_dashboard/widgets/trends_and_insights.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../../core/utils/app_colors.dart';
 import '../../widgets/title_text.dart';
- import 'current_cycle _overview.dart';
+import 'current_cycle _overview.dart';
 import 'statement_details.dart';
 
 class PayoutDashboardViewBody extends StatelessWidget {
@@ -18,8 +18,8 @@ class PayoutDashboardViewBody extends StatelessWidget {
             height: 32,
           ),
           TitleText(
-            Title: 'Payout Dashboard ',
-            SubTitle:
+            title: 'Payout Dashboard ',
+            subTitle:
                 "Manage your earnings and payments for online bookings processed through Eyadti.",
           ),
           sizedBox,
@@ -28,8 +28,9 @@ class PayoutDashboardViewBody extends StatelessWidget {
           TrendsAndInsights(),
           sizedBox,
           StatementDetails(),
-          SizedBox(height: 50,)
-
+          SizedBox(
+            height: 50,
+          )
         ]));
   }
 }

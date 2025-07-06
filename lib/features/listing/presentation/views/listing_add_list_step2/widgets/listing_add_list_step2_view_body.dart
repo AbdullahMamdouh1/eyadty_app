@@ -43,8 +43,8 @@ class _ListingAddListStep2ViewBodyState
             color2: AppColors.greenColor,
           ),
           TitleText(
-            Title: 'Step 2 of 5: Clinic Operations Details',
-            SubTitle:
+            title: 'Step 2 of 5: Clinic Operations Details',
+            subTitle:
                 'Set Payment, working hours and notification preferences.',
           ),
           sizedBox,

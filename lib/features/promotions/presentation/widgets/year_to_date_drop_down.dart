@@ -49,7 +49,7 @@ class _YearToDateDropdownState extends State<YearToDateDropdown> {
         padding: EdgeInsets.zero,
         value: selectedValue,
         hint: Text('Year to date',
-            style: TextStyle(fontSize: 15.sp, fontFamily: 'Karla')),
+            style: TextStyle(fontSize: 12.sp, fontFamily: 'Karla')),
         decoration: InputDecoration(
           contentPadding:
               EdgeInsets.only(left: 12.w, right: 8.w, top: 12.h, bottom: 12.h),
@@ -65,7 +65,7 @@ class _YearToDateDropdownState extends State<YearToDateDropdown> {
             value: option,
             child: Text(
               option,
-              style: TextStyle(fontSize: 15.sp, fontFamily: 'Karla'),
+              style: TextStyle(fontSize: 13.sp, fontFamily: 'Karla'),
             ),
           );
         }).toList(),

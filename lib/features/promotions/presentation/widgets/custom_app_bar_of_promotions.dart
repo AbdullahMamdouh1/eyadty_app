@@ -58,7 +58,6 @@ class CustomAppBar extends StatelessWidget {
                   )
                 ],
               ),
-              verticalSpace(4)
             ],
           ),
         ),

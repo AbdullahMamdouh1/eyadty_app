@@ -38,8 +38,8 @@ class _ListingAddListStep4ViewBodyState
             color4: AppColors.greenColor,
           ),
           TitleText(
-            Title: 'Step 4 of 5: Multimedia Uploads',
-            SubTitle:
+            title: 'Step 4 of 5: Multimedia Uploads',
+            subTitle:
                 'Upload your clinic’s logo, photos, and a profile picture to enhance your online presence.',
           ),
           sizedBox,

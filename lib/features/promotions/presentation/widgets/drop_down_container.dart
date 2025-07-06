@@ -38,7 +38,6 @@ class DropDownContainer extends StatelessWidget {
             'Promotions',
             style: AppStyle.mainAppBar,
           ),
-        if (isFromBottomContainer) horizontalSpace(4),
         Expanded(
           child: YearToDateDropdown(
             initialValue: 'Year to date',

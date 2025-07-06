@@ -1,4 +1,3 @@
-import 'package:eyadty_app/core/routing/routes.dart';
 import 'package:eyadty_app/core/utils/app_colors.dart';
 import 'package:eyadty_app/core/utils/app_images.dart';
 import 'package:eyadty_app/core/utils/spacing.dart';
@@ -7,9 +6,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 
-class PromotionsBottomOptions extends StatelessWidget {
-  const PromotionsBottomOptions({super.key});
-
+class CreateOfferBottomOptions extends StatelessWidget {
+  const CreateOfferBottomOptions({super.key, this.nextRoute});
+  final String? nextRoute;
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -20,25 +19,25 @@ class PromotionsBottomOptions extends StatelessWidget {
         children: [
           Expanded(
             child: CustomBottomOption(
-              text: 'Campaign History',
-              imagePath: AppImages.history,
+              text: 'Save Draft',
+              imagePath: AppImages.save2,
               background: AppColors.white,
               textColor: AppColors.black,
               onPressed: () {
-                context.push(Routes.campaignHistory);
+                // context.push(Routes.campaignHistory);
               },
             ),
           ),
           horizontalSpace(12),
           Expanded(
             child: CustomBottomOption(
-              text: 'New Campaign',
-              imagePath: AppImages.campaign,
+              text: 'Submit',
+              imagePath: AppImages.imagesArrowForward,
               background: AppColors.greenColor,
               textColor: AppColors.white,
               borderColor: AppColors.black,
               onPressed: () {
-                context.push(Routes.newCampaign1);
+                if (nextRoute != null) context.push(nextRoute!);
               },
             ),
           ),

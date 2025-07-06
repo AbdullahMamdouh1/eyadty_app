@@ -37,8 +37,8 @@ class _CompletePatientRecordViewBodyState
         children: [
           SizedBox(height: 32),
           TitleText(
-            Title: 'Complete Patient Record',
-            SubTitle:
+            title: 'Complete Patient Record',
+            subTitle:
                 'No medical record uploaded. Add details and files to complete the profile.',
           ),
           SizedBox(height: 24),
