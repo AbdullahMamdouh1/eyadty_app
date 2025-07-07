@@ -38,8 +38,8 @@ class _ListingAddListStep3ViewBodyState
             color3: AppColors.greenColor,
           ),
           TitleText(
-            Title: 'Step 3 of 5: Doctor Information',
-            SubTitle: 'Enter your name, specialty, and professional details.',
+            title: 'Step 3 of 5: Doctor Information',
+            subTitle: 'Enter your name, specialty, and professional details.',
           ),
           sizedBox,
           CustomContainerShape(

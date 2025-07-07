@@ -27,13 +27,15 @@ class _DrawerItemsListView2State extends State<DrawerItemsListView2> {
     const DrawerItemModel(
         title: 'Inventory Management', image: AppImages.imagesCategory),
     const DrawerItemModel(title: 'Employees', image: AppImages.imagesPeople),
+    const DrawerItemModel(
+        title: 'Offers', image: AppImages.imagesMonetizationOn),
     const DrawerItemModel(title: 'Promotions', image: AppImages.imagesPeople),
   ];
   @override
   Widget build(BuildContext context) {
     return Column(
         children: List.generate(
-      6,
+      7,
       (index) {
         return GestureDetector(
           onTap: () {
@@ -51,12 +53,14 @@ class _DrawerItemsListView2State extends State<DrawerItemsListView2> {
                 context.push(Routes.patientsPageView);
                 break;
               case 3:
-                context.push(Routes.manageListingPageView);
+                context.push(Routes.inventoryManagementView);
                 break;
               case 4:
                 context.push(Routes.employeesPageView);
                 break;
               case 5:
+                context.push(Routes.clinicListingPageView);
+              case 6:
                 context.push(Routes.promotionsView);
               default:
                 print("");

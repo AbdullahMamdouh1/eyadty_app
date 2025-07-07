@@ -40,8 +40,8 @@ class _ListingAddListStep5ViewBodyState
             color5: AppColors.greenColor,
           ),
           TitleText(
-            Title: 'Step 5 of 5: Preview And Submit ',
-            SubTitle:
+            title: 'Step 5 of 5: Preview And Submit ',
+            subTitle:
                 "Review your clinic's details and uploads to ensure everything is accurate before submission.",
           ),
           sizedBox,

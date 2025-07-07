@@ -3,8 +3,25 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class AppStyle {
+  static TextStyle bold18 = TextStyle(
+      fontWeight: FontWeight.bold, fontSize: 18.sp, fontFamily: "Karla");
+  static TextStyle bold28 = TextStyle(
+      fontWeight: FontWeight.bold, fontSize: 28.sp, fontFamily: "Karla");
+  static TextStyle bold24 = TextStyle(
+      fontWeight: FontWeight.bold, fontSize: 24.sp, fontFamily: "Karla");
+
+  static TextStyle semiBold15 = TextStyle(
+      fontWeight: FontWeight.w600, fontSize: 15.sp, fontFamily: "Karla");
+  static TextStyle semiBold20 = TextStyle(
+      fontWeight: FontWeight.w600, fontSize: 20.sp, fontFamily: "Karla");
+
+  static TextStyle regular15 = TextStyle(
+      fontWeight: FontWeight.normal, fontSize: 15.sp, fontFamily: "Karla");
+
+  static TextStyle medium16 = TextStyle(
+      fontWeight: FontWeight.w500, fontSize: 16.sp, fontFamily: "Karla");
   static TextStyle mainAppBar = TextStyle(
-    fontSize: 18.sp,
+    fontSize: 20.sp,
     color: AppColors.mainFontColor,
     fontFamily: 'Karla',
     fontWeight: FontWeight.bold,

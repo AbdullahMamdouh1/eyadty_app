@@ -41,7 +41,7 @@ class CustomBottomOption extends StatelessWidget {
           Text(
             text,
             style: TextStyle(
-                color: textColor, fontSize: 14.sp, fontWeight: FontWeight.w400),
+                color: textColor, fontSize: 12.sp, fontWeight: FontWeight.w400),
           ),
           if (imagePath != null) horizontalSpace(8),
           if (imagePath != null) SvgPicture.asset(imagePath!)

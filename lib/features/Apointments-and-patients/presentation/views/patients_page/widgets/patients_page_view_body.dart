@@ -23,8 +23,8 @@ class PatientsPageViewBody extends StatelessWidget {
             height: 32,
           ),
           TitleText(
-            Title: 'Patients Hub',
-            SubTitle:
+            title: 'Patients Hub',
+            subTitle:
                 'Manage your clinic’s full patient database, including online and offline records.',
           ),
           sizedBox,

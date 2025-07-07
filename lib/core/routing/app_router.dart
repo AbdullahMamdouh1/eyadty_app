@@ -1,6 +1,7 @@
 import 'package:eyadty_app/core/routing/routes.dart';
-import 'package:eyadty_app/features/Offers-and-promotion/presentation/views/CreateOfferPage/create_offerPage_view.dart';
+import 'package:eyadty_app/features/Offers/presentation/views/CreateOfferPage/create_offerPage_view.dart';
 import 'package:eyadty_app/features/auth/presentation/views/forgot_password/forgot_password_step4/password_reset_card.dart';
+import 'package:eyadty_app/features/inventory_management/presentation/add_item_view.dart';
 import 'package:eyadty_app/features/promotions/presentation/campaign_history_view.dart';
 import 'package:eyadty_app/features/promotions/presentation/promotions_view.dart';
 import 'package:flutter/material.dart';
@@ -11,9 +12,9 @@ import '../../features/Apointments-and-patients/presentation/views/add_new_patie
 import '../../features/Apointments-and-patients/presentation/views/appointments_page/appointments_page_view.dart';
 import '../../features/Apointments-and-patients/presentation/views/complete_patient_record/complete_patient_record_view.dart';
 import '../../features/Apointments-and-patients/presentation/views/patients_page/patients_page_view.dart';
-import '../../features/Offers-and-promotion/presentation/views/ClinicListingPage/listing_add_list_step5_view.dart';
-import '../../features/Offers-and-promotion/presentation/views/ManageListingPage/manage_listing_page_view.dart';
-import '../../features/Offers-and-promotion/presentation/views/OffersListingPage/offers_listing_page_view.dart';
+import '../../features/Offers/presentation/views/ClinicListingPage/listing_add_list_step5_view.dart';
+import '../../features/Offers/presentation/views/ManageListingPage/manage_listing_page_view.dart';
+import '../../features/Offers/presentation/views/OffersListingPage/offers_listing_page_view.dart';
 import '../../features/adding_new_employee/presentation/views/add_new_employee_page/add_new_employee_page_view.dart';
 import '../../features/adding_new_employee/presentation/views/employee_added_successfully.dart';
 import '../../features/adding_new_employee/presentation/views/employees_page/employees_page_view.dart';
@@ -25,6 +26,7 @@ import '../../features/auth/presentation/views/login/login_step2/login_verify_vi
 import '../../features/auth/presentation/views/signup_step1/signup_view.dart';
 import '../../features/auth/presentation/views/signup_step2/signup_step2_view.dart';
 import '../../features/auth/presentation/views/signup_step3/signup_step3_view.dart';
+import '../../features/inventory_management/presentation/inventory_management_view.dart';
 import '../../features/listing/presentation/views/listing_add_list_step1/listing_add_list_step1_view.dart';
 import '../../features/listing/presentation/views/listing_add_list_step2/listing_add_list_step2_view.dart';
 import '../../features/listing/presentation/views/listing_add_list_step3/listing_add_list_step3_view.dart';
@@ -190,6 +192,14 @@ class AppRouter {
       GoRoute(
         path: Routes.campaignHistory,
         builder: (context, state) => const CampaignHistoryView(),
+      ),
+      GoRoute(
+        path: Routes.inventoryManagementView,
+        builder: (context, state) => const InventoryManagementView(),
+      ),
+      GoRoute(
+        path: Routes.addItemFromInventoryView,
+        builder: (context, state) => const AddItemView(),
       ),
     ],
     errorBuilder: (context, state) => Scaffold(

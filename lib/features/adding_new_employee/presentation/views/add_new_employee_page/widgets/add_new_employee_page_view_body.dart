@@ -24,8 +24,8 @@ class AddNewEmployeePageViewBody extends StatelessWidget {
             height: 32,
           ),
           TitleText(
-            Title: "Add New Employee",
-            SubTitle:
+            title: "Add New Employee",
+            subTitle:
                 "Invite a collaborator to your clinic and assign their role.",
           ),
           SizedBox(

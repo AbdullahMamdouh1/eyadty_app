@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 /// Normal / regular / plain.
 //static const FontWeight w400 = FontWeight._(3, 400);
@@ -14,26 +15,24 @@ import 'package:flutter/material.dart';
 
 abstract class AppStyles {
   //    1 bold
-  static const TextStyle bold18 =
-      TextStyle(fontWeight: FontWeight.bold, fontSize: 18, fontFamily: "Karla");
-  static const TextStyle bold28 =
-  TextStyle(fontWeight: FontWeight.bold, fontSize: 28, fontFamily: "Karla");
-  static const TextStyle bold24 =
-  TextStyle(fontWeight: FontWeight.bold, fontSize: 24, fontFamily: "Karla");
-
-
+  static TextStyle bold18 = TextStyle(
+      fontWeight: FontWeight.bold, fontSize: 18.sp, fontFamily: "Karla");
+  static TextStyle bold28 = TextStyle(
+      fontWeight: FontWeight.bold, fontSize: 28.sp, fontFamily: "Karla");
+  static TextStyle bold24 = TextStyle(
+      fontWeight: FontWeight.bold, fontSize: 24.sp, fontFamily: "Karla");
 
   // 2 semiBold
-  static const TextStyle semiBold15 =
-      TextStyle(fontWeight: FontWeight.w600, fontSize: 15, fontFamily: "Karla");
-  static const TextStyle semiBold20 =
-  TextStyle(fontWeight: FontWeight.w600, fontSize: 20, fontFamily: "Karla");
+  static TextStyle semiBold15 = TextStyle(
+      fontWeight: FontWeight.w600, fontSize: 15.sp, fontFamily: "Karla");
+  static TextStyle semiBold20 = TextStyle(
+      fontWeight: FontWeight.w600, fontSize: 20.sp, fontFamily: "Karla");
 
   // 3 regular
-  static const TextStyle regular15 = TextStyle(
-      fontWeight: FontWeight.normal, fontSize: 15, fontFamily: "Karla");
+  static TextStyle regular15 = TextStyle(
+      fontWeight: FontWeight.normal, fontSize: 15.sp, fontFamily: "Karla");
 
 //  4 medium
-  static const TextStyle medium16 =
-      TextStyle(fontWeight: FontWeight.w500, fontSize: 16, fontFamily: "Karla");
+  static TextStyle medium16 = TextStyle(
+      fontWeight: FontWeight.w500, fontSize: 16.sp, fontFamily: "Karla");
 }

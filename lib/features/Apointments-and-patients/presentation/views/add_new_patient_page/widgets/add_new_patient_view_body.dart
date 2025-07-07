@@ -32,8 +32,8 @@ class _AddNewPatientViewBodyState extends State<AddNewPatientViewBody> {
         children: [
           SizedBox(height: 32),
           TitleText(
-            Title: 'Add New Patient',
-            SubTitle:
+            title: 'Add New Patient',
+            subTitle:
                 'Create a new patient record and invite them to access their medical history online.',
           ),
           SizedBox(height: 24),

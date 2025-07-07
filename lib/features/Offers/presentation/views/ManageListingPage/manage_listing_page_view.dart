@@ -1,10 +1,10 @@
- import 'package:eyadty_app/features/Offers-and-promotion/presentation/views/ManageListingPage/widgets/manage_listing_page_view_body.dart';
+import 'package:eyadty_app/features/Offers/presentation/views/ManageListingPage/widgets/manage_listing_page_view_body.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../core/widgets/custom_app_bar.dart';
 import '../../../../drawer/custom_drawer.dart';
 
-class  ManageListingPageView extends StatelessWidget {
+class ManageListingPageView extends StatelessWidget {
   const ManageListingPageView({super.key});
 
   @override
